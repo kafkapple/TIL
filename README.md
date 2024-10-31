@@ -1,12 +1,7 @@
-# TIL
+## Today I Learned
 
-## 목차
-
-### Programming
-- [241031_programming](Programming/241031_programming.md)
-
-### ML
-- [20241031](ML/20241031.md)
-- [Ensemble](ML/Ensemble.md)
-- [quiz_2](ML/quiz_2.md)
-
+- [241031_programming.md](./Programming/241031_programming.md)
+- [Ensemble.md](./ML/Ensemble.md)
+- [test.md](./ML/test.md)
+- [quiz_2.md](./ML/quiz_2.md)
+- [20241031.md](./ML/20241031.md)

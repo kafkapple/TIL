@@ -3,39 +3,43 @@ name: Update README
 on:
   push:
     branches:
-      - main
+      - main  # 주 브랜치 이름에 맞게 수정
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
 
       - name: Generate README content
         run: |
+          # 기본 제목으로 시작
           echo "# TIL" > README.md
           echo "" >> README.md
           echo "## 목차" >> README.md
           echo "" >> README.md
-          for dir in $(find . -type d -not -path "./.git*"); do
-            if [ "$dir" != "." ]; then
-              echo "### ${dir:2}" >> README.md
-              for file in "$dir"/*.md; do
-                filename=$(basename "$file")
-                if [ -f "$file" ]; then
-                  echo "- [${filename%.md}]($file)" >> README.md
-                fi
-              done
-              echo "" >> README.md
-            fi
+
+          # 모든 폴더와 md 파일 찾기
+          for dir in $(find . -type d -not -path "./.git*" -not -path "."); do
+            folder_name=$(basename "$dir")
+            echo "### $folder_name" >> README.md
+            for file in "$dir"/*.md; do
+              if [ -f "$file" ]; then
+                filename=$(basename "$file" .md)
+                file_path="${file:2}"
+                echo "- [$filename]($file_path)" >> README.md
+              fi
+            done
+            echo "" >> README.md
           done
 
       - name: Commit and push changes
         run: |
+          # 변경 사항을 커밋하고 푸시
           git config --local user.name "kafkapple"
           git config --local user.email "biasdrive@gmail.com"
           git add README.md
           git commit -m "Auto-update README with TIL files"
-          git push
-
+          git push || echo "No changes to commit"

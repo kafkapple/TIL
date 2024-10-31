@@ -30,10 +30,12 @@ jobs:
       run: |
         python ./update_readme.py
     - name: Run Update README.md File
+      env:
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
       run: |
         git add .
         git diff
-        git config --local user.email "biasdrive@gmail.com"
-        git config --local user.name "kafkapple"
+        git config --local user.name "github-actions[bot]"
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git commit -m ":smiley: Update README.md file"
         git push

@@ -10,7 +10,7 @@ def update_readme():
                 file_path = os.path.join(root, file)
                 til_content += f"- [{file}]({file_path})\n"
     
-    with open("README.md", "w") as f:
+    with open("./README.md", "w", encoding='utf-8') as f:
         f.write(til_content)
 
 if __name__ == "__main__":

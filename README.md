@@ -7,7 +7,10 @@
 ## ML
 
 - [Ensemble](ML/Ensemble.md)
-- [test](ML/test.md)
 - [quiz_2](ML/quiz_2.md)
 - [20241031](ML/20241031.md)
+
+### DL
+
+- [test](ML/DL/test.md)
 

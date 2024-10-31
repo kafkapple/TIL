@@ -9,17 +9,33 @@ jobs:
   update-readme:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.x'
-      - name: Update README
-        run: python update_readme.py
-      - name: Commit changes
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Generate README content
         run: |
-          git config --local user.email "biasdrive@gmail.com"
+          echo "# TIL" > README.md
+          echo "" >> README.md
+          echo "## 목차" >> README.md
+          echo "" >> README.md
+          for dir in $(find . -type d -not -path "./.git*"); do
+            if [ "$dir" != "." ]; then
+              echo "### ${dir:2}" >> README.md
+              for file in "$dir"/*.md; do
+                filename=$(basename "$file")
+                if [ -f "$file" ]; then
+                  echo "- [${filename%.md}]($file)" >> README.md
+                fi
+              done
+              echo "" >> README.md
+            fi
+          done
+
+      - name: Commit and push changes
+        run: |
           git config --local user.name "kafkapple"
+          git config --local user.email "biasdrive@gmail.com"
           git add README.md
-          git commit -m "Update README" -a || echo "No changes to commit"
+          git commit -m "Auto-update README with TIL files"
           git push
+

@@ -2,9 +2,42 @@ import os
 import re
 from datetime import datetime
 
+def get_file_hierarchy(base_directory):
+    """
+    Generate a hierarchical dictionary of markdown files
+    
+    Args:
+        base_directory (str): Base directory to start scanning
+    
+    Returns:
+        dict: Hierarchical structure of markdown files
+    """
+    hierarchy = {}
+    
+    for root, dirs, files in os.walk(base_directory):
+        # Skip Daily folder and README
+        if '_Daily' in root or root == base_directory:
+            continue
+        
+        # Relative path from base directory
+        relative_path = os.path.relpath(root, base_directory)
+        path_parts = [p for p in relative_path.split(os.path.sep) if p != '.']
+        
+        # Traverse or create hierarchy
+        current = hierarchy
+        for part in path_parts:
+            if part not in current:
+                current[part] = {}
+            current = current[part]
+        
+        # Add markdown files to current level
+        current['__files__'] = [f for f in files if f.endswith('.md')]
+    
+    return hierarchy
+
 def parse_markdown_files(base_directory):
     """
-    Parse markdown files with advanced sorting logic
+    Parse markdown files with advanced sorting and linking
     
     Args:
         base_directory (str): Base directory containing markdown files
@@ -14,12 +47,10 @@ def parse_markdown_files(base_directory):
     """
     til_content = ""
     daily_files = {}
-    other_files = {}
-    
-    # Separate Daily folder and other markdown files
-    daily_path = os.path.join(base_directory, '_Daily')
     
     # Process Daily folder files
+    daily_path = os.path.join(base_directory, '_Daily')
+    
     for filename in os.listdir(daily_path):
         match = re.match(r'(\d{4})(\d{2})(\d{2})_(\w+)\.md', filename)
         
@@ -39,18 +70,8 @@ def parse_markdown_files(base_directory):
                 'filename': filename,
                 'topic': topic,
                 'date': file_date,
-                'full_path': os.path.join(daily_path, filename)
+                'full_path': os.path.join('_Daily', filename)
             })
-    
-    # Process other markdown files in base directory
-    for filename in os.listdir(base_directory):
-        if filename.endswith('.md') and not filename.startswith('README') and not os.path.isdir(os.path.join(base_directory, filename)):
-            category = filename.split('_')[0] if '_' in filename else 'Uncategorized'
-            
-            if category not in other_files:
-                other_files[category] = []
-            
-            other_files[category].append(filename)
     
     # Generate README content for Daily files
     for year in sorted(daily_files.keys(), reverse=True):
@@ -66,16 +87,30 @@ def parse_markdown_files(base_directory):
             )
             
             for file_info in sorted_files:
-                til_content += f"- {file_info['filename']} ({file_info['topic']})\n"
+                til_content += f"- [{file_info['filename']}]({file_info['full_path']}) ({file_info['topic']})\n"
             til_content += "\n"
     
-    # Add other markdown files, sorted alphabetically
+    # Process other markdown files with hierarchy
     til_content += "# 기타 문서\n\n"
-    for category, files in sorted(other_files.items()):
-        til_content += f"## {category}\n\n"
-        for filename in sorted(files):
-            til_content += f"- {filename}\n"
-        til_content += "\n"
+    file_hierarchy = get_file_hierarchy(base_directory)
+    
+    def process_hierarchy(hierarchy, depth=1):
+        nonlocal til_content
+        for key, value in sorted(hierarchy.items()):
+            if key == '__files__':
+                for filename in sorted(value):
+                    til_content += f"- [{filename}]({os.path.join(current_path, filename)})\n"
+            else:
+                # Create headings based on depth
+                heading = '#' * (depth + 1)
+                til_content += f"{heading} {key}\n\n"
+                
+                # Update current path for linking
+                current_path = key
+                process_hierarchy(value, depth + 1)
+    
+    current_path = ''
+    process_hierarchy(file_hierarchy)
     
     return til_content
 

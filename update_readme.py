@@ -82,7 +82,9 @@ def parse_markdown_files(base_directory):
             )
             
             for file_info in sorted_files:
-                til_content += f"- [{file_info['filename']}]({file_info['full_path']}) ({file_info['topic']})\n"
+                # Remove .md extension from link
+                link_filename = os.path.splitext(file_info['filename'])[0]
+                til_content += f"- [{file_info['filename']}]({os.path.join('_Daily', link_filename)}) ({file_info['topic']})\n"
             til_content += "\n"
     
     # Process other markdown files with hierarchy
@@ -94,7 +96,9 @@ def parse_markdown_files(base_directory):
         for key, value in sorted(hierarchy.items()):
             if key == '__files__':
                 for filename in sorted(value):
-                    file_link_path = os.path.join(current_path, filename)
+                    # Remove .md extension from link
+                    link_filename = os.path.splitext(filename)[0]
+                    file_link_path = os.path.join(current_path, link_filename)
                     til_content += f"- [{filename}]({file_link_path})\n"
             else:
                 # Create headings based on depth

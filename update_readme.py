@@ -17,7 +17,7 @@ def parse_markdown_files(base_directory):
     other_files = {}
     
     # Separate Daily folder and other markdown files
-    daily_path = os.path.join(base_directory, 'Daily')
+    daily_path = os.path.join(base_directory, '_Daily')
     
     # Process Daily folder files
     for filename in os.listdir(daily_path):

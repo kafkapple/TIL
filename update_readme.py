@@ -2,22 +2,22 @@ import os
 import re
 from datetime import datetime
 
-daily = '_Daily'
-def get_file_hierarchy(base_directory):
+def get_markdown_files(base_directory):
     """
-    Generate a hierarchical dictionary of markdown files
-    
-    Args:
-        base_directory (str): Base directory to start scanning
-    
-    Returns:
-        dict: Hierarchical structure of markdown files
+    Find markdown files across directory hierarchy, excluding README.md
     """
     hierarchy = {}
     
     for root, dirs, files in os.walk(base_directory):
-        # Skip Daily folder and README
-        if daily in root or root == base_directory:
+        # Skip _Daily folder and base directory
+        if '_Daily' in root or root == base_directory:
+            continue
+        
+        # Filter markdown files, excluding README.md
+        md_files = [f for f in files if f.endswith('.md') and f.lower() != 'readme.md']
+        
+        # Skip directories with no markdown files
+        if not md_files:
             continue
         
         # Relative path from base directory
@@ -32,25 +32,19 @@ def get_file_hierarchy(base_directory):
             current = current[part]
         
         # Add markdown files to current level
-        current['__files__'] = [f for f in files if f.endswith('.md')]
+        current['__files__'] = md_files
     
     return hierarchy
 
 def parse_markdown_files(base_directory):
     """
     Parse markdown files with advanced sorting and linking
-    
-    Args:
-        base_directory (str): Base directory containing markdown files
-    
-    Returns:
-        str: Parsed markdown content for README
     """
     til_content = ""
     daily_files = {}
     
-    # Process Daily folder files
-    daily_path = os.path.join(base_directory, daily)
+    # Process _Daily folder files
+    daily_path = os.path.join(base_directory, '_Daily')
     
     for filename in os.listdir(daily_path):
         match = re.match(r'(\d{4})(\d{2})(\d{2})_(\w+)\.md', filename)
@@ -71,7 +65,7 @@ def parse_markdown_files(base_directory):
                 'filename': filename,
                 'topic': topic,
                 'date': file_date,
-                'full_path': os.path.join(daily, filename)
+                'full_path': os.path.join('_Daily', filename)
             })
     
     # Generate README content for Daily files
@@ -93,7 +87,7 @@ def parse_markdown_files(base_directory):
     
     # Process other markdown files with hierarchy
     til_content += "# 기타 문서\n\n"
-    file_hierarchy = get_file_hierarchy(base_directory)
+    file_hierarchy = get_markdown_files(base_directory)
     
     def process_hierarchy(hierarchy, current_path='', depth=1):
         nonlocal til_content

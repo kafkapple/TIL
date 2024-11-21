@@ -6,7 +6,7 @@
 - 20241106_Dataset_split.md (Dataset_split)
 - 20241105_Ensemble.md (Ensemble)
 - 20241104_Variable_continuous_categorical.md (Variable_continuous_categorical)
-- 20241101_ML_data.md (ML_data)
+- 20241101_ML_data_Manual.md (ML_data_Manual)
 
 ## 2024년 10월
 

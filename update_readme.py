@@ -2,6 +2,7 @@ import os
 import re
 from datetime import datetime
 
+daily = '_Daily'
 def get_file_hierarchy(base_directory):
     """
     Generate a hierarchical dictionary of markdown files
@@ -16,7 +17,7 @@ def get_file_hierarchy(base_directory):
     
     for root, dirs, files in os.walk(base_directory):
         # Skip Daily folder and README
-        if '_Daily' in root or root == base_directory:
+        if daily in root or root == base_directory:
             continue
         
         # Relative path from base directory
@@ -49,7 +50,7 @@ def parse_markdown_files(base_directory):
     daily_files = {}
     
     # Process Daily folder files
-    daily_path = os.path.join(base_directory, '_Daily')
+    daily_path = os.path.join(base_directory, daily)
     
     for filename in os.listdir(daily_path):
         match = re.match(r'(\d{4})(\d{2})(\d{2})_(\w+)\.md', filename)
@@ -70,7 +71,7 @@ def parse_markdown_files(base_directory):
                 'filename': filename,
                 'topic': topic,
                 'date': file_date,
-                'full_path': os.path.join('_Daily', filename)
+                'full_path': os.path.join(daily, filename)
             })
     
     # Generate README content for Daily files
@@ -94,22 +95,22 @@ def parse_markdown_files(base_directory):
     til_content += "# 기타 문서\n\n"
     file_hierarchy = get_file_hierarchy(base_directory)
     
-    def process_hierarchy(hierarchy, depth=1):
+    def process_hierarchy(hierarchy, current_path='', depth=1):
         nonlocal til_content
         for key, value in sorted(hierarchy.items()):
             if key == '__files__':
                 for filename in sorted(value):
-                    til_content += f"- [{filename}]({os.path.join(current_path, filename)})\n"
+                    file_link_path = os.path.join(current_path, filename)
+                    til_content += f"- [{filename}]({file_link_path})\n"
             else:
                 # Create headings based on depth
                 heading = '#' * (depth + 1)
                 til_content += f"{heading} {key}\n\n"
                 
                 # Update current path for linking
-                current_path = key
-                process_hierarchy(value, depth + 1)
+                new_path = os.path.join(current_path, key) if current_path else key
+                process_hierarchy(value, new_path, depth + 1)
     
-    current_path = ''
     process_hierarchy(file_hierarchy)
     
     return til_content

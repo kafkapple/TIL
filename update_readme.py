@@ -1,3 +1,5 @@
+import os
+
 def update_readme():
     # README 파일의 시작 부분 텍스트 설정
     til_content = "# Today I Learned\n\n"

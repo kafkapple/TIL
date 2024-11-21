@@ -33,8 +33,8 @@ def update_readme():
                 title_part = file.split('_')[1].split('.')[0] if '_' in file else ''
                 
                 # 날짜에서 년도와 월 추출
-                year = '20' + date_part[:2]
-                month = date_part[2:4]
+                year = date_part[:4]
+                month = date_part[4:6]
                 
                 # 년도가 바뀌면 년도 헤더 추가
                 if year != current_year:

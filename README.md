@@ -1,5 +1,9 @@
 # 2024년 학습 기록
 
+## 2024년 12월
+
+- [20241205_EC2_Docker_Architecture](_Daily/20241205_EC2_Docker_Architecture.md) (EC2_Docker_Architecture)
+
 ## 2024년 11월
 
 - [20241123_MLOps_II_S3_Crawling](_Daily/20241123_MLOps_II_S3_Crawling.md) (MLOps_II_S3_Crawling)

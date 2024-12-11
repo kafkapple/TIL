@@ -12,6 +12,7 @@
 - [20241122_Docker_access_Compose](_Daily/20241122_Docker_access_Compose.md) (Docker_access_Compose)
 - [20241121_airflow_docker](_Daily/20241121_airflow_docker.md) (airflow_docker)
 - [20241120_kwargs](_Daily/20241120_kwargs.md) (kwargs)
+- [20241118_MLOps_CICD_VS_code_short_cut](_Daily/20241118_MLOps_CICD_VS_code_short_cut.md) (MLOps_CICD_VS_code_short_cut)
 - [20241116_ML_pipeline](_Daily/20241116_ML_pipeline.md) (ML_pipeline)
 - [20241114_House_price_prediction_Feedback](_Daily/20241114_House_price_prediction_Feedback.md) (House_price_prediction_Feedback)
 - [20241113_Model_select_metric_Data_prep](_Daily/20241113_Model_select_metric_Data_prep.md) (Model_select_metric_Data_prep)

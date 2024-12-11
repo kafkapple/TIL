@@ -12,6 +12,8 @@
 - [20241120_kwargs](_Daily/20241120_kwargs.md) (kwargs)
 - [20241116_ML_pipeline](_Daily/20241116_ML_pipeline.md) (ML_pipeline)
 - [20241114_House_price_prediction_Feedback](_Daily/20241114_House_price_prediction_Feedback.md) (House_price_prediction_Feedback)
+- [20241113_Model_select_metric_Data_prep](_Daily/20241113_Model_select_metric_Data_prep.md) (Model_select_metric_Data_prep)
+- [20241112_Feature_selection](_Daily/20241112_Feature_selection.md) (Feature_selection)
 - [20241106_Dataset_split](_Daily/20241106_Dataset_split.md) (Dataset_split)
 - [20241105_Ensemble](_Daily/20241105_Ensemble.md) (Ensemble)
 - [20241104_Variable_continuous_categorical](_Daily/20241104_Variable_continuous_categorical.md) (Variable_continuous_categorical)

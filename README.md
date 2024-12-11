@@ -7,7 +7,9 @@
 
 ## 2024년 11월
 
+- [20241126_Hyperparam_search_objective_metric](_Daily/20241126_Hyperparam_search_objective_metric.md) (Hyperparam_search_objective_metric)
 - [20241123_MLOps_II_S3_Crawling](_Daily/20241123_MLOps_II_S3_Crawling.md) (MLOps_II_S3_Crawling)
+- [20241122_Docker_access_Compose](_Daily/20241122_Docker_access_Compose.md) (Docker_access_Compose)
 - [20241121_airflow_docker](_Daily/20241121_airflow_docker.md) (airflow_docker)
 - [20241120_kwargs](_Daily/20241120_kwargs.md) (kwargs)
 - [20241116_ML_pipeline](_Daily/20241116_ML_pipeline.md) (ML_pipeline)

@@ -40,7 +40,7 @@
     - **Task**
         - Operator로부터 정의된 실제 실행 단위
     - **Task Instance**
-        - Task의 실행 인스턴스를 의미
+        - Task의 실행 인스턴스를 의미 (ti: task instance)
         - 특정 시점에 Task가 실행될 때의 상태와 실행 기록
 - 구성 요소
     - Scheduler: 워크플로우 스케줄링 및 트리거링

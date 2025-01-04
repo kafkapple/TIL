@@ -2,6 +2,9 @@
 
 ## 2024년 12월
 
+- [20241223_Domain_adaptation_TTA](_Daily/20241223_Domain_adaptation_TTA.md) (Domain_adaptation_TTA)
+- [20241216_Domain_adaptation_Transfer_learning](_Daily/20241216_Domain_adaptation_Transfer_learning.md) (Domain_adaptation_Transfer_learning)
+- [20241210_Transfer_learning_finetuning](_Daily/20241210_Transfer_learning_finetuning.md) (Transfer_learning_finetuning)
 - [20241206_Markdown_Convention_LLM_mermaid](_Daily/20241206_Markdown_Convention_LLM_mermaid.md) (Markdown_Convention_LLM_mermaid)
 - [20241205_EC2_Docker_Architecture](_Daily/20241205_EC2_Docker_Architecture.md) (EC2_Docker_Architecture)
 

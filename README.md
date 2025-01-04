@@ -24,10 +24,12 @@
 - [20241208_Linux_windows_NVIDIA_torch_setup](_Daily/20241208_Linux_windows_NVIDIA_torch_setup.md) (Linux_windows_NVIDIA_torch_setup)
 - [20241207_Preprocessing](_Daily/20241207_Preprocessing.md) (Preprocessing)
 - [20241206_Markdown_Convention_LLM_mermaid](_Daily/20241206_Markdown_Convention_LLM_mermaid.md) (Markdown_Convention_LLM_mermaid)
+- [20241205_Linux_Logger_google_doc](_Daily/20241205_Linux_Logger_google_doc.md) (Linux_Logger_google_doc)
 
 ## 2024년 11월
 
 - [20241126_Hyperparam_search_objective_metric](_Daily/20241126_Hyperparam_search_objective_metric.md) (Hyperparam_search_objective_metric)
+- [20241123_Feature_variable_Docker_stop](_Daily/20241123_Feature_variable_Docker_stop.md) (Feature_variable_Docker_stop)
 - [20241122_Docker_access_Compose](_Daily/20241122_Docker_access_Compose.md) (Docker_access_Compose)
 - [20241121_airflow_docker](_Daily/20241121_airflow_docker.md) (airflow_docker)
 - [20241120_kwargs](_Daily/20241120_kwargs.md) (kwargs)

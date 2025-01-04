@@ -20,7 +20,6 @@
 - [20241216_Domain_adaptation_Transfer_learning](_Daily/20241216_Domain_adaptation_Transfer_learning.md) (Domain_adaptation_Transfer_learning)
 - [20241212_Docker](_Daily/20241212_Docker.md) (Docker)
 - [20241211_Typehinting_literal](_Daily/20241211_Typehinting_literal.md) (Typehinting_literal)
-- [20241210_Transfer_learning_finetuning](_Daily/20241210_Transfer_learning_finetuning.md) (Transfer_learning_finetuning)
 - [20241209_CICD_Workflow_management](_Daily/20241209_CICD_Workflow_management.md) (CICD_Workflow_management)
 - [20241208_Linux_windows_NVIDIA_torch_setup](_Daily/20241208_Linux_windows_NVIDIA_torch_setup.md) (Linux_windows_NVIDIA_torch_setup)
 - [20241207_Preprocessing](_Daily/20241207_Preprocessing.md) (Preprocessing)

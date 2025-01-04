@@ -1,3 +1,9 @@
+# 2025년 학습 기록
+
+## 2025년 01월
+
+- [20250104_Model_Hyperparameters](_Daily/20250104_Model_Hyperparameters.md) (Model_Hyperparameters)
+
 # 2024년 학습 기록
 
 ## 2024년 12월

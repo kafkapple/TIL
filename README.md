@@ -2,6 +2,7 @@
 ## 2025.01
 ### Week-1
 - [Model Hyperparameters-Train, Optim, Regul, Model, Data](_Daily/250104_Model%20Hyperparameters-Train%2C%20Optim%2C%20Regul%2C%20Model%2C%20Data.md) (Sat 01.04)
+- [init import 용법](_Daily/250102_init%20import%20%EC%9A%A9%EB%B2%95.md) (Thu 01.02)
 - [Wandb](_Daily/250101_Wandb.md) (Wed 01.01)
 
 # 2024 TIL
@@ -19,6 +20,7 @@
 
 ### Week-4
 - [Aug_Color-jitter](_Daily/20241220_Aug_Color-jitter.md) (Fri 12.20)
+- [Hydra config 관리, wandb 전달](_Daily/241217_Hydra%20config%20%EA%B4%80%EB%A6%AC%2C%20wandb%20%EC%A0%84%EB%8B%AC.md) (Tue 12.17)
 - [Domain adaptation, Transfer learning](_Daily/20241216_Domain%20adaptation%2C%20Transfer%20learning.md) (Mon 12.16)
 
 ### Week-3

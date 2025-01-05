@@ -4,7 +4,7 @@
 
 ### 1주차
 
-- [20250104_Model_Hyperparameters_Train_Optim_Regul_Model_Data](_Daily/20250104_Model_Hyperparameters_Train_Optim_Regul_Model_Data.md) (Model_Hyperparameters_Train_Optim_Regul_Model_Data) - Sat
+- [250104_Model_Hyperparameters_Train_Optim_Regul_Model_Data](_Daily/250104_Model_Hyperparameters_Train_Optim_Regul_Model_Data.md) (Model_Hyperparameters_Train_Optim_Regul_Model_Data) - Sat
 - [20250101_Wandb](_Daily/20250101_Wandb.md) (Wandb) - Wed
 
 # 2024년 학습 기록

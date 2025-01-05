@@ -130,7 +130,7 @@ class ReadmeGenerator:
             year_data = self.daily_manager.daily_files[year]
             
             for month in sorted(year_data.keys(), reverse=True):
-                content.append(f"## {year}. {month}\n")
+                content.append(f"## {year}.{month}\n")
                 month_data = year_data[month]
                 
                 for week in sorted(month_data.keys(), reverse=True):
@@ -138,8 +138,10 @@ class ReadmeGenerator:
                     files = sorted(month_data[week], key=lambda x: x.date, reverse=True)
                     
                     for file in files:
+                        # 날짜 형식 추가 (월.일)
+                        date_str = file.date.strftime('%m.%d')
                         content.append(
-                            f"- [{file.topic}]({file.safe_path}) ({file.weekday})\n"
+                            f"- [{file.topic}]({file.safe_path}) ({file.weekday} {date_str})\n"
                         )
                     content.append("\n")
         
@@ -165,6 +167,10 @@ def update_readme():
     
     topic_manager = TopicFileManager('.')
     topic_manager.collect_files()
+    
+    # 디버깅을 위한 출력
+    print("Collected topic structure:")
+    print(topic_manager.topic_structure)
     
     generator = ReadmeGenerator(daily_manager, topic_manager)
     content = generator.generate_content()

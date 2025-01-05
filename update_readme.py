@@ -90,16 +90,18 @@ class TopicFileManager:
 
     def collect_files(self):
         for root, dirs, files in os.walk(self.base_directory):
-            # 디버깅을 위한 출력
             print(f"Scanning directory: {root}")
             
-            # _Daily 폴더 스킵 로직 수정
-            if '_Daily' in root.split(os.sep):
+            # 경로 부분을 개별적으로 체크
+            path_parts = root.split(os.sep)
+            
+            # _Daily 폴더 스킵
+            if '_Daily' in path_parts:
                 print(f"Skipping _Daily folder: {root}")
                 continue
                 
-            # 숨김 폴더 스킵
-            if any(part.startswith('.') for part in root.split(os.sep)):
+            # 실제 숨김 폴더만 스킵 (폴더명이 .으로 시작하는 경우만)
+            if any(part.startswith('.') and part != '.' for part in path_parts):
                 print(f"Skipping hidden folder: {root}")
                 continue
 
@@ -118,9 +120,10 @@ class TopicFileManager:
                 
                 # 마지막 부분을 제외한 경로 처리
                 for part in path_parts:
-                    if part not in current_level:
-                        current_level[part] = {}
-                    current_level = current_level[part]
+                    if part != '.':  # 현재 디렉토리 표시 무시
+                        if part not in current_level:
+                            current_level[part] = {}
+                        current_level = current_level[part]
                 
                 # 현재 디렉토리의 파일들 저장
                 if md_files:

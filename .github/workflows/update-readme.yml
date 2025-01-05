@@ -27,6 +27,7 @@ jobs:
     - name: Run Update README.md File
       env:
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+          PYTHONUNBUFFERED: 1 # Python의 출력 버퍼링이 비활성화되어 print 문의 출력이 실시간으로 Actions 로그에 표시
       run: |
         git add .
         git diff

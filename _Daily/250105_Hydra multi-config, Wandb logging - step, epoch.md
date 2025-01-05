@@ -1,4 +1,16 @@
-# Hydra multi-config → wandb logging
+
+# Project
+## Project template
+### Step / Epoch Learning curves
+### Debug
+- PyTorch DataLoader가 멀티프로세싱을 사용시 오류
+  - Lambda 함수는 pickle이 불가능하기 때문에 프로세스 간 전달시 문제
+  - 대안
+  - 1) num workers =0 
+  - 2) psutils 설치 후, 구동 환경에 맞는 값 설정
+# Study
+
+## Hydra multi-config → wandb logging
 
 - OmegaConf.to_container(cfg, resolve=True)
 - model_config = config_dict["model"]
@@ -37,7 +49,7 @@
     })
 ```
 
-# Wandb logging 단위: Step, Epoch
+## Wandb logging 단위: Step, Epoch
 
 - step 단위 로깅의 장단점
     - 장점: 더 세밀한 학습 과정 모니터링 가능

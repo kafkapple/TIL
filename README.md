@@ -1,20 +1,24 @@
 # 2025 TIL
 ## 2025.01
 ### Week-1
+- [Hydra multi-config, Wandb logging - step, epoch](_Daily/250105_Hydra%20multi-config%2C%20Wandb%20logging%20-%20step%2C%20epoch.md) (Sun 01.05)
 - [Model Hyperparameters-Train, Optim, Regul, Model, Data](_Daily/250104_Model%20Hyperparameters-Train%2C%20Optim%2C%20Regul%2C%20Model%2C%20Data.md) (Sat 01.04)
-- [init import 용법](_Daily/250102_init%20import%20%EC%9A%A9%EB%B2%95.md) (Thu 01.02)
+- [Project template 에서 src 및 main entry point 위치, Linux GPU monitoring, Conda 추천](_Daily/250103_Project%20template%20%EC%97%90%EC%84%9C%20src%20%EB%B0%8F%20main%20entry%20point%20%EC%9C%84%EC%B9%98%2C%20Linux%20GPU%20monitoring%2C%20Conda%20%EC%B6%94%EC%B2%9C.md) (Fri 01.03)
+- [init import 용법](_Daily/Python/250102_init%20import%20%EC%9A%A9%EB%B2%95.md) (Thu 01.02)
 - [Wandb](_Daily/250101_Wandb.md) (Wed 01.01)
 
 # 2024 TIL
 ## 2024.12
 ### Week-6
 - [Mentoring - OCR, On-off-line augmentation](_Daily/Mentoring/20241231_Mentoring%20-%20OCR%2C%20On-off-line%20augmentation.md) (Tue 12.31)
+- [Data leakage - Augmentation 이슈](_Daily/241230_Data%20leakage%20-%20Augmentation%20%EC%9D%B4%EC%8A%88.md) (Mon 12.30)
 
 ### Week-5
 - [Path_resolve_Tensor_detach](_Daily/Python/20241229_Path_resolve_Tensor_detach.md) (Sun 12.29)
 - [Class_imbalance_Focal_Weighted_Precsion_Recall](_Daily/20241228_Class_imbalance_Focal_Weighted_Precsion_Recall.md) (Sat 12.28)
 - [Linux_tar](_Daily/Linux_Git/20241227_Linux_tar.md) (Fri 12.27)
 - [Focal_loss_Class_weight](_Daily/20241226_Focal_loss_Class_weight.md) (Thu 12.26)
+- [Precision 개선](_Daily/241225_Precision%20%EA%B0%9C%EC%84%A0.md) (Wed 12.25)
 - [TTA_TTAd](_Daily/20241224_TTA_TTAd.md) (Tue 12.24)
 - [Domain_adaptation_TTA](_Daily/20241223_Domain_adaptation_TTA.md) (Mon 12.23)
 
@@ -24,12 +28,14 @@
 - [Domain adaptation, Transfer learning](_Daily/20241216_Domain%20adaptation%2C%20Transfer%20learning.md) (Mon 12.16)
 
 ### Week-3
+- [Bash vs Source, NVIDIA Driver, CUDA, CUDNN](_Daily/241213_Bash%20vs%20Source%2C%20NVIDIA%20Driver%2C%20CUDA%2C%20CUDNN.md) (Fri 12.13)
 - [Docker](_Daily/MLOps/20241212_Docker.md) (Thu 12.12)
 - [Typehinting_literal](_Daily/Python/20241211_Typehinting_literal.md) (Wed 12.11)
 - [CICD_Workflow_management](_Daily/MLOps/20241209_CICD_Workflow_management.md) (Mon 12.09)
 
 ### Week-2
 - [Linux_windows_NVIDIA_torch_setup](_Daily/Linux_Git/20241208_Linux_windows_NVIDIA_torch_setup.md) (Sun 12.08)
+- [MLflow Tracking server, Artifact store 연동 이슈 ](_Daily/241206_MLflow%20Tracking%20server%2C%20Artifact%20store%20%EC%97%B0%EB%8F%99%20%EC%9D%B4%EC%8A%88%20.md) (Fri 12.06)
 - [Markdown_image_embed_Convention_LLM_mermaid](_Daily/Python/20241206_Markdown_image_embed_Convention_LLM_mermaid.md) (Fri 12.06)
 - [Linux_Logger_google_doc](_Daily/Linux_Git/20241205_Linux_Logger_google_doc.md) (Thu 12.05)
 - [EC2_Docker_Architecture](_Daily/MLOps/20241204_EC2_Docker_Architecture.md) (Wed 12.04)

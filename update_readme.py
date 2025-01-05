@@ -90,33 +90,59 @@ class TopicFileManager:
 
     def collect_files(self):
         for root, dirs, files in os.walk(self.base_directory):
-            # _Daily 폴더 제외
-            if '_Daily' in root:
+            # 디버깅을 위한 출력
+            print(f"Scanning directory: {root}")
+            
+            # _Daily 폴더 스킵 로직 수정
+            if '_Daily' in root.split(os.sep):
+                print(f"Skipping _Daily folder: {root}")
                 continue
                 
-            # 숨김 폴더 제외
+            # 숨김 폴더 스킵
             if any(part.startswith('.') for part in root.split(os.sep)):
+                print(f"Skipping hidden folder: {root}")
                 continue
 
             relative_path = os.path.relpath(root, self.base_directory)
             if relative_path == '.':
                 continue
 
-            current_level = self.topic_structure
-            # 루트부터 현재 디렉토리까지의 경로를 단계별로 생성
-            path_parts = relative_path.split(os.sep)
-            for part in path_parts[:-1]:
-                current_level = current_level.setdefault(part, {})
-
-            # 현재 디렉토리의 파일들 처리
+            # 마크다운 파일 찾기
             md_files = [f for f in files if f.endswith('.md')]
             if md_files:
-                current_level[path_parts[-1]] = [
-                    TopicFile(
-                        filename=f,
-                        full_path=os.path.relpath(os.path.join(root, f), self.base_directory)
-                    ) for f in md_files
-                ]
+                print(f"Found MD files in {relative_path}: {md_files}")
+                
+                # 경로 파싱
+                path_parts = relative_path.split(os.sep)
+                current_level = self.topic_structure
+                
+                # 마지막 부분을 제외한 경로 처리
+                for part in path_parts:
+                    if part not in current_level:
+                        current_level[part] = {}
+                    current_level = current_level[part]
+                
+                # 현재 디렉토리의 파일들 저장
+                if md_files:
+                    current_level['files'] = [
+                        TopicFile(
+                            filename=f,
+                            full_path=os.path.relpath(os.path.join(root, f), self.base_directory)
+                        ) for f in md_files
+                    ]
+
+    def print_structure(self):
+        """디버깅용: 수집된 구조 출력"""
+        def _print_level(structure, level=0):
+            indent = "  " * level
+            for key, value in structure.items():
+                if key == 'files':
+                    print(f"{indent}Files: {[f.filename for f in value]}")
+                else:
+                    print(f"{indent}{key}:")
+                    _print_level(value, level + 1)
+        
+        _print_level(self.topic_structure)
 
 class ReadmeGenerator:
     def __init__(self, daily_manager, topic_manager):
@@ -164,12 +190,14 @@ class ReadmeGenerator:
         
         for key, value in sorted(structure.items()):
             indent = "  " * level
-            if isinstance(value, dict):
-                content.append(f"{indent}## {key}\n")
-                content.append(self.generate_topic_content(value, level + 1))
-            else:  # 파일 리스트
+            if key == 'files':
+                # 파일 목록 처리
                 for file in sorted(value, key=lambda x: x.filename):
                     content.append(f"{indent}- [{file.topic}]({file.safe_path})\n")
+            else:
+                # 디렉토리 처리
+                content.append(f"{indent}## {key}\n")
+                content.append(self.generate_topic_content(value, level + 1))
         
         return "".join(content)
 
@@ -180,9 +208,9 @@ def update_readme():
     topic_manager = TopicFileManager('.')
     topic_manager.collect_files()
     
-    # 디버깅을 위한 출력
-    print("Collected topic structure:")
-    print(topic_manager.topic_structure)
+    # 디버깅을 위한 구조 출력
+    print("\nCollected Topic Structure:")
+    topic_manager.print_structure()
     
     generator = ReadmeGenerator(daily_manager, topic_manager)
     content = generator.generate_content()

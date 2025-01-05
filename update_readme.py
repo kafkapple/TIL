@@ -43,50 +43,65 @@ def parse_markdown_files(base_directory):
     til_content = ""
     daily_files = {}
     
-    # Process _Daily folder files
+    # Process _Daily folder files recursively
     daily_path = os.path.join(base_directory, '_Daily')
     
-    for filename in os.listdir(daily_path):
-        match = re.match(r'(\d{4})(\d{2})(\d{2})_(\w+)\.md', filename)
-        
-        if match:
-            year, month, day, topic = match.groups()
+    for root, _, files in os.walk(daily_path):
+        for filename in files:
+            if not filename.endswith('.md'):
+                continue
+                
+            # Support both 8-digit and 6-digit date formats
+            match = re.match(r'(?:20)?(\d{2})(\d{2})(\d{2})_(.+)\.md', filename)
             
-            # Create datetime for sorting
-            file_date = datetime(int(year), int(month), int(day))
-            
-            if year not in daily_files:
-                daily_files[year] = {}
-            
-            if month not in daily_files[year]:
-                daily_files[year][month] = []
-            
-            daily_files[year][month].append({
-                'filename': filename,
-                'topic': topic,
-                'date': file_date,
-                'full_path': os.path.join('_Daily', filename)
-            })
-    
+            if match:
+                year, month, day, topic = match.groups()
+                year = f"20{year}"  # Assume 20xx for all years
+                
+                # Create datetime for sorting and weekday info
+                file_date = datetime(int(year), int(month), int(day))
+                week_number = file_date.isocalendar()[1]
+                
+                if year not in daily_files:
+                    daily_files[year] = {}
+                
+                if month not in daily_files[year]:
+                    daily_files[year][month] = {}
+                    
+                if week_number not in daily_files[year][month]:
+                    daily_files[year][month][week_number] = []
+                
+                daily_files[year][month][week_number].append({
+                    'filename': filename,
+                    'topic': topic,
+                    'date': file_date,
+                    'weekday': file_date.strftime('%a'),  # 요일 추가
+                    'full_path': os.path.relpath(os.path.join(root, filename), base_directory)
+                })
+
     # Generate README content for Daily files
     for year in sorted(daily_files.keys(), reverse=True):
         til_content += f"# {year}년 학습 기록\n\n"
         for month in sorted(daily_files[year].keys(), reverse=True):
             til_content += f"## {year}년 {month}월\n\n"
             
-            # Sort files by date in descending order
-            sorted_files = sorted(
-                daily_files[year][month], 
-                key=lambda x: x['date'], 
-                reverse=True
-            )
-            
-            for file_info in sorted_files:
-                # Remove .md extension for display name but keep it in link
-                display_name = os.path.splitext(file_info['filename'])[0]
-                til_content += f"- [{display_name}]({os.path.join('_Daily', file_info['filename'])}) ({file_info['topic']})\n"
-            til_content += "\n"
-    
+            # Sort weeks in descending order
+            for week in sorted(daily_files[year][month].keys(), reverse=True):
+                til_content += f"### {week}주차\n\n"
+                
+                # Sort files by date in descending order
+                sorted_files = sorted(
+                    daily_files[year][month][week], 
+                    key=lambda x: x['date'], 
+                    reverse=True
+                )
+                
+                for file_info in sorted_files:
+                    # Remove .md extension for display name but keep it in link
+                    display_name = os.path.splitext(file_info['filename'])[0]
+                    til_content += f"- [{display_name}]({file_info['full_path']}) ({file_info['topic']}) - {file_info['weekday']}\n"
+                til_content += "\n"
+
     # Process other markdown files with hierarchy
     til_content += "# 기타 문서\n\n"
     file_hierarchy = get_markdown_files(base_directory)

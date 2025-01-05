@@ -15,18 +15,11 @@
 ### **2. Google Docs 확장 프로그램**
 
 - **Slides Toolbox**: Google Slides 편집 도구.
-- **Format Painter**: 포맷 복사 및 적용 도구.
-- **Code Blocks**: 코드 스니펫을 깔끔하게 꾸며주는 확장 프로그램.
+  - **Format Painter**: 포맷 복사 및 적용 도구.
+  - **Code Blocks**: 코드 스니펫을 깔끔하게 꾸며주는 확장 프로그램.
 
 ---
 
-### **3. README 및 Markdown**
-
-- **README에 이미지 첨부**: 프로젝트 문서화 시 이미지 추가 방법 활용.
-- **Markdown 문법**: README 작성 시 필수 문법 학습 및 사용.
-
----
-
-### **4. Logger 설정**
+### **3. Logger 설정**
 
 - **로깅 수준**: `level = error` 설정으로 오류 메시지 기록

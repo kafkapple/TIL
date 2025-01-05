@@ -7,7 +7,7 @@
 # 2024 TIL
 ## 2024.12
 ### Week-6
-- [Mentoring_OCR_On_offline_augmentation](_Daily/20241231_Mentoring_OCR_On_offline_augmentation.md) (Tue 12.31)
+- [Mentoring_OCR, On-off-line augmentation](_Daily/20241231_Mentoring_OCR%2C%20On-off-line%20augmentation.md) (Tue 12.31)
 
 ### Week-5
 - [Path_resolve_Tensor_detach](_Daily/20241229_Path_resolve_Tensor_detach.md) (Sun 12.29)

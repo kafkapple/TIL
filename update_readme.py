@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timedelta
 import os
 import re
 from urllib.parse import quote
@@ -29,14 +29,26 @@ class DailyFileManager:
         if not match:
             return
 
-        year, month, day, topic = match.groups()
+        year, month, day = match.groups()[:3]
+        topic = match.groups()[3]
         year = f"20{year}"
         
         file_date = datetime(int(year), int(month), int(day))
-        # 월별 주차 계산
+        
+        # 월요일 기준 주차 계산
         first_day = datetime(int(year), int(month), 1)
+        
+        # 해당 월의 첫 월요일 찾기
+        while first_day.weekday() != 0:  # 0은 월요일
+            first_day = first_day - timedelta(days=1)
+            
+        # 첫 월요일부터의 차이로 주차 계산
         days_diff = (file_date - first_day).days
         week_number = (days_diff // 7) + 1
+        
+        # 이전 달의 마지막 주에 속하는 경우 처리
+        if file_date < datetime(int(year), int(month), 1):
+            week_number = 0  # 이전 달의 마지막 주
 
         self._add_file_to_structure(
             MarkdownFile(

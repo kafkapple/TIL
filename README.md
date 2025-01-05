@@ -71,5 +71,5 @@
 ## ML
   - [Ensemble](ML/Ensemble.md)
   - [Features](ML/Features.md)
-  - [ML_Debug](ML/ML_Debug.md)
-  - [ML_pipeline](ML/ML_pipeline.md)
+  - [ML Debug](ML/ML%20Debug.md)
+  - [ML pipeline](ML/ML%20pipeline.md)

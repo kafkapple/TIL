@@ -1,0 +1,3 @@
+- **Feature 수 제약 Rule of thumbs**:
+    - 권장 Feature 수: 약 300개 이내.
+    - 규칙: `n_samples > n_features^2`를 만족해야 일반화 가능.

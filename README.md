@@ -31,6 +31,7 @@
 - [Bash vs Source, NVIDIA Driver, CUDA, CUDNN](_Daily/241213_Bash%20vs%20Source%2C%20NVIDIA%20Driver%2C%20CUDA%2C%20CUDNN.md) (Fri 12.13)
 - [Docker](_Daily/MLOps/20241212_Docker.md) (Thu 12.12)
 - [Typehinting_literal](_Daily/Python/20241211_Typehinting_literal.md) (Wed 12.11)
+- [Transfer_learning_finetuning](_Daily/20241210_Transfer_learning_finetuning.md) (Tue 12.10)
 - [CICD_Workflow_management](_Daily/MLOps/20241209_CICD_Workflow_management.md) (Mon 12.09)
 
 ### Week-2

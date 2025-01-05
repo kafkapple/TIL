@@ -22,8 +22,8 @@
 
 ### 51주차
 
-- [20241220_Aug_Color_jitter](_Daily/20241220_Aug_Color_jitter.md) (Aug_Color_jitter) - Fri
-- [20241216_Domain_adaptation_Transfer_learning](_Daily/20241216_Domain_adaptation_Transfer_learning.md) (Domain_adaptation_Transfer_learning) - Mon
+- [20241220_Aug_Color-jitter](_Daily/20241220_Aug_Color-jitter.md) (Aug_Color-jitter) - Fri
+- [20241216_Domain adaptation, Transfer learning](_Daily/20241216_Domain adaptation, Transfer learning.md) (Domain adaptation, Transfer learning) - Mon
 
 ### 50주차
 

@@ -1,138 +1,100 @@
+from datetime import datetime
 import os
 import re
-from datetime import datetime
+from urllib.parse import quote
 
-def get_markdown_files(base_directory):
-    """
-    Find markdown files across directory hierarchy, excluding README.md
-    """
-    hierarchy = {}
-    
-    for root, dirs, files in os.walk(base_directory):
-        # Skip _Daily folder and base directory
-        if '_Daily' in root or root == base_directory:
-            continue
+class MarkdownFile:
+    def __init__(self, filename, full_path, date, topic):
+        self.filename = filename
+        self.full_path = full_path
+        self.date = date
+        self.weekday = date.strftime('%a')
+        self.topic = topic
         
-        # Filter markdown files, excluding README.md
-        md_files = [f for f in files if f.endswith('.md') and f.lower() != 'readme.md']
-        
-        # Skip directories with no markdown files
-        if not md_files:
-            continue
-        
-        # Relative path from base directory
-        relative_path = os.path.relpath(root, base_directory)
-        path_parts = [p for p in relative_path.split(os.path.sep) if p != '.']
-        
-        # Traverse or create hierarchy
-        current = hierarchy
-        for part in path_parts:
-            if part not in current:
-                current[part] = {}
-            current = current[part]
-        
-        # Add markdown files to current level
-        current['__files__'] = md_files
-    
-    return hierarchy
+    @property
+    def safe_path(self):
+        """URL-safe 경로 반환"""
+        return quote(self.full_path)
 
-def parse_markdown_files(base_directory):
-    """
-    Parse markdown files with advanced sorting and linking
-    """
-    til_content = ""
-    daily_files = {}
-    
-    # Process _Daily folder files recursively
-    daily_path = os.path.join(base_directory, '_Daily')
-    
-    for root, _, files in os.walk(daily_path):
-        for filename in files:
-            if not filename.endswith('.md'):
-                continue
-                
-            # Support both 8-digit and 6-digit date formats
-            match = re.match(r'(?:20)?(\d{2})(\d{2})(\d{2})_(.+)\.md', filename)
+class DailyFileManager:
+    def __init__(self, base_directory):
+        self.base_directory = base_directory
+        self.daily_files = {}
+
+    def process_file(self, root, filename):
+        if not filename.endswith('.md'):
+            return
+
+        match = re.match(r'(?:20)?(\d{2})(\d{2})(\d{2})_(.+)\.md', filename)
+        if not match:
+            return
+
+        year, month, day, topic = match.groups()
+        year = f"20{year}"
+        
+        file_date = datetime(int(year), int(month), int(day))
+        # 월별 주차 계산
+        first_day = datetime(int(year), int(month), 1)
+        days_diff = (file_date - first_day).days
+        week_number = (days_diff // 7) + 1
+
+        self._add_file_to_structure(
+            MarkdownFile(
+                filename=filename,
+                full_path=os.path.relpath(os.path.join(root, filename), self.base_directory),
+                date=file_date,
+                topic=topic
+            ),
+            year, month, week_number
+        )
+
+    def _add_file_to_structure(self, md_file, year, month, week):
+        self.daily_files.setdefault(year, {})
+        self.daily_files[year].setdefault(month, {})
+        self.daily_files[year][month].setdefault(week, [])
+        self.daily_files[year][month][week].append(md_file)
+
+    def collect_files(self):
+        daily_path = os.path.join(self.base_directory, '_Daily')
+        for root, _, files in os.walk(daily_path):
+            for filename in files:
+                self.process_file(root, filename)
+
+class ReadmeGenerator:
+    def __init__(self, file_manager):
+        self.file_manager = file_manager
+
+    def generate_daily_content(self):
+        content = []
+        for year in sorted(self.file_manager.daily_files.keys(), reverse=True):
+            content.append(f"# {year}년 학습 기록\n")
+            year_data = self.file_manager.daily_files[year]
             
-            if match:
-                year, month, day, topic = match.groups()
-                year = f"20{year}"  # Assume 20xx for all years
+            for month in sorted(year_data.keys(), reverse=True):
+                content.append(f"## {year}년 {month}월\n")
+                month_data = year_data[month]
                 
-                # Create datetime for sorting and weekday info
-                file_date = datetime(int(year), int(month), int(day))
-                week_number = file_date.isocalendar()[1]
-                
-                if year not in daily_files:
-                    daily_files[year] = {}
-                
-                if month not in daily_files[year]:
-                    daily_files[year][month] = {}
+                for week in sorted(month_data.keys(), reverse=True):
+                    content.append(f"### {week}주차\n")
+                    files = sorted(month_data[week], key=lambda x: x.date, reverse=True)
                     
-                if week_number not in daily_files[year][month]:
-                    daily_files[year][month][week_number] = []
-                
-                daily_files[year][month][week_number].append({
-                    'filename': filename,
-                    'topic': topic,
-                    'date': file_date,
-                    'weekday': file_date.strftime('%a'),  # 요일 추가
-                    'full_path': os.path.relpath(os.path.join(root, filename), base_directory)
-                })
-
-    # Generate README content for Daily files
-    for year in sorted(daily_files.keys(), reverse=True):
-        til_content += f"# {year}년 학습 기록\n\n"
-        for month in sorted(daily_files[year].keys(), reverse=True):
-            til_content += f"## {year}년 {month}월\n\n"
-            
-            # Sort weeks in descending order
-            for week in sorted(daily_files[year][month].keys(), reverse=True):
-                til_content += f"### {week}주차\n\n"
-                
-                # Sort files by date in descending order
-                sorted_files = sorted(
-                    daily_files[year][month][week], 
-                    key=lambda x: x['date'], 
-                    reverse=True
-                )
-                
-                for file_info in sorted_files:
-                    # Remove .md extension for display name but keep it in link
-                    display_name = os.path.splitext(file_info['filename'])[0]
-                    til_content += f"- [{display_name}]({file_info['full_path']}) ({file_info['topic']}) - {file_info['weekday']}\n"
-                til_content += "\n"
-
-    # Process other markdown files with hierarchy
-    til_content += "# 기타 문서\n\n"
-    file_hierarchy = get_markdown_files(base_directory)
-    
-    def process_hierarchy(hierarchy, current_path='', depth=1):
-        nonlocal til_content
-        for key, value in sorted(hierarchy.items()):
-            if key == '__files__':
-                for filename in sorted(value):
-                    # Remove .md extension for display name but keep it in link
-                    display_name = os.path.splitext(filename)[0]
-                    file_link_path = os.path.join(current_path, filename)
-                    til_content += f"- [{display_name}]({file_link_path})\n"
-            else:
-                # Create headings based on depth
-                heading = '#' * (depth + 1)
-                til_content += f"{heading} {key}\n\n"
-                
-                # Update current path for linking
-                new_path = os.path.join(current_path, key) if current_path else key
-                process_hierarchy(value, new_path, depth + 1)
-    
-    process_hierarchy(file_hierarchy)
-    
-    return til_content
+                    for file in files:
+                        content.append(
+                            f"- [{file.topic}]({file.safe_path}) ({file.weekday})\n"
+                        )
+                    content.append("\n")
+        
+        return "".join(content)
 
 def update_readme():
-    # 작성한 내용을 README.md 파일에 저장
-    til_content = parse_markdown_files('.')
+    manager = DailyFileManager('.')
+    manager.collect_files()
+    
+    generator = ReadmeGenerator(manager)
+    content = generator.generate_daily_content()
+    
     with open("./README.md", "w", encoding='utf-8') as f:
-        f.write(til_content)
+        f.write(content)
 
 if __name__ == "__main__":
     update_readme()

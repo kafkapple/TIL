@@ -7,12 +7,12 @@
 # 2024 TIL
 ## 2024.12
 ### Week-6
-- [Mentoring - OCR, On-off-line augmentation](_Daily/20241231_Mentoring%20-%20OCR%2C%20On-off-line%20augmentation.md) (Tue 12.31)
+- [Mentoring - OCR, On-off-line augmentation](_Daily/Mentoring/20241231_Mentoring%20-%20OCR%2C%20On-off-line%20augmentation.md) (Tue 12.31)
 
 ### Week-5
-- [Path_resolve_Tensor_detach](_Daily/20241229_Path_resolve_Tensor_detach.md) (Sun 12.29)
+- [Path_resolve_Tensor_detach](_Daily/Python/20241229_Path_resolve_Tensor_detach.md) (Sun 12.29)
 - [Class_imbalance_Focal_Weighted_Precsion_Recall](_Daily/20241228_Class_imbalance_Focal_Weighted_Precsion_Recall.md) (Sat 12.28)
-- [Linux_tar](_Daily/20241227_Linux_tar.md) (Fri 12.27)
+- [Linux_tar](_Daily/Linux_Git/20241227_Linux_tar.md) (Fri 12.27)
 - [Focal_loss_Class_weight](_Daily/20241226_Focal_loss_Class_weight.md) (Thu 12.26)
 - [TTA_TTAd](_Daily/20241224_TTA_TTAd.md) (Tue 12.24)
 - [Domain_adaptation_TTA](_Daily/20241223_Domain_adaptation_TTA.md) (Mon 12.23)
@@ -23,13 +23,13 @@
 
 ### Week-3
 - [Docker](_Daily/MLOps/20241212_Docker.md) (Thu 12.12)
-- [Typehinting_literal](_Daily/20241211_Typehinting_literal.md) (Wed 12.11)
+- [Typehinting_literal](_Daily/Python/20241211_Typehinting_literal.md) (Wed 12.11)
 - [CICD_Workflow_management](_Daily/MLOps/20241209_CICD_Workflow_management.md) (Mon 12.09)
 
 ### Week-2
-- [Linux_windows_NVIDIA_torch_setup](_Daily/20241208_Linux_windows_NVIDIA_torch_setup.md) (Sun 12.08)
-- [Markdown_image_embed_Convention_LLM_mermaid](_Daily/20241206_Markdown_image_embed_Convention_LLM_mermaid.md) (Fri 12.06)
-- [Linux_Logger_google_doc](_Daily/20241205_Linux_Logger_google_doc.md) (Thu 12.05)
+- [Linux_windows_NVIDIA_torch_setup](_Daily/Linux_Git/20241208_Linux_windows_NVIDIA_torch_setup.md) (Sun 12.08)
+- [Markdown_image_embed_Convention_LLM_mermaid](_Daily/Python/20241206_Markdown_image_embed_Convention_LLM_mermaid.md) (Fri 12.06)
+- [Linux_Logger_google_doc](_Daily/Linux_Git/20241205_Linux_Logger_google_doc.md) (Thu 12.05)
 - [EC2_Docker_Architecture](_Daily/MLOps/20241204_EC2_Docker_Architecture.md) (Wed 12.04)
 
 ## 2024.11
@@ -40,14 +40,14 @@
 - [MLOps_II_S3_Crawling](_Daily/MLOps/20241123_MLOps_II_S3_Crawling.md) (Sat 11.23)
 - [Docker_access_Compose](_Daily/MLOps/20241122_Docker_access_Compose.md) (Fri 11.22)
 - [Airflow_Docker](_Daily/MLOps/20241121_Airflow_Docker.md) (Thu 11.21)
-- [kwargs](_Daily/20241120_kwargs.md) (Wed 11.20)
+- [kwargs](_Daily/Python/20241120_kwargs.md) (Wed 11.20)
 - [Feature_variable_Docker_stop](_Daily/20241119_Feature_variable_Docker_stop.md) (Tue 11.19)
 - [MLOps_CICD_VS_code_short_cut](_Daily/MLOps/20241118_MLOps_CICD_VS_code_short_cut.md) (Mon 11.18)
 
 ### Week-3
 - [Preprocessing](_Daily/20241117_Preprocessing.md) (Sun 11.17)
 - [ML_pipeline](_Daily/20241116_ML_pipeline.md) (Sat 11.16)
-- [House_price_prediction_Feedback](_Daily/20241114_House_price_prediction_Feedback.md) (Thu 11.14)
+- [House_price_prediction_Feedback](_Daily/Mentoring/20241114_House_price_prediction_Feedback.md) (Thu 11.14)
 - [Model_select_metric_Data_prep](_Daily/20241113_Model_select_metric_Data_prep.md) (Wed 11.13)
 - [Feature_selection](_Daily/20241112_Feature_selection.md) (Tue 11.12)
 

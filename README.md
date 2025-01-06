@@ -1,9 +1,13 @@
 # 2025 TIL
 ## 2025.01
+### Week-2
+- [Quantization, Torch dtype bfloat16, Powershell Conda 이슈](_Daily/250106_Quantization%2C%20Torch%20dtype%20bfloat16%2C%20Powershell%20Conda%20%EC%9D%B4%EC%8A%88.md) (Mon 01.06)
+
 ### Week-1
 - [Hydra multi-config, Wandb logging - step, epoch](_Daily/250105_Hydra%20multi-config%2C%20Wandb%20logging%20-%20step%2C%20epoch.md) (Sun 01.05)
 - [Model Hyperparameters-Train, Optim, Regul, Model, Data](_Daily/250104_Model%20Hyperparameters-Train%2C%20Optim%2C%20Regul%2C%20Model%2C%20Data.md) (Sat 01.04)
 - [Project template 에서 src 및 main entry point 위치, Linux GPU monitoring, Conda 추천](_Daily/250103_Project%20template%20%EC%97%90%EC%84%9C%20src%20%EB%B0%8F%20main%20entry%20point%20%EC%9C%84%EC%B9%98%2C%20Linux%20GPU%20monitoring%2C%20Conda%20%EC%B6%94%EC%B2%9C.md) (Fri 01.03)
+- [CV Contest - 발표 피드백 및 개선 방향](_Daily/250102_CV%20Contest%20-%20%EB%B0%9C%ED%91%9C%20%ED%94%BC%EB%93%9C%EB%B0%B1%20%EB%B0%8F%20%EA%B0%9C%EC%84%A0%20%EB%B0%A9%ED%96%A5.md) (Thu 01.02)
 - [init import 용법](_Daily/Python/250102_init%20import%20%EC%9A%A9%EB%B2%95.md) (Thu 01.02)
 - [Wandb](_Daily/250101_Wandb.md) (Wed 01.01)
 
@@ -28,16 +32,18 @@
 - [Domain adaptation, Transfer learning](_Daily/20241216_Domain%20adaptation%2C%20Transfer%20learning.md) (Mon 12.16)
 
 ### Week-3
+- [MLFlow DB - SQLite, Postgre](_Daily/241214_MLFlow%20DB%20-%20SQLite%2C%20Postgre.md) (Sat 12.14)
 - [Bash vs Source, NVIDIA Driver, CUDA, CUDNN](_Daily/241213_Bash%20vs%20Source%2C%20NVIDIA%20Driver%2C%20CUDA%2C%20CUDNN.md) (Fri 12.13)
 - [Docker](_Daily/MLOps/20241212_Docker.md) (Thu 12.12)
 - [Typehinting_literal](_Daily/Python/20241211_Typehinting_literal.md) (Wed 12.11)
+- [동적 메소드 getattr](_Daily/241210_%EB%8F%99%EC%A0%81%20%EB%A9%94%EC%86%8C%EB%93%9C%20getattr.md) (Tue 12.10)
 - [Transfer_learning_finetuning](_Daily/20241210_Transfer_learning_finetuning.md) (Tue 12.10)
 - [CICD_Workflow_management](_Daily/MLOps/20241209_CICD_Workflow_management.md) (Mon 12.09)
 
 ### Week-2
 - [Linux_windows_NVIDIA_torch_setup](_Daily/Linux_Git/20241208_Linux_windows_NVIDIA_torch_setup.md) (Sun 12.08)
+- [Markdown_image_embed_Convention_LLM_mermaid](_Daily/Python/20241207_Markdown_image_embed_Convention_LLM_mermaid.md) (Sat 12.07)
 - [MLflow Tracking server, Artifact store 연동 이슈 ](_Daily/241206_MLflow%20Tracking%20server%2C%20Artifact%20store%20%EC%97%B0%EB%8F%99%20%EC%9D%B4%EC%8A%88%20.md) (Fri 12.06)
-- [Markdown_image_embed_Convention_LLM_mermaid](_Daily/Python/20241206_Markdown_image_embed_Convention_LLM_mermaid.md) (Fri 12.06)
 - [Linux_Logger_google_doc](_Daily/Linux_Git/20241205_Linux_Logger_google_doc.md) (Thu 12.05)
 - [EC2_Docker_Architecture](_Daily/MLOps/20241204_EC2_Docker_Architecture.md) (Wed 12.04)
 
@@ -56,6 +62,7 @@
 ### Week-3
 - [Preprocessing](_Daily/20241117_Preprocessing.md) (Sun 11.17)
 - [ML_pipeline](_Daily/20241116_ML_pipeline.md) (Sat 11.16)
+- [멘토링 피드백 정리](_Daily/241115_%EB%A9%98%ED%86%A0%EB%A7%81%20%ED%94%BC%EB%93%9C%EB%B0%B1%20%EC%A0%95%EB%A6%AC.md) (Fri 11.15)
 - [House_price_prediction_Feedback](_Daily/Mentoring/20241114_House_price_prediction_Feedback.md) (Thu 11.14)
 - [Model_select_metric_Data_prep](_Daily/20241113_Model_select_metric_Data_prep.md) (Wed 11.13)
 - [Feature_selection](_Daily/20241112_Feature_selection.md) (Tue 11.12)

@@ -1,7 +1,7 @@
 # 2025 TIL
 ## 2025.01
 ### Week-2
-- [Quantization, Torch dtype bfloat16, Powershell Conda 이슈](_Daily/250106_Quantization%2C%20Torch%20dtype%20bfloat16%2C%20Powershell%20Conda%20%EC%9D%B4%EC%8A%88.md) (Mon 01.06)
+- [Template 코드 작성_Quantization, Torch dtype bfloat16, Powershell Conda 이슈](_Daily/250106_Template%20%EC%BD%94%EB%93%9C%20%EC%9E%91%EC%84%B1_Quantization%2C%20Torch%20dtype%20bfloat16%2C%20Powershell%20Conda%20%EC%9D%B4%EC%8A%88.md) (Mon 01.06)
 
 ### Week-1
 - [Hydra multi-config, Wandb logging - step, epoch](_Daily/250105_Hydra%20multi-config%2C%20Wandb%20logging%20-%20step%2C%20epoch.md) (Sun 01.05)
@@ -28,6 +28,7 @@
 
 ### Week-4
 - [Aug_Color-jitter](_Daily/20241220_Aug_Color-jitter.md) (Fri 12.20)
+- [전이 학습(Transfer Learning), 파인튜닝(Fine-Tuning), 도메인 적응(Domain Adaptation)](_Daily/241218_%EC%A0%84%EC%9D%B4%20%ED%95%99%EC%8A%B5%28Transfer%20Learning%29%2C%20%ED%8C%8C%EC%9D%B8%ED%8A%9C%EB%8B%9D%28Fine-Tuning%29%2C%20%EB%8F%84%EB%A9%94%EC%9D%B8%20%EC%A0%81%EC%9D%91%28Domain%20Adaptation%29.md) (Wed 12.18)
 - [Hydra config 관리_wandb 전달](_Daily/241217_Hydra%20config%20%EA%B4%80%EB%A6%AC_wandb%20%EC%A0%84%EB%8B%AC.md) (Tue 12.17)
 - [Domain adaptation, Transfer learning](_Daily/20241216_Domain%20adaptation%2C%20Transfer%20learning.md) (Mon 12.16)
 
@@ -62,12 +63,13 @@
 ### Week-3
 - [Preprocessing](_Daily/20241117_Preprocessing.md) (Sun 11.17)
 - [ML_pipeline](_Daily/20241116_ML_pipeline.md) (Sat 11.16)
-- [멘토링 피드백 정리](_Daily/241115_%EB%A9%98%ED%86%A0%EB%A7%81%20%ED%94%BC%EB%93%9C%EB%B0%B1%20%EC%A0%95%EB%A6%AC.md) (Fri 11.15)
+- [멘토링 피드백_ML pipeline,실험 설계, 협업 및 회고_Validation](_Daily/Mentoring/241115_%EB%A9%98%ED%86%A0%EB%A7%81%20%ED%94%BC%EB%93%9C%EB%B0%B1_ML%20pipeline%2C%EC%8B%A4%ED%97%98%20%EC%84%A4%EA%B3%84%2C%20%ED%98%91%EC%97%85%20%EB%B0%8F%20%ED%9A%8C%EA%B3%A0_Validation.md) (Fri 11.15)
 - [House_price_prediction_Feedback](_Daily/Mentoring/20241114_House_price_prediction_Feedback.md) (Thu 11.14)
 - [Model_select_metric_Data_prep](_Daily/20241113_Model_select_metric_Data_prep.md) (Wed 11.13)
 - [Feature_selection](_Daily/20241112_Feature_selection.md) (Tue 11.12)
 
 ### Week-2
+- [Cursor IDE - Chat vs Composer, cursorrules](_Daily/241107_Cursor%20IDE%20-%20Chat%20vs%20Composer%2C%20cursorrules.md) (Thu 11.07)
 - [Dataset_split](_Daily/20241106_Dataset_split.md) (Wed 11.06)
 - [Ensemble](_Daily/20241105_Ensemble.md) (Tue 11.05)
 - [Variable_continuous_categorical](_Daily/20241104_Variable_continuous_categorical.md) (Mon 11.04)

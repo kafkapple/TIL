@@ -1,3 +1,9 @@
+
+## 딥러닝 실험을 위한 모듈화된 템플릿 코드 작성
+- Hydra 설정 관리
+- WandB(Weights & Biases)를 통한 실험 관리 및 시각화 기능
+
+https://github.com/kafkapple/project_template
 ## Quantization & dtype Precision
 
 ### Mixed Precision **혼합 정밀도란?**

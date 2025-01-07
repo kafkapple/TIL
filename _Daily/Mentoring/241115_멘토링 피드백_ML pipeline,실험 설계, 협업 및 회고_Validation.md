@@ -10,6 +10,8 @@
 
 - **Random하게 분할하지 말 것**
     - cross validation 이 꼭 더 좋은 것은 아님.
+    - Random 분할 대신, 데이터 특성과 목적에 맞게 Validation Set 구성.
+    - Validation 결과를 통해 모델 성능을 유추하는 것이 중요.
 
 → train, val metric 결과의 gap 으로 유추 가능?
 
@@ -20,30 +22,54 @@
 - 정형 데이터 접근 방식에서 학습한 내용을 비정형 데이터(영상, 사진, 음성 등)에 적용할 수 있을지 질문.
     - **비정형 데이터**는 용량이 크므로, 초기 단계에서 **down-sampling 기준**과 **추출 지표** 설정이 중요.
     - Tabular dataset 생성 후 EDA를 시작하는 것이 적합할 가능성 높음.
+    - EDA 과정에서 어떤 지표를 사용할지 명확히 정의.
 
 ---
 
 ### **3. ML 분석 루틴과 실험 전략**
-
-- **ML 파이프라인의 이상과 현실**
-    - 이론적 순서: 데이터 준비 → 피처 엔지니어링 → 모델링.
-    - 현실에서는 선형적이지 않으며, 초기 단계의 데이터 구성/검증이 중요.
+- **이론적 루틴**:
+    - Data Preparation → Feature Engineering → Modeling.
+    - 하지만 실전에서는 선형적이지 않고, 반복적이고 역동적임.
+    -  초기 단계의 데이터 구성/검증이 중요.
+- **데이터 중심 접근**:
+    - 데이터셋과 Validation Set 구성이 제대로 되지 않으면, 후속 작업의 성과가 미미.
+    - 모델링에 집중하기 전에 데이터의 구조와 특성을 충분히 이해.
     - 데이터를 소홀히 하면 후속 작업에서 성과가 거의 없거나 우연에 의존.
-- **다음 실험 루틴 제안**
-    1. **Feature Selection**:
-        - Filter methods: Variance(0.1 이하 제거), Correlation(0.8 이상 제거).
-        - Wrapper methods: SFS(Sequential Feature Selection), RFE(Recursive Feature Elimination).
-    2. **EDA**:
-        - **결측치, 이상치 처리 방식 탐색**.
-        - 데이터의 정성적/정량적 분석.
-    3. **Feature Engineering**:
+
+- **개선 목표**:
+    - 실험 루틴:
+        - Filter/Wrapper/Embedding Method로 주요 변수 선택.
+        - EDA를 통해 결측치, 이상치 처리 후 Feature Engineering 반복.
+    - 왕도는 없으며, 개인마다 경험과 스타일을 통해 적합한 루틴을 만들어감.
+
+### 4. **실험 설계와 의사결정**
+
+- **데이터와 통계 지표**:
+    - 통계 지표는 필수적이나 맹신하지 말고, 시각화와 정성적 분석을 병행.
+    - 도메인 지식과 통계적 정보가 조화롭게 활용되어야 함.
+- **실험 설계**:
+    - 가능한 **한 가지 요소씩** 변경하며 실험.
+    - 프로젝트 목적에 맞게 **우선순위 조율**과 **선택과 집중**.
+-  **EDA**:
+     - **결측치, 이상치 처리 방식 탐색**.
+     - 데이터의 정성적/정량적 분석.
+- **결측치 처리**:
+   - 단순 평균보다 Random Forest 등 모델 기반 처리 시도.
+   - 이상치는 실험과 모델 성능 분석에 기반해 판단.
+
+- **Modeling**:
+  - Baseline 모델(RandomForest)로 시작, 이후 점진적 개선(XGBoost 등).
+- **Feature Selection**:
+    - **Filter Method**:
+        - Variance 기준: 0.1 이하 제거.
+        - Correlation 기준: 0.9 이상 제거.
+    - **Wrapper Method**:
+        - Sequential Feature Selection(SFS).
+        - Recursive Feature Elimination(RFE).
+    -  **Feature Engineering**:
         - Encoding 방식 비교(label encoding, one-hot, frequency encoding).
         - Null 값 처리: 평균, 모델 기반 보완(Random Forest 등).
-    4. **Modeling**:
-        - Baseline 모델(RandomForest)로 시작, 이후 점진적 개선(XGBoost 등).
-    5. **Validation**:
-        - Cross-validation 활용.
-        - 실험 시, **1개씩만 변경**하며 성능 영향 파악.
+
 
 ---
 
@@ -68,10 +94,21 @@
 - **회고와 기록의 부족**:
     - 실험 후 회고를 통해 무엇을 배웠는지 정리 부족.
     - 점수에 치중하기보다 프로세스 개선에 집중.
+---
+### 6. **협업과 회고**
 
+- **팀 내 협업**:
+    - 자율성이 장점이자 단점으로 작용:
+        - 각자 빠르게 진행했으나, 논의가 부족해 체계적 접근 부족.
+    - "즐기는 데" 과몰입하여 충분한 고찰과 논의 부족.
+- **실험 결과 분석**:
+    - 다양한 요소를 한 번에 실험해 후속 개선과 분석이 어려움.
+    - 실험 결과로 모델 성능은 개선되었으나, 분석 가능한 범위 내에서의 실험 설계 부족.
+- **회고의 필요성**:
+    - 프로젝트 종료 후 체계적이고 심층적인 회고를 진행하지 못한 점 반성.
 ---
 
-### **6. 주요 교훈**
+### **7. 주요 교훈**
 
 - **데이터와 피처에 대한 고민**:
     - 데이터의 질과 구성에 대한 고찰이 모델 성능을 좌우.
@@ -106,7 +143,6 @@
 
 ML 파이프라인은 이론적으로 **Data Prep → Feature Engineering → Modeling** 순서지만, 실제로는 비선형
 
-아래의 루틴을 추천합니다:
 
 1. **초기 설정**
     - **데이터셋 구성 검토**: Train/Test 분리 및 Validation 전략 세부 검토.
@@ -155,3 +191,4 @@ ML 파이프라인은 이론적으로 **Data Prep → Feature Engineering → Mo
     - Log 변환 후 성능 저하: 변환이 데이터 분포와 모델링 과정에 적합했는지 확인.
 3. **데이터 중심의 접근 강화**
     - 데이터 이해가 부족하면 모델링 단계에서의 개선은 한계가 있음.
+  

@@ -38,7 +38,6 @@
 - [Docker](_Daily/MLOps/20241212_Docker.md) (Thu 12.12)
 - [Typehinting_literal](_Daily/Python/20241211_Typehinting_literal.md) (Wed 12.11)
 - [동적 메소드 getattr](_Daily/241210_%EB%8F%99%EC%A0%81%20%EB%A9%94%EC%86%8C%EB%93%9C%20getattr.md) (Tue 12.10)
-- [Transfer_learning_finetuning](_Daily/20241210_Transfer_learning_finetuning.md) (Tue 12.10)
 - [CICD_Workflow_management](_Daily/MLOps/20241209_CICD_Workflow_management.md) (Mon 12.09)
 
 ### Week-2

@@ -7,8 +7,8 @@
 - [Hydra multi-config, Wandb logging - step, epoch](_Daily/250105_Hydra%20multi-config%2C%20Wandb%20logging%20-%20step%2C%20epoch.md) (Sun 01.05)
 - [Model Hyperparameters-Train, Optim, Regul, Model, Data](_Daily/250104_Model%20Hyperparameters-Train%2C%20Optim%2C%20Regul%2C%20Model%2C%20Data.md) (Sat 01.04)
 - [Project template 에서 src 및 main entry point 위치, Linux GPU monitoring, Conda 추천](_Daily/250103_Project%20template%20%EC%97%90%EC%84%9C%20src%20%EB%B0%8F%20main%20entry%20point%20%EC%9C%84%EC%B9%98%2C%20Linux%20GPU%20monitoring%2C%20Conda%20%EC%B6%94%EC%B2%9C.md) (Fri 01.03)
-- [CV Contest - 발표 피드백 및 개선 방향](_Daily/250102_CV%20Contest%20-%20%EB%B0%9C%ED%91%9C%20%ED%94%BC%EB%93%9C%EB%B0%B1%20%EB%B0%8F%20%EA%B0%9C%EC%84%A0%20%EB%B0%A9%ED%96%A5.md) (Thu 01.02)
 - [init import 용법](_Daily/Python/250102_init%20import%20%EC%9A%A9%EB%B2%95.md) (Thu 01.02)
+- [피드백 CV Contest - 개선 방향](_Daily/Mentoring/250102_%ED%94%BC%EB%93%9C%EB%B0%B1%20CV%20Contest%20-%20%EA%B0%9C%EC%84%A0%20%EB%B0%A9%ED%96%A5.md) (Thu 01.02)
 - [Wandb](_Daily/250101_Wandb.md) (Wed 01.01)
 
 # 2024 TIL
@@ -64,8 +64,8 @@
 - [Preprocessing](_Daily/20241117_Preprocessing.md) (Sun 11.17)
 - [ML_pipeline](_Daily/20241116_ML_pipeline.md) (Sat 11.16)
 - [멘토링 피드백_ML pipeline,실험 설계, 협업 및 회고_Validation](_Daily/Mentoring/241115_%EB%A9%98%ED%86%A0%EB%A7%81%20%ED%94%BC%EB%93%9C%EB%B0%B1_ML%20pipeline%2C%EC%8B%A4%ED%97%98%20%EC%84%A4%EA%B3%84%2C%20%ED%98%91%EC%97%85%20%EB%B0%8F%20%ED%9A%8C%EA%B3%A0_Validation.md) (Fri 11.15)
-- [House_price_prediction_Feedback](_Daily/Mentoring/20241114_House_price_prediction_Feedback.md) (Thu 11.14)
-- [Model_select_metric_Data_prep](_Daily/20241113_Model_select_metric_Data_prep.md) (Wed 11.13)
+- [피드백 - Contest 1 House_price_prediction](_Daily/Mentoring/20241114_%ED%94%BC%EB%93%9C%EB%B0%B1%20-%20Contest%201%20House_price_prediction.md) (Thu 11.14)
+- [멘토링 - Model_select_metric_Data_prep](_Daily/Mentoring/20241113_%EB%A9%98%ED%86%A0%EB%A7%81%20-%20Model_select_metric_Data_prep.md) (Wed 11.13)
 - [Feature_selection](_Daily/20241112_Feature_selection.md) (Tue 11.12)
 
 ### Week-2
@@ -81,6 +81,8 @@
 ### Week-5
 - [ML_process_basic](_Daily/20241031_ML_process_basic.md) (Thu 10.31)
 - [ML_model_data](_Daily/20241030_ML_model_data.md) (Wed 10.30)
+- [Boosting vs Bagging](_Daily/241029_Boosting%20vs%20Bagging.md) (Tue 10.29)
+- [Latex 분수 표현, Path as_posix() 경로 구분자 통일](_Daily/241028_Latex%20%EB%B6%84%EC%88%98%20%ED%91%9C%ED%98%84%2C%20Path%20as_posix%28%29%20%EA%B2%BD%EB%A1%9C%20%EA%B5%AC%EB%B6%84%EC%9E%90%20%ED%86%B5%EC%9D%BC.md) (Mon 10.28)
 
 
 # Topics

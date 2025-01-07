@@ -11,12 +11,15 @@
     
     ```python
 
-    # __init__.py
-    from .module1 import func1
-    from .module2 import func2
+    # src/logger/__init__.py
+    from .base_logger import Logger
+
+    __all__ = [
+        'Logger'
+    ]
     
-    # main.py
-    from mypackage import func1, func2
+    # src/main.py
+    from logger import Logger
     
     ```
     

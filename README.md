@@ -1,6 +1,8 @@
 # 2025 TIL
 ## 2025.01
 ### Week-2
+- [ Project Emotion - NLP, BART seq max 1024,  import warnings, seed](_Daily/250108_%20Project%20Emotion%20-%20NLP%2C%20BART%20seq%20max%201024%2C%20%20import%20warnings%2C%20seed.md) (Wed 01.08)
+- [Data Ensemble k-fold](_Daily/250107_Data%20Ensemble%20k-fold.md) (Tue 01.07)
 - [Template 코드 작성_Quantization, Torch dtype bfloat16, Powershell Conda 이슈](_Daily/250106_Template%20%EC%BD%94%EB%93%9C%20%EC%9E%91%EC%84%B1_Quantization%2C%20Torch%20dtype%20bfloat16%2C%20Powershell%20Conda%20%EC%9D%B4%EC%8A%88.md) (Mon 01.06)
 
 ### Week-1

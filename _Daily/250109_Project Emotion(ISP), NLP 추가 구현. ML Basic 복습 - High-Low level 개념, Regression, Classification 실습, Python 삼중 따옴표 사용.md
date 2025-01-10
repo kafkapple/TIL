@@ -156,6 +156,7 @@ prediction = (probs > 0.5).astype(int)
 - 특성
     - 정규직교행렬(orthonormal matrix)
         - 각 행을 별개의 벡터로 볼때 모두가 서로 직교하고, 길이(norm)가 1인 행렬
+        - 행렬의 서로 다른 row를 골라 내적하면 0
         - 자기자신의 transpose와 곱했을 때 단위행렬
             - transpose만 해주면 역행렬이 된다는 편리한 특성
     - 행렬 U와 V

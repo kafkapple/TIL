@@ -1,6 +1,7 @@
 # 2025 TIL
 ## 2025.01
 ### Week-2
+- [SVD Rank, Correlation_Scaling (Standarization - mu, Normalization - min max)_Latex_기업 설명회](_Daily/250110_SVD%20Rank%2C%20Correlation_Scaling%20%28Standarization%20-%20mu%2C%20Normalization%20-%20min%20max%29_Latex_%EA%B8%B0%EC%97%85%20%EC%84%A4%EB%AA%85%ED%9A%8C.md) (Fri 01.10)
 - [Project Emotion(ISP), NLP 추가 구현. ML Basic 복습 - High-Low level 개념, Regression, Classification 실습, Python 삼중 따옴표 사용](_Daily/250109_Project%20Emotion%28ISP%29%2C%20NLP%20%EC%B6%94%EA%B0%80%20%EA%B5%AC%ED%98%84.%20ML%20Basic%20%EB%B3%B5%EC%8A%B5%20-%20High-Low%20level%20%EA%B0%9C%EB%85%90%2C%20Regression%2C%20Classification%20%EC%8B%A4%EC%8A%B5%2C%20Python%20%EC%82%BC%EC%A4%91%20%EB%94%B0%EC%98%B4%ED%91%9C%20%EC%82%AC%EC%9A%A9.md) (Thu 01.09)
 - [ Project Emotion - NLP, BART seq max 1024,  import warnings, seed](_Daily/250108_%20Project%20Emotion%20-%20NLP%2C%20BART%20seq%20max%201024%2C%20%20import%20warnings%2C%20seed.md) (Wed 01.08)
 - [특강 - 이력서](_Daily/250107_%ED%8A%B9%EA%B0%95%20-%20%EC%9D%B4%EB%A0%A5%EC%84%9C.md) (Tue 01.07)
@@ -10,8 +11,8 @@
 - [Hydra multi-config, Wandb logging - step, epoch](_Daily/250105_Hydra%20multi-config%2C%20Wandb%20logging%20-%20step%2C%20epoch.md) (Sun 01.05)
 - [Model Hyperparameters-Train, Optim, Regul, Model, Data](_Daily/250104_Model%20Hyperparameters-Train%2C%20Optim%2C%20Regul%2C%20Model%2C%20Data.md) (Sat 01.04)
 - [Project template 에서 src 및 main entry point 위치, Linux GPU monitoring, Conda 추천](_Daily/250103_Project%20template%20%EC%97%90%EC%84%9C%20src%20%EB%B0%8F%20main%20entry%20point%20%EC%9C%84%EC%B9%98%2C%20Linux%20GPU%20monitoring%2C%20Conda%20%EC%B6%94%EC%B2%9C.md) (Fri 01.03)
-- [init import 용법](_Daily/Python/250102_init%20import%20%EC%9A%A9%EB%B2%95.md) (Thu 01.02)
 - [피드백 CV Contest - 개선 방향](_Daily/Mentoring/250102_%ED%94%BC%EB%93%9C%EB%B0%B1%20CV%20Contest%20-%20%EA%B0%9C%EC%84%A0%20%EB%B0%A9%ED%96%A5.md) (Thu 01.02)
+- [init import 용법](_Daily/Python/250102_init%20import%20%EC%9A%A9%EB%B2%95.md) (Thu 01.02)
 - [Wandb](_Daily/MLOps/250101_Wandb.md) (Wed 01.01)
 
 # 2024 TIL
@@ -53,6 +54,7 @@
 
 ## 2024.11
 ### Week-5
+- [Numpy, Pandas, Visualization, Sklearn](_Daily/241127_Numpy%2C%20Pandas%2C%20Visualization%2C%20Sklearn.md) (Wed 11.27)
 - [Hyperparam_search_objective_metric](_Daily/241126_Hyperparam_search_objective_metric.md) (Tue 11.26)
 
 ### Week-4
@@ -73,6 +75,7 @@
 - [멘토링 - 연속, 범주형 변수 선택 기준, Train Test 데이터 전처리 분할 (다른조)](_Daily/Mentoring/241111_%EB%A9%98%ED%86%A0%EB%A7%81%20-%20%EC%97%B0%EC%86%8D%2C%20%EB%B2%94%EC%A3%BC%ED%98%95%20%EB%B3%80%EC%88%98%20%EC%84%A0%ED%83%9D%20%EA%B8%B0%EC%A4%80%2C%20Train%20Test%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%A0%84%EC%B2%98%EB%A6%AC%20%EB%B6%84%ED%95%A0%20%28%EB%8B%A4%EB%A5%B8%EC%A1%B0%29.md) (Mon 11.11)
 
 ### Week-2
+- [Pandas 결측치 확인 info, isna - isnull, 처리 fillna, dropna](_Daily/241108_Pandas%20%EA%B2%B0%EC%B8%A1%EC%B9%98%20%ED%99%95%EC%9D%B8%20info%2C%20isna%20-%20isnull%2C%20%EC%B2%98%EB%A6%AC%20fillna%2C%20dropna.md) (Fri 11.08)
 - [Cursor IDE - Chat vs Composer, cursorrules](_Daily/Python/241107_Cursor%20IDE%20-%20Chat%20vs%20Composer%2C%20cursorrules.md) (Thu 11.07)
 - [Dataset_split](_Daily/20241106_Dataset_split.md) (Wed 11.06)
 - [Ensemble](_Daily/20241105_Ensemble.md) (Tue 11.05)

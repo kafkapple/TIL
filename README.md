@@ -1,13 +1,15 @@
 # 2025 TIL
 ## 2025.01
 ### Week-3
+- [CV Basic 3, 4강 - Backbone, decoder, CNN, ResNet, EfficientNet](_Daily/250114_CV%20Basic%203%2C%204%EA%B0%95%20-%20Backbone%2C%20decoder%2C%20CNN%2C%20ResNet%2C%20EfficientNet.md) (Tue 01.14)
 - [Recommendation System, Time-series analysis, Model 평가 및 개선](_Daily/250113_Recommendation%20System%2C%20Time-series%20analysis%2C%20Model%20%ED%8F%89%EA%B0%80%20%EB%B0%8F%20%EA%B0%9C%EC%84%A0.md) (Mon 01.13)
+- [특강-Overview of LLM](_Daily/%ED%8A%B9%EA%B0%95/250113_%ED%8A%B9%EA%B0%95-Overview%20of%20LLM.md) (Mon 01.13)
 
 ### Week-2
 - [SVD Rank, Correlation_Scaling (Standarization - mu, Normalization - min max)_Latex_기업 설명회](_Daily/250110_SVD%20Rank%2C%20Correlation_Scaling%20%28Standarization%20-%20mu%2C%20Normalization%20-%20min%20max%29_Latex_%EA%B8%B0%EC%97%85%20%EC%84%A4%EB%AA%85%ED%9A%8C.md) (Fri 01.10)
 - [Project Emotion(ISP), NLP 추가 구현. ML Basic 복습 - High-Low level 개념, Regression, Classification 실습, Python 삼중 따옴표 사용](_Daily/250109_Project%20Emotion%28ISP%29%2C%20NLP%20%EC%B6%94%EA%B0%80%20%EA%B5%AC%ED%98%84.%20ML%20Basic%20%EB%B3%B5%EC%8A%B5%20-%20High-Low%20level%20%EA%B0%9C%EB%85%90%2C%20Regression%2C%20Classification%20%EC%8B%A4%EC%8A%B5%2C%20Python%20%EC%82%BC%EC%A4%91%20%EB%94%B0%EC%98%B4%ED%91%9C%20%EC%82%AC%EC%9A%A9.md) (Thu 01.09)
 - [ Project Emotion - NLP, BART seq max 1024,  import warnings, seed](_Daily/250108_%20Project%20Emotion%20-%20NLP%2C%20BART%20seq%20max%201024%2C%20%20import%20warnings%2C%20seed.md) (Wed 01.08)
-- [특강 - 이력서](_Daily/250107_%ED%8A%B9%EA%B0%95%20-%20%EC%9D%B4%EB%A0%A5%EC%84%9C.md) (Tue 01.07)
+- [특강 - 이력서](_Daily/%ED%8A%B9%EA%B0%95/250107_%ED%8A%B9%EA%B0%95%20-%20%EC%9D%B4%EB%A0%A5%EC%84%9C.md) (Tue 01.07)
 - [Template 코드 작성_Quantization, Torch dtype bfloat16, Powershell Conda 이슈](_Daily/250106_Template%20%EC%BD%94%EB%93%9C%20%EC%9E%91%EC%84%B1_Quantization%2C%20Torch%20dtype%20bfloat16%2C%20Powershell%20Conda%20%EC%9D%B4%EC%8A%88.md) (Mon 01.06)
 
 ### Week-1
@@ -69,23 +71,22 @@
 - [Mentoring - MLOps, CICD, VS_code_short_cut](_Daily/MLOps/241118_Mentoring%20-%20MLOps%2C%20CICD%2C%20VS_code_short_cut.md) (Mon 11.18)
 
 ### Week-3
-- [Preprocessing](_Daily/20241117_Preprocessing.md) (Sun 11.17)
-- [ML_pipeline](_Daily/20241116_ML_pipeline.md) (Sat 11.16)
+- [Preprocessing](_Daily/241117_Preprocessing.md) (Sun 11.17)
+- [ML_pipeline](_Daily/241116_ML_pipeline.md) (Sat 11.16)
 - [멘토링 피드백_ML pipeline,실험 설계, 협업 및 회고_Validation](_Daily/Mentoring/241115_%EB%A9%98%ED%86%A0%EB%A7%81%20%ED%94%BC%EB%93%9C%EB%B0%B1_ML%20pipeline%2C%EC%8B%A4%ED%97%98%20%EC%84%A4%EA%B3%84%2C%20%ED%98%91%EC%97%85%20%EB%B0%8F%20%ED%9A%8C%EA%B3%A0_Validation.md) (Fri 11.15)
 - [피드백 - Contest 1 House_price_prediction](_Daily/Mentoring/241114_%ED%94%BC%EB%93%9C%EB%B0%B1%20-%20Contest%201%20House_price_prediction.md) (Thu 11.14)
 - [멘토링 - Model_select_metric_Data_prep](_Daily/Mentoring/241113_%EB%A9%98%ED%86%A0%EB%A7%81%20-%20Model_select_metric_Data_prep.md) (Wed 11.13)
-- [Feature_selection](_Daily/20241112_Feature_selection.md) (Tue 11.12)
+- [Feature_selection](_Daily/241112_Feature_selection.md) (Tue 11.12)
 - [멘토링 - 연속, 범주형 변수 선택 기준, Train Test 데이터 전처리 분할 (다른조)](_Daily/Mentoring/241111_%EB%A9%98%ED%86%A0%EB%A7%81%20-%20%EC%97%B0%EC%86%8D%2C%20%EB%B2%94%EC%A3%BC%ED%98%95%20%EB%B3%80%EC%88%98%20%EC%84%A0%ED%83%9D%20%EA%B8%B0%EC%A4%80%2C%20Train%20Test%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%A0%84%EC%B2%98%EB%A6%AC%20%EB%B6%84%ED%95%A0%20%28%EB%8B%A4%EB%A5%B8%EC%A1%B0%29.md) (Mon 11.11)
 
 ### Week-2
 - [Pandas 결측치 확인 info, isna - isnull, 처리 fillna, dropna](_Daily/241108_Pandas%20%EA%B2%B0%EC%B8%A1%EC%B9%98%20%ED%99%95%EC%9D%B8%20info%2C%20isna%20-%20isnull%2C%20%EC%B2%98%EB%A6%AC%20fillna%2C%20dropna.md) (Fri 11.08)
 - [Cursor IDE - Chat vs Composer, cursorrules](_Daily/Python/241107_Cursor%20IDE%20-%20Chat%20vs%20Composer%2C%20cursorrules.md) (Thu 11.07)
-- [Dataset_split](_Daily/20241106_Dataset_split.md) (Wed 11.06)
-- [Ensemble](_Daily/20241105_Ensemble.md) (Tue 11.05)
-- [Variable_continuous_categorical](_Daily/20241104_Variable_continuous_categorical.md) (Mon 11.04)
+- [Ensemble](_Daily/241105_Ensemble.md) (Tue 11.05)
+- [Variable_continuous_categorical](_Daily/241104_Variable_continuous_categorical.md) (Mon 11.04)
 
 ### Week-1
-- [ML_data_Manual](_Daily/20241101_ML_data_Manual.md) (Fri 11.01)
+- [ML_data_Manual](_Daily/241101_ML_data_Manual.md) (Fri 11.01)
 
 ## 2024.10
 ### Week-5

@@ -16,7 +16,7 @@
 - [Hydra multi-config, Wandb logging - step, epoch](_Daily/250105_Hydra%20multi-config%2C%20Wandb%20logging%20-%20step%2C%20epoch.md) (Sun 01.05)
 - [Model Hyperparameters-Train, Optim, Regul, Model, Data](_Daily/250104_Model%20Hyperparameters-Train%2C%20Optim%2C%20Regul%2C%20Model%2C%20Data.md) (Sat 01.04)
 - [Project template 에서 src 및 main entry point 위치, Linux GPU monitoring, Conda 추천](_Daily/250103_Project%20template%20%EC%97%90%EC%84%9C%20src%20%EB%B0%8F%20main%20entry%20point%20%EC%9C%84%EC%B9%98%2C%20Linux%20GPU%20monitoring%2C%20Conda%20%EC%B6%94%EC%B2%9C.md) (Fri 01.03)
-- [피드백 CV Contest - 개선 방향](_Daily/Mentoring/250102_%ED%94%BC%EB%93%9C%EB%B0%B1%20CV%20Contest%20-%20%EA%B0%9C%EC%84%A0%20%EB%B0%A9%ED%96%A5.md) (Thu 01.02)
+- [CV Contest - 발표 피드백 및 개선 방향 from 송원호 멘토](_Daily/Mentoring/250102_CV%20Contest%20-%20%EB%B0%9C%ED%91%9C%20%ED%94%BC%EB%93%9C%EB%B0%B1%20%EB%B0%8F%20%EA%B0%9C%EC%84%A0%20%EB%B0%A9%ED%96%A5%20from%20%EC%86%A1%EC%9B%90%ED%98%B8%20%EB%A9%98%ED%86%A0.md) (Thu 01.02)
 - [init import 용법](_Daily/Python/250102_init%20import%20%EC%9A%A9%EB%B2%95.md) (Thu 01.02)
 - [Wandb](_Daily/MLOps/250101_Wandb.md) (Wed 01.01)
 

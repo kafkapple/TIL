@@ -1,6 +1,9 @@
 # 2025 TIL
 ## 2025.01
 ### Week-3
+- [Proj - LLM sum, emo recog, chat task_Token param_Categorical val - one-hot encode](_Daily/250117_Proj%20-%20LLM%20sum%2C%20emo%20recog%2C%20chat%20task_Token%20param_Categorical%20val%20-%20one-hot%20encode.md) (Fri 01.17)
+- [Journal - Line Attractor encoding an affective state](_Daily/250116_Journal%20-%20Line%20Attractor%20encoding%20an%20affective%20state.md) (Thu 01.16)
+- [NLP contest 시작_ Pandas, random, sort_values, dict map_SSH Jupyter](_Daily/250115_NLP%20contest%20%EC%8B%9C%EC%9E%91_%20Pandas%2C%20random%2C%20sort_values%2C%20dict%20map_SSH%20Jupyter.md) (Wed 01.15)
 - [CV Basic 3, 4강 - Backbone, decoder, CNN, ResNet, EfficientNet](_Daily/250114_CV%20Basic%203%2C%204%EA%B0%95%20-%20Backbone%2C%20decoder%2C%20CNN%2C%20ResNet%2C%20EfficientNet.md) (Tue 01.14)
 - [Recommendation System, Time-series analysis, Model 평가 및 개선](_Daily/250113_Recommendation%20System%2C%20Time-series%20analysis%2C%20Model%20%ED%8F%89%EA%B0%80%20%EB%B0%8F%20%EA%B0%9C%EC%84%A0.md) (Mon 01.13)
 - [특강-Overview of LLM](_Daily/%ED%8A%B9%EA%B0%95/250113_%ED%8A%B9%EA%B0%95-Overview%20of%20LLM.md) (Mon 01.13)
@@ -9,6 +12,7 @@
 - [SVD Rank, Correlation_Scaling (Standarization - mu, Normalization - min max)_Latex_기업 설명회](_Daily/250110_SVD%20Rank%2C%20Correlation_Scaling%20%28Standarization%20-%20mu%2C%20Normalization%20-%20min%20max%29_Latex_%EA%B8%B0%EC%97%85%20%EC%84%A4%EB%AA%85%ED%9A%8C.md) (Fri 01.10)
 - [Project Emotion(ISP), NLP 추가 구현. ML Basic 복습 - High-Low level 개념, Regression, Classification 실습, Python 삼중 따옴표 사용](_Daily/250109_Project%20Emotion%28ISP%29%2C%20NLP%20%EC%B6%94%EA%B0%80%20%EA%B5%AC%ED%98%84.%20ML%20Basic%20%EB%B3%B5%EC%8A%B5%20-%20High-Low%20level%20%EA%B0%9C%EB%85%90%2C%20Regression%2C%20Classification%20%EC%8B%A4%EC%8A%B5%2C%20Python%20%EC%82%BC%EC%A4%91%20%EB%94%B0%EC%98%B4%ED%91%9C%20%EC%82%AC%EC%9A%A9.md) (Thu 01.09)
 - [ Project Emotion - NLP, BART seq max 1024,  import warnings, seed](_Daily/250108_%20Project%20Emotion%20-%20NLP%2C%20BART%20seq%20max%201024%2C%20%20import%20warnings%2C%20seed.md) (Wed 01.08)
+- [Project NLP - dialouge summarization template 디자인 구현](_Daily/250107_Project%20NLP%20-%20dialouge%20summarization%20template%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EA%B5%AC%ED%98%84.md) (Tue 01.07)
 - [특강 - 이력서](_Daily/%ED%8A%B9%EA%B0%95/250107_%ED%8A%B9%EA%B0%95%20-%20%EC%9D%B4%EB%A0%A5%EC%84%9C.md) (Tue 01.07)
 - [Template 코드 작성_Quantization, Torch dtype bfloat16, Powershell Conda 이슈](_Daily/250106_Template%20%EC%BD%94%EB%93%9C%20%EC%9E%91%EC%84%B1_Quantization%2C%20Torch%20dtype%20bfloat16%2C%20Powershell%20Conda%20%EC%9D%B4%EC%8A%88.md) (Mon 01.06)
 

@@ -1,7 +1,82 @@
 
-## 딥러닝 실험을 위한 모듈화된 템플릿 코드 작성
-- Hydra 설정 관리
-- WandB(Weights & Biases)를 통한 실험 관리 및 시각화 기능
+
+# Project
+
+- 모듈 프레임워크 초점
+  - Hydra 설정 관리
+  - WandB(Weights & Biases)를 통한 실험 관리 및 시각화 기능
+  - pytorch lighting
+  - hugging face model manage
+
+## Project_template 
+- 딥러닝 실험을 위한 모듈화된 템플릿 코드 작성
+
+
+## NLP Task Project Template 구현
+https://paperswithcode.com/dataset/dialogsum
+
+- Dataset
+    
+    https://github.com/cylnlp/dialogsum/tree/main/DialogSum_Data
+    
+    - 실제 대회 데이터셋, 위 데이터 한글로 번역해 제공
+### template_nlp_sum (test_rouge)
+
+### nlp
+
+검증 완료 → 개선 중
+
+- **DialogSum 데이터셋**
+- **BART 기반 모델**
+- ROUGE 스코어 사용
+    - 생성된 요약문의 품질 평가
+
+### summary
+
+
+검증 완료. 
+
+
+**데이터셋**
+
+- **DialogSum 데이터셋**
+    - 출처: GitHub cylnlp/dialogsum 저장소
+    - 구조: 대화(dialogue)와 요약(summary) 쌍으로 구성
+    - 파일:
+        - train.json: 학습 데이터
+        - val.json: 검증 데이터
+
+**2. 모델**
+
+- **BART 모델**
+    - 기본 모델: facebook/bart-large-cnn
+    - 크기: 약 400M 파라미터
+- **T5 모델** (대체 옵션)
+    - 기본 모델: t5-small
+    - 크기: 약 60M 파라미터
+    - 설정:
+
+**파인튜닝 전략**:
+
+- 그래디언트 체크포인팅 사용
+- 선택적 레이어 동결
+- 임베딩 레이어 동결 옵션
+
+**4. 평가 메트릭**
+
+- **ROUGE 점수**
+
+<aside>
+💡
+
+</aside>
+
+- 학습에 따른 metric 개선 확인
+
+Evaluating model...Evaluating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:05<00:00,  1.99it/s]Validation ROUGE scores: {'rouge1': 0.3878867728969686, 'rouge2': 0.1951162475308493, 'rougeL': 0.3183383168823225}
+
+Validation ROUGE scores: {'rouge1': 0.41737868855929205, 'rouge2': 0.2105218297398614, 'rougeL': 0.3501939765357674}
+# Study
 
 https://github.com/kafkapple/project_template
 ## Quantization & dtype Precision

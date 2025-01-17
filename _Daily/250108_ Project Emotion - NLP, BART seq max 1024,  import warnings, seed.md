@@ -1,4 +1,4 @@
-```markdown
+
 # 회고
 - 이번 주 월요일에는 성공했었으나,
   - 아침 일찍 운동
@@ -26,8 +26,6 @@
   - unfreeze layer 등 학습 기법 조절
   - logging 조절
   - refactoring
-  
-```
 
 # Transformer BART input sequence max 1024
 

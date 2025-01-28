@@ -1,6 +1,7 @@
 # 2025 TIL
 ## 2025.01
 ### Week-3
+- [LoRA(Low-Rank Adaptation)_rank, alpha(scaling), q v_proj](_Daily/250118_LoRA%28Low-Rank%20Adaptation%29_rank%2C%20alpha%28scaling%29%2C%20q%20v_proj.md) (Sat 01.18)
 - [Proj - LLM sum, emo recog, chat task_Token param_Categorical val - one-hot encode](_Daily/250117_Proj%20-%20LLM%20sum%2C%20emo%20recog%2C%20chat%20task_Token%20param_Categorical%20val%20-%20one-hot%20encode.md) (Fri 01.17)
 - [Journal - Line Attractor encoding an affective state](_Daily/250116_Journal%20-%20Line%20Attractor%20encoding%20an%20affective%20state.md) (Thu 01.16)
 - [NLP contest 시작_ Pandas, random, sort_values, dict map_SSH Jupyter](_Daily/250115_NLP%20contest%20%EC%8B%9C%EC%9E%91_%20Pandas%2C%20random%2C%20sort_values%2C%20dict%20map_SSH%20Jupyter.md) (Wed 01.15)
@@ -20,8 +21,8 @@
 - [Hydra multi-config, Wandb logging - step, epoch](_Daily/250105_Hydra%20multi-config%2C%20Wandb%20logging%20-%20step%2C%20epoch.md) (Sun 01.05)
 - [Model Hyperparameters-Train, Optim, Regul, Model, Data](_Daily/250104_Model%20Hyperparameters-Train%2C%20Optim%2C%20Regul%2C%20Model%2C%20Data.md) (Sat 01.04)
 - [Project template 에서 src 및 main entry point 위치, Linux GPU monitoring, Conda 추천](_Daily/250103_Project%20template%20%EC%97%90%EC%84%9C%20src%20%EB%B0%8F%20main%20entry%20point%20%EC%9C%84%EC%B9%98%2C%20Linux%20GPU%20monitoring%2C%20Conda%20%EC%B6%94%EC%B2%9C.md) (Fri 01.03)
-- [CV Contest - 발표 피드백 및 개선 방향 from 송원호 멘토](_Daily/Mentoring/250102_CV%20Contest%20-%20%EB%B0%9C%ED%91%9C%20%ED%94%BC%EB%93%9C%EB%B0%B1%20%EB%B0%8F%20%EA%B0%9C%EC%84%A0%20%EB%B0%A9%ED%96%A5%20from%20%EC%86%A1%EC%9B%90%ED%98%B8%20%EB%A9%98%ED%86%A0.md) (Thu 01.02)
 - [init import 용법](_Daily/Python/250102_init%20import%20%EC%9A%A9%EB%B2%95.md) (Thu 01.02)
+- [CV Contest - 발표 피드백 및 개선 방향 from 송원호 멘토](_Daily/Mentoring/250102_CV%20Contest%20-%20%EB%B0%9C%ED%91%9C%20%ED%94%BC%EB%93%9C%EB%B0%B1%20%EB%B0%8F%20%EA%B0%9C%EC%84%A0%20%EB%B0%A9%ED%96%A5%20from%20%EC%86%A1%EC%9B%90%ED%98%B8%20%EB%A9%98%ED%86%A0.md) (Thu 01.02)
 - [Wandb](_Daily/MLOps/250101_Wandb.md) (Wed 01.01)
 
 # 2024 TIL
@@ -86,6 +87,7 @@
 ### Week-2
 - [Pandas 결측치 확인 info, isna - isnull, 처리 fillna, dropna](_Daily/241108_Pandas%20%EA%B2%B0%EC%B8%A1%EC%B9%98%20%ED%99%95%EC%9D%B8%20info%2C%20isna%20-%20isnull%2C%20%EC%B2%98%EB%A6%AC%20fillna%2C%20dropna.md) (Fri 11.08)
 - [Cursor IDE - Chat vs Composer, cursorrules](_Daily/Python/241107_Cursor%20IDE%20-%20Chat%20vs%20Composer%2C%20cursorrules.md) (Thu 11.07)
+- [Dataset_split](_Daily/241106_Dataset_split.md) (Wed 11.06)
 - [Ensemble](_Daily/241105_Ensemble.md) (Tue 11.05)
 - [Variable_continuous_categorical](_Daily/241104_Variable_continuous_categorical.md) (Mon 11.04)
 
@@ -98,6 +100,15 @@
 - [ML_model_data](_Daily/241030_ML_model_data.md) (Wed 10.30)
 - [Boosting vs Bagging](_Daily/241029_Boosting%20vs%20Bagging.md) (Tue 10.29)
 - [Latex 분수 표현, Path as_posix() 경로 구분자 통일](_Daily/Python/241028_Latex%20%EB%B6%84%EC%88%98%20%ED%91%9C%ED%98%84%2C%20Path%20as_posix%28%29%20%EA%B2%BD%EB%A1%9C%20%EA%B5%AC%EB%B6%84%EC%9E%90%20%ED%86%B5%EC%9D%BC.md) (Mon 10.28)
+
+## 2024.01
+### Week-3
+- [스캐폴딩(Scaffolding) ](_Daily/240121_%EC%8A%A4%EC%BA%90%ED%8F%B4%EB%94%A9%28Scaffolding%29%20.md) (Sun 01.21)
+- [Huggingface cache_rm -rf](_Daily/240120_Huggingface%20cache_rm%20-rf.md) (Sat 01.20)
+- [PyTorch 텍스트 생성 모델의 Padding 처리와 -100 masking](_Daily/240115_PyTorch%20%ED%85%8D%EC%8A%A4%ED%8A%B8%20%EC%83%9D%EC%84%B1%20%EB%AA%A8%EB%8D%B8%EC%9D%98%20Padding%20%EC%B2%98%EB%A6%AC%EC%99%80%20-100%20masking.md) (Mon 01.15)
+
+### Week-2
+- [ROUGE 및 NLP 평가 메트릭 개요](_Daily/240108_ROUGE%20%EB%B0%8F%20NLP%20%ED%8F%89%EA%B0%80%20%EB%A9%94%ED%8A%B8%EB%A6%AD%20%EA%B0%9C%EC%9A%94.md) (Mon 01.08)
 
 
 # Topics

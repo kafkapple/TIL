@@ -1,9 +1,14 @@
 # 2025 TIL
 ## 2025.01
+### Week-4
+- [스캐폴딩(Scaffolding) ](_Daily/250121_%EC%8A%A4%EC%BA%90%ED%8F%B4%EB%94%A9%28Scaffolding%29%20.md) (Tue 01.21)
+- [Huggingface cache_rm-rf](_Daily/250120_Huggingface%20cache_rm-rf.md) (Mon 01.20)
+
 ### Week-3
 - [LoRA(Low-Rank Adaptation)_rank, alpha(scaling), q v_proj](_Daily/250118_LoRA%28Low-Rank%20Adaptation%29_rank%2C%20alpha%28scaling%29%2C%20q%20v_proj.md) (Sat 01.18)
 - [Proj - LLM sum, emo recog, chat task_Token param_Categorical val - one-hot encode](_Daily/250117_Proj%20-%20LLM%20sum%2C%20emo%20recog%2C%20chat%20task_Token%20param_Categorical%20val%20-%20one-hot%20encode.md) (Fri 01.17)
 - [Journal - Line Attractor encoding an affective state](_Daily/250116_Journal%20-%20Line%20Attractor%20encoding%20an%20affective%20state.md) (Thu 01.16)
+- [PyTorch 텍스트 생성 모델의 Padding 처리와 -100 masking](_Daily/250115_PyTorch%20%ED%85%8D%EC%8A%A4%ED%8A%B8%20%EC%83%9D%EC%84%B1%20%EB%AA%A8%EB%8D%B8%EC%9D%98%20Padding%20%EC%B2%98%EB%A6%AC%EC%99%80%20-100%20masking.md) (Wed 01.15)
 - [NLP contest 시작_ Pandas, random, sort_values, dict map_SSH Jupyter](_Daily/250115_NLP%20contest%20%EC%8B%9C%EC%9E%91_%20Pandas%2C%20random%2C%20sort_values%2C%20dict%20map_SSH%20Jupyter.md) (Wed 01.15)
 - [CV Basic 3, 4강 - Backbone, decoder, CNN, ResNet, EfficientNet](_Daily/250114_CV%20Basic%203%2C%204%EA%B0%95%20-%20Backbone%2C%20decoder%2C%20CNN%2C%20ResNet%2C%20EfficientNet.md) (Tue 01.14)
 - [Recommendation System, Time-series analysis, Model 평가 및 개선](_Daily/250113_Recommendation%20System%2C%20Time-series%20analysis%2C%20Model%20%ED%8F%89%EA%B0%80%20%EB%B0%8F%20%EA%B0%9C%EC%84%A0.md) (Mon 01.13)
@@ -13,6 +18,7 @@
 - [SVD Rank, Correlation_Scaling (Standarization - mu, Normalization - min max)_Latex_기업 설명회](_Daily/250110_SVD%20Rank%2C%20Correlation_Scaling%20%28Standarization%20-%20mu%2C%20Normalization%20-%20min%20max%29_Latex_%EA%B8%B0%EC%97%85%20%EC%84%A4%EB%AA%85%ED%9A%8C.md) (Fri 01.10)
 - [Project Emotion(ISP), NLP 추가 구현. ML Basic 복습 - High-Low level 개념, Regression, Classification 실습, Python 삼중 따옴표 사용](_Daily/250109_Project%20Emotion%28ISP%29%2C%20NLP%20%EC%B6%94%EA%B0%80%20%EA%B5%AC%ED%98%84.%20ML%20Basic%20%EB%B3%B5%EC%8A%B5%20-%20High-Low%20level%20%EA%B0%9C%EB%85%90%2C%20Regression%2C%20Classification%20%EC%8B%A4%EC%8A%B5%2C%20Python%20%EC%82%BC%EC%A4%91%20%EB%94%B0%EC%98%B4%ED%91%9C%20%EC%82%AC%EC%9A%A9.md) (Thu 01.09)
 - [Project Emotion - NLP, BART seq max 1024,  import warnings, seed](_Daily/250108_Project%20Emotion%20-%20NLP%2C%20BART%20seq%20max%201024%2C%20%20import%20warnings%2C%20seed.md) (Wed 01.08)
+- [ROUGE 및 NLP 평가 메트릭 개요](_Daily/250108_ROUGE%20%EB%B0%8F%20NLP%20%ED%8F%89%EA%B0%80%20%EB%A9%94%ED%8A%B8%EB%A6%AD%20%EA%B0%9C%EC%9A%94.md) (Wed 01.08)
 - [Project NLP - dialouge summarization template 디자인 구현](_Daily/250107_Project%20NLP%20-%20dialouge%20summarization%20template%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EA%B5%AC%ED%98%84.md) (Tue 01.07)
 - [특강 - 이력서](_Daily/%ED%8A%B9%EA%B0%95/250107_%ED%8A%B9%EA%B0%95%20-%20%EC%9D%B4%EB%A0%A5%EC%84%9C.md) (Tue 01.07)
 - [Template 코드 작성_Quantization, Torch dtype bfloat16, Powershell Conda 이슈](_Daily/250106_Template%20%EC%BD%94%EB%93%9C%20%EC%9E%91%EC%84%B1_Quantization%2C%20Torch%20dtype%20bfloat16%2C%20Powershell%20Conda%20%EC%9D%B4%EC%8A%88.md) (Mon 01.06)
@@ -100,15 +106,6 @@
 - [ML_model_data](_Daily/241030_ML_model_data.md) (Wed 10.30)
 - [Boosting vs Bagging](_Daily/241029_Boosting%20vs%20Bagging.md) (Tue 10.29)
 - [Latex 분수 표현, Path as_posix() 경로 구분자 통일](_Daily/Python/241028_Latex%20%EB%B6%84%EC%88%98%20%ED%91%9C%ED%98%84%2C%20Path%20as_posix%28%29%20%EA%B2%BD%EB%A1%9C%20%EA%B5%AC%EB%B6%84%EC%9E%90%20%ED%86%B5%EC%9D%BC.md) (Mon 10.28)
-
-## 2024.01
-### Week-3
-- [스캐폴딩(Scaffolding) ](_Daily/240121_%EC%8A%A4%EC%BA%90%ED%8F%B4%EB%94%A9%28Scaffolding%29%20.md) (Sun 01.21)
-- [Huggingface cache_rm -rf](_Daily/240120_Huggingface%20cache_rm%20-rf.md) (Sat 01.20)
-- [PyTorch 텍스트 생성 모델의 Padding 처리와 -100 masking](_Daily/240115_PyTorch%20%ED%85%8D%EC%8A%A4%ED%8A%B8%20%EC%83%9D%EC%84%B1%20%EB%AA%A8%EB%8D%B8%EC%9D%98%20Padding%20%EC%B2%98%EB%A6%AC%EC%99%80%20-100%20masking.md) (Mon 01.15)
-
-### Week-2
-- [ROUGE 및 NLP 평가 메트릭 개요](_Daily/240108_ROUGE%20%EB%B0%8F%20NLP%20%ED%8F%89%EA%B0%80%20%EB%A9%94%ED%8A%B8%EB%A6%AD%20%EA%B0%9C%EC%9A%94.md) (Mon 01.08)
 
 
 # Topics

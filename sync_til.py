@@ -88,6 +88,20 @@ def run_command(command, working_dir):
         print(f"오류: '{command[0]}' 명령을 찾을 수 없습니다. 시스템에 설치되어 있는지 확인하세요.")
         return False
 
+def get_current_branch(working_dir):
+    """현재 Git 브랜치 이름을 가져옵니다."""
+    try:
+        result = subprocess.run(
+            ["git", "rev-parse", "--abbrev-ref", "HEAD"],
+            cwd=working_dir,
+            check=True,
+            text=True,
+            capture_output=True
+        )
+        return result.stdout.strip()
+    except Exception:
+        return None
+
 def main():
     """메인 동기화 로직을 실행합니다."""
     source_dir, target_dir = find_paths()
@@ -108,11 +122,21 @@ def main():
     print("Git 스테이징 완료.")
 
     print("\n[4/4] Git 커밋 및 푸시...")
-    if not run_command(["git", "commit", "-m", COMMIT_MESSAGE], target_dir):
-        # 커밋할 내용이 없을 경우 오류가 발생하므로, 이를 성공으로 간주하고 넘어감
+    # 커밋할 내용이 없을 때를 대비하여 예외 처리
+    commit_result = run_command(["git", "commit", "-m", COMMIT_MESSAGE], target_dir)
+    if not commit_result:
+        # 'nothing to commit' 메시지는 정상으로 간주
+        # 실제로는 stderr를 파싱하는 것이 더 정확하지만, 여기서는 단순하게 처리
         print("커밋할 내용이 없거나 이미 커밋되었습니다.")
-    
-    if not run_command(["git", "push"], target_dir):
+
+    # 현재 브랜치 이름을 가져와서 push
+    current_branch = get_current_branch(target_dir)
+    if not current_branch:
+        print("오류: 현재 Git 브랜치 이름을 가져올 수 없습니다.")
+        return
+        
+    print(f"현재 브랜치: {current_branch}")
+    if not run_command(["git", "push", "--set-upstream", "origin", current_branch], target_dir):
         return
     
     print("\n✨ 모든 동기화 작업이 성공적으로 완료되었습니다!")

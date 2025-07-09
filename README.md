@@ -1,3 +1,24 @@
+# kafkapple's TIL
+
+이 저장소는 [Obsidian](https://obsidian.md/)에서 작성된 TIL(Today I Learned) 노트와 자동으로 동기화됩니다.
+
+##  Obsidian 연동 워크플로우
+
+1.  **노트 작성:** Obsidian 볼트 내의 `10_Daily`, `30_Projects`, `40_Areas` 폴더 및 하위 폴더에서 TIL 노트를 자유롭게 작성합니다.
+    - **규칙 1:** 파일명은 `YYMMDD_` 또는 `YYYYMMDD_` 형식의 날짜 접두사로 시작해야 합니다.
+    - **규칙 2:** 노트의 Frontmatter(머리말)에 `tags: til` 태그가 반드시 포함되어야 합니다.
+2.  **동기화 실행:** 노트 작성이 완료된 후, 이 저장소의 로컬 폴더에서 다음 명령어를 실행합니다.
+    ```bash
+    python3 sync_til.py
+    ```
+3.  **자동화:** 위 명령어를 실행하면, `sync_til.py` 스크립트가 다음 작업을 모두 자동으로 처리합니다.
+    - Obsidian 볼트에서 규칙에 맞는 새롭거나 변경된 TIL 노트를 탐색합니다.
+    - 노트의 Frontmatter를 제거하고 순수한 Markdown 내용만 `_Daily` 폴더로 복사합니다.
+    - `update_readme.py`를 실행하여 이 `README.md` 파일을 최신 상태로 업데이트합니다.
+    - 모든 변경사항을 원격 저장소(GitHub)에 `pull`, `commit`, `push` 합니다.
+
+---
+
 # 2025 TIL
 ## 2025.07
 ### Week-2

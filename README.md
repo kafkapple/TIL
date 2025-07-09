@@ -1,9 +1,47 @@
 # 2025 TIL
 ## 2025.07
 ### Week-2
+- [Obsidian_TIL_Github_Sync_Plan](_Daily/250709_Obsidian_TIL_Github_Sync_Plan.md) (Wed 07.09)
 - [TIL_obs.md](_Daily/250709_TIL_obs.md.md) (Wed 07.09)
 - [TIL_Gmail_분석_자동화_스크립트](_Daily/250708_TIL_Gmail_%EB%B6%84%EC%84%9D_%EC%9E%90%EB%8F%99%ED%99%94_%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8.md) (Tue 07.08)
 - [TIL_til_test](_Daily/250707_TIL_til_test.md) (Mon 07.07)
+
+### Week-1
+- [TIL_obsidian_js_문법](_Daily/250701_TIL_obsidian_js_%EB%AC%B8%EB%B2%95.md) (Tue 07.01)
+
+## 2025.06
+### Week-5
+- [TIL_eng 연구 관련](_Daily/250629_TIL_eng%20%EC%97%B0%EA%B5%AC%20%EA%B4%80%EB%A0%A8.md) (Sun 06.29)
+
+### Week-3
+- [TIL_3_The_Illusion_of_Thinking](_Daily/250612_TIL_3_The_Illusion_of_Thinking.md) (Thu 06.12)
+- [TIL_2_연속_잠재_공간에서_LLM_추론_-_ToT_부터_Coconut_까지](_Daily/250610_TIL_2_%EC%97%B0%EC%86%8D_%EC%9E%A0%EC%9E%AC_%EA%B3%B5%EA%B0%84%EC%97%90%EC%84%9C_LLM_%EC%B6%94%EB%A1%A0_-_ToT_%EB%B6%80%ED%84%B0_Coconut_%EA%B9%8C%EC%A7%80.md) (Tue 06.10)
+
+### Week-2
+- [TIL_1_From_Tokens_to_Thoughts](_Daily/250608_TIL_1_From_Tokens_to_Thoughts.md) (Sun 06.08)
+
+## 2025.05
+### Week-2
+- [TIL_저당_콜레스테롤_호밀빵_사워도우](_Daily/250510_TIL_%EC%A0%80%EB%8B%B9_%EC%BD%9C%EB%A0%88%EC%8A%A4%ED%85%8C%EB%A1%A4_%ED%98%B8%EB%B0%80%EB%B9%B5_%EC%82%AC%EC%9B%8C%EB%8F%84%EC%9A%B0.md) (Sat 05.10)
+
+## 2025.04
+### Week-4
+- [TIL_제텔카스텐](_Daily/250427_TIL_%EC%A0%9C%ED%85%94%EC%B9%B4%EC%8A%A4%ED%85%90.md) (Sun 04.27)
+- [TIL_System,_assistant,_user](_Daily/250427_TIL_System%2C_assistant%2C_user.md) (Sun 04.27)
+- [TIL_top_k](_Daily/250423_TIL_top_k.md) (Wed 04.23)
+- [TIL_MASTER_자기소개서](_Daily/250423_TIL_MASTER_%EC%9E%90%EA%B8%B0%EC%86%8C%EA%B0%9C%EC%84%9C.md) (Wed 04.23)
+- [TIL_Tools,_Function_call](_Daily/250423_TIL_Tools%2C_Function_call.md) (Wed 04.23)
+- [TIL_obsidian_hk_code_block](_Daily/250423_TIL_obsidian_hk_code_block.md) (Wed 04.23)
+- [TIL_포트폴리오_특강](_Daily/250422_TIL_%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4_%ED%8A%B9%EA%B0%95.md) (Tue 04.22)
+- [TIL_Langchain_Runnable,_YAML_Frontmatter](_Daily/250421_TIL_Langchain_Runnable%2C_YAML_Frontmatter.md) (Mon 04.21)
+
+### Week-3
+- [TIL_이력서_포인트](_Daily/250420_TIL_%EC%9D%B4%EB%A0%A5%EC%84%9C_%ED%8F%AC%EC%9D%B8%ED%8A%B8.md) (Sun 04.20)
+- [TIL_SVG_-_XML](_Daily/250418_TIL_SVG_-_XML.md) (Fri 04.18)
+- [TIL_Prompt_engineering_특강](_Daily/250418_TIL_Prompt_engineering_%ED%8A%B9%EA%B0%95.md) (Fri 04.18)
+- [TIL_이력서_특강 - 9가지 요소](_Daily/250418_TIL_%EC%9D%B4%EB%A0%A5%EC%84%9C_%ED%8A%B9%EA%B0%95%20-%209%EA%B0%80%EC%A7%80%20%EC%9A%94%EC%86%8C.md) (Fri 04.18)
+- [TIL_취업_특강_](_Daily/250416_TIL_%EC%B7%A8%EC%97%85_%ED%8A%B9%EA%B0%95_.md) (Wed 04.16)
+- [TIL_english](_Daily/250415_TIL_english.md) (Tue 04.15)
 
 ## 2025.01
 ### Week-4

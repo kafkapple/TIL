@@ -1,8 +1,8 @@
 # 2025 TIL
 ## 2025.07
 ### Week-2
-- [TIL_obs.md](_Daily/250709_TIL_obs.md.md) (Wed 07.09)
 - [Obsidian_TIL_Github_Sync_Plan](_Daily/250709_Obsidian_TIL_Github_Sync_Plan.md) (Wed 07.09)
+- [TIL_obs.md](_Daily/250709_TIL_obs.md.md) (Wed 07.09)
 - [TIL_Gmail_분석_자동화_스크립트](_Daily/250708_TIL_Gmail_%EB%B6%84%EC%84%9D_%EC%9E%90%EB%8F%99%ED%99%94_%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8.md) (Tue 07.08)
 - [TIL_til_test](_Daily/250707_TIL_til_test.md) (Mon 07.07)
 
@@ -29,17 +29,17 @@
 - [TIL_제텔카스텐](_Daily/250427_TIL_%EC%A0%9C%ED%85%94%EC%B9%B4%EC%8A%A4%ED%85%90.md) (Sun 04.27)
 - [TIL_System,_assistant,_user](_Daily/250427_TIL_System%2C_assistant%2C_user.md) (Sun 04.27)
 - [TIL_top_k](_Daily/250423_TIL_top_k.md) (Wed 04.23)
-- [TIL_obsidian_hk_code_block](_Daily/250423_TIL_obsidian_hk_code_block.md) (Wed 04.23)
 - [TIL_MASTER_자기소개서](_Daily/250423_TIL_MASTER_%EC%9E%90%EA%B8%B0%EC%86%8C%EA%B0%9C%EC%84%9C.md) (Wed 04.23)
 - [TIL_Tools,_Function_call](_Daily/250423_TIL_Tools%2C_Function_call.md) (Wed 04.23)
+- [TIL_obsidian_hk_code_block](_Daily/250423_TIL_obsidian_hk_code_block.md) (Wed 04.23)
 - [TIL_포트폴리오_특강](_Daily/250422_TIL_%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4_%ED%8A%B9%EA%B0%95.md) (Tue 04.22)
 - [TIL_Langchain_Runnable,_YAML_Frontmatter](_Daily/250421_TIL_Langchain_Runnable%2C_YAML_Frontmatter.md) (Mon 04.21)
 
 ### Week-3
 - [TIL_이력서_포인트](_Daily/250420_TIL_%EC%9D%B4%EB%A0%A5%EC%84%9C_%ED%8F%AC%EC%9D%B8%ED%8A%B8.md) (Sun 04.20)
 - [TIL_SVG_-_XML](_Daily/250418_TIL_SVG_-_XML.md) (Fri 04.18)
-- [TIL_이력서_특강 - 9가지 요소](_Daily/250418_TIL_%EC%9D%B4%EB%A0%A5%EC%84%9C_%ED%8A%B9%EA%B0%95%20-%209%EA%B0%80%EC%A7%80%20%EC%9A%94%EC%86%8C.md) (Fri 04.18)
 - [TIL_Prompt_engineering_특강](_Daily/250418_TIL_Prompt_engineering_%ED%8A%B9%EA%B0%95.md) (Fri 04.18)
+- [TIL_이력서_특강 - 9가지 요소](_Daily/250418_TIL_%EC%9D%B4%EB%A0%A5%EC%84%9C_%ED%8A%B9%EA%B0%95%20-%209%EA%B0%80%EC%A7%80%20%EC%9A%94%EC%86%8C.md) (Fri 04.18)
 - [TIL_취업_특강_](_Daily/250416_TIL_%EC%B7%A8%EC%97%85_%ED%8A%B9%EA%B0%95_.md) (Wed 04.16)
 - [TIL_english](_Daily/250415_TIL_english.md) (Tue 04.15)
 

@@ -1,4 +1,10 @@
 # 2025 TIL
+## 2025.07
+### Week-2
+- [TIL_obs.md](_Daily/250709_TIL_obs.md.md) (Wed 07.09)
+- [TIL_Gmail_분석_자동화_스크립트](_Daily/250708_TIL_Gmail_%EB%B6%84%EC%84%9D_%EC%9E%90%EB%8F%99%ED%99%94_%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8.md) (Tue 07.08)
+- [TIL_til_test](_Daily/250707_TIL_til_test.md) (Mon 07.07)
+
 ## 2025.01
 ### Week-4
 - [스캐폴딩(Scaffolding) ](_Daily/250121_%EC%8A%A4%EC%BA%90%ED%8F%B4%EB%94%A9%28Scaffolding%29%20.md) (Tue 01.21)

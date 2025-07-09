@@ -65,7 +65,6 @@ def sync_new_notes(til_notes, repo_path):
                 with open(source_path, 'r', encoding='utf-8') as f_source:
                     content = f_source.read()
                 
-                # Frontmatter 제거
                 content_without_frontmatter = FRONTMATTER_REGEX.sub('', content, count=1)
 
                 with open(target_path, 'w', encoding='utf-8') as f_target:
@@ -123,15 +122,19 @@ def main():
     print("\n[4/5] Git 변경사항 스테이징...")
     if not run_command(["git", "add", "."], repo_path): return
 
-    print("\n[5/5] Git 커밋 및 푸시...")
+    print("\n[5/5] Git 동기화 및 푸시...")
     commit_message = f"TIL Sync: {datetime.datetime.now().strftime('%Y-%m-%d')}"
     if not run_command(["git", "commit", "-m", commit_message], repo_path): return
     
     current_branch = get_current_branch(repo_path)
     if not current_branch:
-        print("  - 오류: 현재 Git ��랜치 이름을 가져올 수 없습니다.")
+        print("  - 오류: 현재 Git 브랜치 이름을 가져올 수 없습니다.")
         return
-        
+    
+    print("  > 원격 저장소와 동기화 (git pull)...")
+    if not run_command(["git", "pull", "--rebase", "origin", current_branch], repo_path): return
+
+    print("  > 원격 저장소로 푸시 (git push)...")
     if not run_command(["git", "push", "origin", current_branch], repo_path): return
     
     print("\n✨ 모든 동기화 작업이 성공적으로 완료되었습니다!")

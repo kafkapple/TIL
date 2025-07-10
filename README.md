@@ -1,4 +1,12 @@
 # TIL Dashboard
+## Table of Contents
+- [🗓️ Daily Learning Log](#daily-learning-log)
+  - [2025](#2025)
+  - [2024](#2024)
+- [📚 Learning Archive](#learning-archive)
+  - [2025](#2025-1)
+  - [2024](#2024-1)
+
 ## 🗓️ Daily Learning Log
 ### 2025
 ```

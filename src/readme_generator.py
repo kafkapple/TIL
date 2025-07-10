@@ -130,17 +130,71 @@ class ReadmeGenerator:
                         content.append(f"    - [{md_file.topic}]({md_file.safe_path}) - *{date_str}*")
         return "\n".join(content)
 
+    def _slugify(self, text):
+        """GitHub Markdown 앵커 링크에 사용할 슬러그를 생성합니다."""
+        text = text.lower()
+        text = re.sub(r'[^\w\s-]', '', text) # 특수문자 제거 (단어, 공백, 하이픈 제외)
+        text = re.sub(r'[\s_-]+', '-', text) # 공백/밑줄을 하이픈으로 대체
+        text = text.strip('-') # 앞뒤 하이픈 제거
+        return text
+
+    def _generate_toc_content(self, full_content_string):
+        """전체 콘텐츠에서 헤딩을 찾아 TOC 문자열을 생성합니다."""
+        toc_lines = []
+        heading_pattern = re.compile(r'^(#+)\s*(.*)$', re.MULTILINE)
+        slug_counts = defaultdict(int)
+
+        for match in heading_pattern.finditer(full_content_string):
+            level_str = match.group(1)
+            heading_text = match.group(2).strip()
+            level = len(level_str)
+
+            # 레벨 2와 3 헤딩만 TOC에 포함
+            if level < 2 or level > 3:
+                continue
+
+            base_slug = self._slugify(heading_text)
+            slug = base_slug
+            
+            # 중복 슬러그 처리 (GitHub 방식: -1, -2 추가)
+            if slug_counts[base_slug] > 0:
+                slug = f"{base_slug}-{slug_counts[base_slug]}"
+            slug_counts[base_slug] += 1
+
+            # 들여쓰기 계산
+            indent = "  " * (level - 2) # Level 2: 0 들여쓰기, Level 3: 2칸 들여쓰기
+
+            toc_lines.append(f"{indent}- [{heading_text}](#{slug})")
+        
+        if not toc_lines:
+            return ""
+        
+        return "## Table of Contents\n" + "\n".join(toc_lines) + "\n"
+
     def write_readme(self):
         """모든 콘텐츠를 조합하여 README.md 파일을 작성합니다."""
         print("-> README.md 생성 시작...")
-        content = [
-            "# TIL Dashboard",
+        
+        # TOC 생성을 위해 먼저 주요 콘텐츠를 문자열로 조합
+        main_content_parts = [
             self.generate_all_heatmaps(),
             self.generate_daily_log(),
+            # self.generate_topic_list() # 토픽 리스트는 필요시 활성화
+        ]
+        base_content_string = "\n".join(main_content_parts)
+
+        # TOC 생성
+        toc_content = self._generate_toc_content(base_content_string)
+
+        # 최종 README 내용 조합
+        final_content = [
+            "# TIL Dashboard",
+            toc_content, # TOC 삽입
+            base_content_string
         ]
         
         with open(README_FILE, "w", encoding="utf-8") as f:
-            f.write("\n".join(content))
+            f.write("\n".join(final_content))
         print("   README.md가 성공적으로 업데이트되었습니다.")
 
 def update_readme():

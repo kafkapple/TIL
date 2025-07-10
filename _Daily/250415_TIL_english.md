@@ -1,5 +1,4 @@
 # 250415 TIL - english (Tuesday)
-**Area**: [[_Index_of_3a_English|3a_English]] (ID: A_0p9bzcdn)
 # _영어로 뭐라하지?
 250422
 we’ve been working on the revision (due on the 28th) and on some PEFT-related tasks. 
@@ -81,13 +80,7 @@ alike 
 만약 그 둘이 연결되어 있다면
 네 덕분에
 10 년 뒤에 넌 뭐하고 있을 것 같아?
-~한 제약 조건으로부터 자유롭다
-## Metadata
-- **Created Date**: 2025-04-15
-- **Category**: TIL
-- **ID**: N_0palfnlj
-## Area Notes
-```dataview
+~한 제약 조건으로부터 자유롭다dataview
 TABLE date as "Date", category as "Category", file.name as "File"
 FROM ""
 WHERE category = "TIL" AND context_id = "A_0p9bzcdn" AND file.name != "250415_TIL_english"

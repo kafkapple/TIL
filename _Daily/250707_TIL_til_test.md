@@ -14,13 +14,7 @@ modified: 2025-07-07T18:55:16
 ## Overview
 -
 ## What I Learned
-- 
-## Metadata
-- **Created Date**: 2025-07-07
-- **Category**: TIL
-- **ID**: N_dof2c63o
-## Same Category Notes
-```dataview
+- dataview
 TABLE date as "Date", context_name as "Context", file.name as "File"
 FROM ""
 WHERE category = "TIL" AND file.name != "250707_TIL_til_test"

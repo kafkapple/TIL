@@ -7,13 +7,7 @@ SVG(Scalable Vector Graphics)는 **XML을 기반으로 한 벡터 그래픽 포
 ## Overview
 -
 ## What I Learned
-- 
-## Metadata
-- **Created Date**: 2025-04-18
-- **Category**: TIL
-- **ID**: N_gla4jpri
-## Same Category Notes
-```dataview
+- dataview
 TABLE date as "Date", context_name as "Context", file.name as "File"
 FROM ""
 WHERE category = "TIL" AND file.name != "250418_TIL_SVG_-_XML"

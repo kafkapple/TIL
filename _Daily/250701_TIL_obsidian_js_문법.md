@@ -1,5 +1,4 @@
 # 250701 TIL - obsidian js 문법 (Tuesday)
-**Area**: [[40_Areas/1_Knowledge-Management(KM)/1_Knowledge-Management(KM)|1_Knowledge-Management(KM)]] (ID: A_et45jsbf)
 - 
 옵시디언의 Dataview 쿼리에서 `FROM "projects"`로 하면 해당 폴더(projects) 내 **직접 포함된 파일**이 모두 보이고,  
 `FROM "projects/**"`로 하면 **projects 폴더와 그 하위 폴더 전체**의 파일을 보여주는 것이 기본 의도입니다.
@@ -57,13 +56,7 @@
 7. [https://stackoverflow.com/questions/56148470/using-wildcards-in-file-path/56148765](https://stackoverflow.com/questions/56148470/using-wildcards-in-file-path/56148765)
 8. [https://www.reddit.com/r/ObsidianMD/comments/tb7n1m/dataview_question_pages_that_start_with_project/](https://www.reddit.com/r/ObsidianMD/comments/tb7n1m/dataview_question_pages_that_start_with_project/)
 9. [https://stackoverflow.com/questions/74072506/using-wildcard-for-folder-in-the-mid-of-the-path](https://stackoverflow.com/questions/74072506/using-wildcard-for-folder-in-the-mid-of-the-path)
-10. [https://www.reddit.com/r/ObsidianMD/comments/1612hka/streamlining_obsidian_and_dataview_for_enhanced/](https://www.reddit.com/r/ObsidianMD/comments/1612hka/streamlining_obsidian_and_dataview_for_enhanced/)
-## Metadata
-- **Created Date**: 2025-07-01
-- **Category**: TIL
-- **ID**: N_et4esnhn
-## Area Notes
-```dataview
+10. [https://www.reddit.com/r/ObsidianMD/comments/1612hka/streamlining_obsidian_and_dataview_for_enhanced/](https://www.reddit.com/r/ObsidianMD/comments/1612hka/streamlining_obsidian_and_dataview_for_enhanced/)dataview
 TABLE date as "Date", category as "Category", file.name as "File"
 FROM ""
 WHERE category = "TIL" AND context_id = "A_et45jsbf" AND file.name != "250701_TIL_obsidian_js_문법"

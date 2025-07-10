@@ -1,5 +1,4 @@
 # 250423 TIL - Tools, Function call (Wednesday)
-**Area**: [[_Index_of_2b_LLM|2b_LLM]] (ID: A_5p0kyoyo)
 1초 동안 생각함
 “Function calling”과 “tools”의 차이는 단순히 “커스텀 함수” 기능 여부를 넘어서, 확장성·보안·오케스트레이션 측면에서 완전히 다른 프레임워크라는 점입니다. 아래 한글로 정리합니다.
 ## 1. 함수 호출(function calling) 개념
@@ -28,13 +27,7 @@
 |스트리밍/비동기|불가|지원|
 ## 4. 결론
 - “커스텀 함수 기능”은 tools의 기본 사례이지만, tools는 그 위에 **병렬성**, **확장성**, **보안**, **메타데이터 기반 탐색/오케스트레이션** 등의 중요한 기능을 추가한 **상위 개념**입니다.
-- 따라서 function calling은 tools의 한 부분일 뿐이며, modern agent 워크플로우에서는 반드시 tools 프레임워크를 활용하는 것이 바람직합니다.
-## Metadata
-- **Created Date**: 2025-04-23
-- **Category**: TIL
-- **ID**: N_5p1i79ki
-## Area Notes
-```dataview
+- 따라서 function calling은 tools의 한 부분일 뿐이며, modern agent 워크플로우에서는 반드시 tools 프레임워크를 활용하는 것이 바람직합니다.dataview
 TABLE date as "Date", category as "Category", file.name as "File"
 FROM ""
 WHERE category = "TIL" AND context_id = "A_5p0kyoyo" AND file.name != "250423_TIL_Tools,_Function_call"

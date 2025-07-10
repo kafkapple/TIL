@@ -18,17 +18,14 @@ DATE_PREFIX_REGEX = re.compile(r"^(?:\d{8}|\d{6})_.*\.md$")
 TIL_TAG_REGEX = re.compile(r"tags:.*til", re.IGNORECASE)
 FRONTMATTER_REGEX = re.compile(r"^---\s*\n.*?\n---\s*\n", re.DOTALL)
 
-# --- 추가된 정리 함수 ---
+# --- 최종 정리 함수 ---
 def clean_obsidian_boilerplate(content):
-    """Obsidian 관련 보일러플레이트(메타데이터, Dataview 쿼리 등)를 제거합니다."""
-    # 1. Area: [[...]] (ID: ...)
-    content = re.sub(r"^Area: .*\n", "", content, flags=re.MULTILINE)
-    # 2. Metadata block
-    content = re.sub(r"^Metadata\n(Created Date: .*\n)?(Category: .*\n)?(ID: .*\n)?", "", content, flags=re.MULTILINE)
-    # 3. Area Notes & Recent Notes Dataview blocks
-    content = re.sub(r"^(?:Area|Recent) Notes\nTABLE[\s\S]*?LIMIT 5\n", "", content, flags=re.MULTILINE)
-    # 제거 후 남는 연속적인 빈 줄들을 하나로 줄입니다.
-    content = re.sub(r'\n\s*\n', '\n', content)
+    """Obsidian 관련 보일러플레이트(마크다운, 메타데이터, Dataview 쿼리 등)를 모두 제거합니다."""
+    # 1. Area 라인 제거 (마크다운 강조, 공백 등 변형 고려)
+    content = re.sub(r"^\*\*?Area\*\*?:.*\(ID: .*\)\s*\n?", "", content, flags=re.MULTILINE)
+    # 2. Metadata, Area Notes, Recent Notes 블록 전체를 한 번에 제거
+    content = re.sub(r"\n## Metadata[\s\S]*?```\s*", "", content, flags=re.DOTALL)
+    # 정리 후 상단과 하단의 불필요한 공백을 모두 제거합니다.
     return content.strip()
 
 # --- 스크립트 본체 ---
@@ -81,7 +78,7 @@ def sync_new_notes(til_notes, repo_path):
                 # Frontmatter 제거
                 content_without_frontmatter = FRONTMATTER_REGEX.sub('', content, count=1)
                 
-                # Obsidian 관련 내용 제거
+                # Obsidian 관련 내용 제거 (최종 로직 적용)
                 cleaned_content = clean_obsidian_boilerplate(content_without_frontmatter)
 
                 with open(target_path, 'w', encoding='utf-8') as f_target:

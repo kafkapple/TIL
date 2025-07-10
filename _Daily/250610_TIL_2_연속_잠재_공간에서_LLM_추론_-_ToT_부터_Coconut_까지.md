@@ -14,13 +14,7 @@
 - Improving LLM Reasoning with Multi-Agent Tree-of-Thought Validator Agent.pdf
 - Large Language Model Guided Tree-of-Thought.pdf
 - ToTRL_ Unlock LLM Tree-of-Thoughts Reasoning Potential through Puzzles Solving.pdf
-- Tree of Thoughts_ Deliberate Problem Solving with Large Language Models.pdf
-## Metadata
-- **Created Date**: 2025-06-10
-- **Category**: TIL
-- **ID**: N_00jzb48e
-## Project Notes
-```dataview
+- Tree of Thoughts_ Deliberate Problem Solving with Large Language Models.pdfdataview
 TABLE date as "Date", category as "Category", file.name as "File"
 FROM ""
 WHERE category = "TIL" AND context_id = "P_civi38os" AND file.name != "250610_TIL_2_연속_잠재_공간에서_LLM_추론_-_ToT_부터_Coconut_까지"

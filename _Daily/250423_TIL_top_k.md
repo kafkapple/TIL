@@ -1,5 +1,4 @@
 # 250423 TIL - top k (Wednesday)
-**Area**: [[_Index_of_2b_LLM|2b_LLM]] (ID: A_5p0kyoyo)
 ## GPT Playground에서 Top-p란?
 **Top-p**(또는 _nucleus sampling_)는 GPT Playground에서 텍스트 생성 시 다양성과 예측 가능성을 조절하는 중요한 하이퍼파라미터입니다. 이 값은 모델이 다음 단어를 선택할 때, 확률 분포에서 누적 확률이 특정 임계값(p)에 도달할 때까지 상위 후보 단어만을 고려하는 방식을 의미합니다[1](https://wktj.tistory.com/164)[2](https://velog.io/@funda__mental_/GPT-Playground%EB%A1%9C-%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81-%ED%95%B4%EB%B3%B4%EA%B8%B0-%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC)[6](https://www.jiniai.biz/2023/07/23/openai-chatgpt-playground-%EC%99%84%EC%A0%84-%EC%B4%88%EB%B3%B4%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EC%82%AC%EC%9A%A9-%EA%B0%80%EC%9D%B4%EB%93%9C/)[8](https://testmanager.tistory.com/425).
 **동작 원리**
@@ -22,13 +21,7 @@
 | Top-p 값 | 특징            | 예시 텍스트 스타일                                     |
 | ------- | ------------- | ---------------------------------------------- |
 | 0.3     | 예측 가능, 일관성 높음 | "식비 절약을 잘 하셨네요. 교통비도 계획적으로 관리해보세요."            |
-| 0.9     | 다양성, 창의성 높음   | "이번 달 예산을 잘 지키셨네요! 특히 식비와 카페 비용에서 멋지게 절약하셨어요." |
-## Metadata
-- **Created Date**: 2025-04-23
-- **Category**: TIL
-- **ID**: N_6xbkl8io
-## Area Notes
-```dataview
+| 0.9     | 다양성, 창의성 높음   | "이번 달 예산을 잘 지키셨네요! 특히 식비와 카페 비용에서 멋지게 절약하셨어요." |dataview
 TABLE date as "Date", category as "Category", file.name as "File"
 FROM ""
 WHERE category = "TIL" AND context_id = "A_5p0kyoyo" AND file.name != "250423_TIL_top_k"

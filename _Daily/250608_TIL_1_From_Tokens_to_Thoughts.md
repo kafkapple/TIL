@@ -3,13 +3,7 @@
 ## Overview
 -
 ## What I Learned
-- 
-## Metadata
-- **Created Date**: 2025-06-08
-- **Category**: TIL
-- **ID**: N_yogfmxrj
-## Project Notes
-```dataview
+- dataview
 TABLE date as "Date", category as "Category", file.name as "File"
 FROM ""
 WHERE category = "TIL" AND context_id = "P_civi38os" AND file.name != "250608_TIL_1_From_Tokens_to_Thoughts"

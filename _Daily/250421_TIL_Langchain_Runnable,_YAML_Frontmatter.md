@@ -81,13 +81,7 @@ result = chain.invoke({
 2. 실행 시 `invoke()`, `batch()`, `ainvoke()`, `abatch()` 활용
 3. 공식 [LangChain 마이그레이션 가이드](https://python.langchain.com/docs/versions/migrating_chains/llm_chain/) 참고
 ---
-이 요약을 바탕으로 Frontmatter 작성과 LangChain Runnable 체인 전환 작업을 빠르게 진행하실 수 있습니다. 추가적인 예제나 심화 가이드가 필요하시면 언제든 말씀해 주세요!
-## Metadata
-- **Created Date**: 2025-04-21
-- **Category**: TIL
-- **ID**: N_ifvpj6dw
-## Same Category Notes
-```dataview
+이 요약을 바탕으로 Frontmatter 작성과 LangChain Runnable 체인 전환 작업을 빠르게 진행하실 수 있습니다. 추가적인 예제나 심화 가이드가 필요하시면 언제든 말씀해 주세요!dataview
 TABLE date as "Date", context_name as "Context", file.name as "File"
 FROM ""
 WHERE category = "TIL" AND file.name != "250421_TIL_Langchain_Runnable,_YAML_Frontmatter"

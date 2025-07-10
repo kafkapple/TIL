@@ -18,6 +18,19 @@ DATE_PREFIX_REGEX = re.compile(r"^(?:\d{8}|\d{6})_.*\.md$")
 TIL_TAG_REGEX = re.compile(r"tags:.*til", re.IGNORECASE)
 FRONTMATTER_REGEX = re.compile(r"^---\s*\n.*?\n---\s*\n", re.DOTALL)
 
+# --- 추가된 정리 함수 ---
+def clean_obsidian_boilerplate(content):
+    """Obsidian 관련 보일러플레이트(메타데이터, Dataview 쿼리 등)를 제거합니다."""
+    # 1. Area: [[...]] (ID: ...)
+    content = re.sub(r"^Area: .*\n", "", content, flags=re.MULTILINE)
+    # 2. Metadata block
+    content = re.sub(r"^Metadata\n(Created Date: .*\n)?(Category: .*\n)?(ID: .*\n)?", "", content, flags=re.MULTILINE)
+    # 3. Area Notes & Recent Notes Dataview blocks
+    content = re.sub(r"^(?:Area|Recent) Notes\nTABLE[\s\S]*?LIMIT 5\n", "", content, flags=re.MULTILINE)
+    # 제거 후 남는 연속적인 빈 줄들을 하나로 줄입니다.
+    content = re.sub(r'\n\s*\n', '\n', content)
+    return content.strip()
+
 # --- 스크립트 본체 ---
 
 def find_paths():
@@ -48,7 +61,7 @@ def discover_til_notes(vault_path):
     return valid_notes
 
 def sync_new_notes(til_notes, repo_path):
-    print("\n[2/5] 새로운 노트 동기화 중 (Frontmatter 제거 포함)...")
+    print("\n[2/5] 새로운 노트 동기화 중 (Frontmatter 및 불필요한 내용 제거 포함)...")
     synced_count = 0
     target_base_dir = os.path.join(repo_path, TARGET_DAILY_FOLDER)
     if not os.path.exists(target_base_dir):
@@ -65,12 +78,16 @@ def sync_new_notes(til_notes, repo_path):
                 with open(source_path, 'r', encoding='utf-8') as f_source:
                     content = f_source.read()
                 
+                # Frontmatter 제거
                 content_without_frontmatter = FRONTMATTER_REGEX.sub('', content, count=1)
+                
+                # Obsidian 관련 내용 제거
+                cleaned_content = clean_obsidian_boilerplate(content_without_frontmatter)
 
                 with open(target_path, 'w', encoding='utf-8') as f_target:
-                    f_target.write(content_without_frontmatter)
+                    f_target.write(cleaned_content)
 
-                print(f"  - 복사 (Frontmatter 제거): {filename}")
+                print(f"  - 복사 및 정리: {filename}")
                 synced_count += 1
             except Exception as e:
                 print(f"  - 동기화 오류 {filename}: {e}")

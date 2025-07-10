@@ -188,6 +188,189 @@ class ReadmeGenerator:
         
         return "".join(content)
 
+    def generate_heatmap_content(self):
+        # SVG 설정
+        CELL_SIZE = 12
+        CELL_SPACING = 3
+        WEEKDAY_LABEL_WIDTH = 40
+        MONTH_LABEL_HEIGHT = 20
+        
+        # 요일 레이블 (월요일부터 시작)
+        WEEKDAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+        
+        # 색상 (활동량에 따라)
+        # COLORS = ["#ebedf0", "#9be9a8", "#40c463", "#30a14e", "#216e39"] # GitHub-like green
+        COLORS = ["#ebedf0", "#c6e48b", "#7bc96d", "#239a3b", "#196127"] # Slightly different green
+        
+        # TIL 날짜 데이터 준비
+        til_dates = defaultdict(int) # (year, month, day) -> count
+        for year_str, months in self.daily_manager.daily_files.items():
+            for month_str, weeks in months.items():
+                for week_num, files in weeks.items():
+                    for file in files:
+                        til_dates[(file.date.year, file.date.month, file.date.day)] += 1
+
+        today = datetime.now()
+        # 지난 12개월을 기준으로 히트맵 생성
+        start_date = (today - timedelta(days=365)).replace(day=1)
+        
+        # SVG 시작
+        svg_elements = []
+        
+        # 요일 레이블 추가
+        for i, weekday in enumerate(WEEKDAYS):
+            svg_elements.append(f'''<text x="0" y="{MONTH_LABEL_HEIGHT + (i * (CELL_SIZE + CELL_SPACING)) + (CELL_SIZE / 2) + 4}" class="w-label">{weekday}</text>''')
+
+        current_x = WEEKDAY_LABEL_WIDTH
+        
+        # 월별 데이터 처리
+        for month_offset in range(12):
+            current_month_date = datetime(start_date.year, start_date.month, 1) + timedelta(days=30 * month_offset) # 대략적인 월 이동
+            
+            # 정확한 월 계산
+            year = start_date.year + (start_date.month + month_offset - 1) // 12
+            month = (start_date.month + month_offset - 1) % 12 + 1
+            
+            # 현재 월의 첫 날
+            first_day_of_month = datetime(year, month, 1)
+            
+            # 월 레이블 추가
+            svg_elements.append(f'''<text x="{current_x + (CELL_SIZE + CELL_SPACING) * (first_day_of_month.weekday() if first_day_of_month.weekday() != 0 else 7) / 2}" y="15" class="m-label">{calendar.month_abbr[month]}</text>''')
+            
+            # 해당 월의 모든 날짜 순회
+            for day in range(1, calendar.monthrange(year, month)[1] + 1):
+                current_date = datetime(year, month, day)
+                
+                # 월요일(0)부터 일요일(6)까지 매핑
+                # Python의 weekday()는 월=0, 일=6
+                # SVG 히트맵은 보통 일=0, 토=6 또는 월=0, 일=6
+                # 여기서는 월=0, 일=6으로 사용
+                day_of_week = current_date.weekday() # 0=월, 6=일
+                
+                # x, y 좌표 계산
+                # x는 월의 시작 위치 + (요일 * 셀 크기)
+                # y는 요일 * (셀 크기 + 간격)
+                
+                # 월의 첫 날이 시작하는 열을 기준으로 x 오프셋 계산
+                # 첫 날이 월요일(0)이면 0열, 화요일(1)이면 1열... 일요일(6)이면 6열
+                # 히트맵은 월요일부터 시작하므로, 월요일이 0번째 줄
+                # 따라서 day_of_week를 그대로 y 좌표로 사용
+                
+                # 월별로 열을 계산해야 함.
+                # 각 월은 새로운 열에서 시작
+                # 월의 첫 날이 무슨 요일인지에 따라 첫 번째 셀의 위치가 결정됨
+                
+                # 이 부분은 좀 더 복잡하게 계산해야 함.
+                # 전체 캘린더를 52주(대략)로 보고 각 주를 열로 표현해야 함.
+                # GitHub 잔디밭처럼 주 단위로 열이 증가하는 방식
+                
+                # 다시 계산: 각 날짜는 해당 연도의 몇 번째 주인지, 그리고 무슨 요일인지로 위치 결정
+                # 1년 52주를 기준으로 x축을 잡고, 요일을 y축으로 잡는 방식
+                
+                # 모든 TIL 날짜를 (년, 월, 일) 튜플로 변환
+                all_til_dates = set()
+                for year_str, months in self.daily_manager.daily_files.items():
+                    for month_str, weeks in months.items():
+                        for week_num, files in weeks.items():
+                            for file in files:
+                                all_til_dates.add((file.date.year, file.date.month, file.date.day))
+
+                # 현재 연도 기준
+                current_year = today.year
+                
+                # 히트맵 데이터 구조 초기화 (요일 x 주차)
+                # 7일 * 53주 (최대)
+                heatmap_data = defaultdict(lambda: defaultdict(int)) # heatmap_data[weekday][week_of_year] = count
+                
+                # 모든 날짜를 순회하며 데이터 채우기
+                # 1월 1일부터 12월 31일까지
+                for day_num in range(366): # 윤년 고려 최대 366일
+                    date_to_check = datetime(current_year, 1, 1) + timedelta(days=day_num)
+                    if date_to_check.year != current_year: # 다음 해로 넘어갔으면 중단
+                        break
+                    
+                    # Python의 weekday()는 월=0, 일=6
+                    # 히트맵은 월요일부터 시작하는 것이 일반적이므로 그대로 사용
+                    day_of_week_idx = date_to_check.weekday() # 0:월, 1:화, ..., 6:일
+                    
+                    # 해당 연도의 몇 번째 주인지 계산 (ISO 주차 기준)
+                    # ISO 주차는 월요일을 주의 시작으로 간주
+                    week_of_year = date_to_check.isocalendar()[1]
+                    
+                    if (date_to_check.year, date_to_check.month, date_to_check.day) in all_til_dates:
+                        heatmap_data[day_of_week_idx][week_of_year] += 1 # TIL이 있으면 카운트 증가
+
+                # SVG 그리기
+                # x축은 주차, y축은 요일
+                
+                # 최대 주차 찾기 (SVG 너비 계산용)
+                max_week = 0
+                for weekday_data in heatmap_data.values():
+                    if weekday_data:
+                        max_week = max(max_week, max(weekday_data.keys()))
+                
+                # SVG 너비 계산
+                SVG_WIDTH = WEEKDAY_LABEL_WIDTH + (max_week + 1) * (CELL_SIZE + CELL_SPACING) + 10 # +10은 여백
+                SVG_HEIGHT = MONTH_LABEL_HEIGHT + 7 * (CELL_SIZE + CELL_SPACING) + 10 # +10은 여백
+
+                svg_elements = []
+                
+                # 스타일 정��
+                svg_elements.append('''<style>
+.w-label { font: 9px sans-serif; fill: #586069; }
+.m-label { font: 9px sans-serif; fill: #586069; }
+.day-cell { stroke: rgba(27,31,35,0.06); stroke-width: 1px; }
+</style>''')
+
+                # 요일 레이블 (월요일부터 일요일)
+                for i, weekday_label in enumerate(WEEKDAYS):
+                    svg_elements.append(f'''<text x="0" y="{MONTH_LABEL_HEIGHT + (i * (CELL_SIZE + CELL_SPACING)) + (CELL_SIZE / 2) + 4}" class="w-label">{weekday_label}</text>''')
+
+                # 월 레이블 (대략적인 위치)
+                # 각 월의 첫 번째 날짜가 속하는 주의 x 위치를 기준으로 월 레이블을 배치
+                month_starts_x = defaultdict(int)
+                for day_num in range(366):
+                    date_to_check = datetime(current_year, 1, 1) + timedelta(days=day_num)
+                    if date_to_check.year != current_year:
+                        break
+                    
+                    week_of_year = date_to_check.isocalendar()[1]
+                    
+                    # 해당 월의 첫 날이 속하는 주의 x 위치를 저장
+                    if date_to_check.day == 1:
+                        month_starts_x[date_to_check.month] = WEEKDAY_LABEL_WIDTH + (week_of_year - 1) * (CELL_SIZE + CELL_SPACING)
+
+                for month_idx in range(1, 13):
+                    if month_idx in month_starts_x:
+                        svg_elements.append(f'''<text x="{month_starts_x[month_idx]}" y="15" class="m-label">{calendar.month_abbr[month_idx]}</text>''')
+
+                # 날짜 셀 그리기
+                for day_num in range(366):
+                    date_to_check = datetime(current_year, 1, 1) + timedelta(days=day_num)
+                    if date_to_check.year != current_year:
+                        break
+                    
+                    day_of_week_idx = date_to_check.weekday() # 0:월, 6:일
+                    week_of_year = date_to_check.isocalendar()[1]
+                    
+                    # x, y 좌표 계산
+                    x = WEEKDAY_LABEL_WIDTH + (week_of_year - 1) * (CELL_SIZE + CELL_SPACING)
+                    y = MONTH_LABEL_HEIGHT + day_of_week_idx * (CELL_SIZE + CELL_SPACING)
+                    
+                    # TIL 존재 여부에 따른 색상 결정
+                    count = til_dates[(date_to_check.year, date_to_check.month, date_to_check.day)]
+                    color_idx = min(count, len(COLORS) - 1) # 활동량에 따라 색상 인덱스 결정
+                    fill_color = COLORS[color_idx]
+                    
+                    svg_elements.append(f'''<rect x="{x}" y="{y}" width="{CELL_SIZE}" height="{CELL_SIZE}" fill="{fill_color}" class="day-cell" data-date="{date_to_check.strftime('%Y-%m-%d')}" data-count="{count}"></rect>''')
+
+                # SVG 최종 조립
+                svg_content = f'''<svg width="{SVG_WIDTH}" height="{SVG_HEIGHT}" viewBox="0 0 {SVG_WIDTH} {SVG_HEIGHT}" xmlns="http://www.w3.org/2000/svg">
+{ "".join(svg_elements) }
+</svg>'''
+                
+                return f"<!-- TIL_HEATMAP_START -->\n{svg_content}\n<!-- TIL_HEATMAP_END -->\n\n"
+
     def generate_topic_content(self, structure, level=0):
         content = []
         

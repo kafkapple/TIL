@@ -1,5 +1,4 @@
 ## I. Prompt Engineering
-
 - **Transformer 구조 무거운 이슈**
     - Encoder와 Decoder를 분리해, 목적에 따라 각각 최적 활용해 보자
 - **Encoder: BERT**
@@ -20,13 +19,9 @@
     - **Clarity with delimiters**
         - 구분자(예: “””) 사용해 사용자 입력/요청을 명확히 구분
             - e.g., as a bullet point lit of the most important points
-            
             text: “””
-            
             {input here}
-            
             “””
-            
     - Understanding about LLMs
         - 실시간 정보 모르므로, 정보 추가로 줘서 요청
     - **Position of information**
@@ -36,18 +31,13 @@
         - think step by step
     - **Program-of-Thought (PoT)**
         - 복잡한 수학 문제 등에서 “프로그램처럼” 단계적 접근
-
 ---
-
 ## II. RAG (Retrieval-Augmented Generation)
-
 - **동기(Motivation)**
     - LLM은 최신 정보나 구체적 사실에 약함 → RAG는 검색으로 이를 보완
     - “Hallucination” 현상 방지를 위해 외부 문서(지식) 참조
 - **Chunking & Embedding**
-    
     ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/00c8f8ca-9b9e-47d7-a22a-d972f43cd460/6c155928-a711-4bdf-8c50-a0659dd8f229/image.png)
-    
     - 문서를 일정 크기 단위로 쪼개고(Chunking), 각 덩어리에 대한 임베딩 생성
     - 고정 길이 vs 문서 단위 vs 문장 단위 vs 의미 단위 등 다양한 방법 존재
         - fixed-size chunking
@@ -60,20 +50,13 @@
 - **Retrieval Strategies**
     - **Hybrid search**
         - Sparse(전통 TF-IDF 등) + Dense(임베딩 기반) 검색 조합
-    
     ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/00c8f8ca-9b9e-47d7-a22a-d972f43cd460/a2d802ae-6546-480b-b012-4466423e7995/image.png)
-    
     - **Query expansion**
         - 사용자 쿼리를 여러 형태로 확장해 검색 범위 확보
         - 
-        
         ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/00c8f8ca-9b9e-47d7-a22a-d972f43cd460/dbc5c499-0372-4f02-9dcf-999e8f986cb3/image.png)
-        
-
 ---
-
 ## III. Instruction Tuning
-
 - **User와의 대화 데이터 기반 지도학습**
     - 사용자 입력과 정답(응답) 쌍으로 모델을 지도학습(Supervised)
         - user input 에 masking (only response loss)
@@ -96,11 +79,8 @@
             - in-depth 난이도 높이는
             - in-breadth 유사 난이도 생성 → 다양성 향상
             - elimination → evolving 한 결과를 다시 LLM 에서 학습하기 적절한지 물어봄 → 오류 있음 제거
-
 ---
-
 ## V. Alignment Tuning
-
 - **Instruction Tuning vs Alignment**
     - Alignment는 모델 응답은 생성하고, 이에 대한 인간 “선호도”를 학습
         - 더 간단함
@@ -119,23 +99,16 @@
             - 굳이 preference 아니어도 학습 가능하도록 cross entropy 형태로 변환
     - **Self-rewarding**
         - 모델이 자체적으로 reward 점수를 생성하며 학습
-
 ---
-
 # 기타
-
 - model collapse 이슈
     - 합성 데이터 만드는 모델, ( 사이즈 더 크게)
     - 실제 모델 다르게 구분
-
 → 큰 모델 능력을 작은 모델에 distillation 하는 셈
-
 - COCONUT 같은 latent space embedding 수준에서의 BFS CoT 연구?
     - reasoning 쪽 연구는 활발.
     - latent space 쪽도 연구 존재는 함
-
 ### 정리 요약
-
 1. **Prompt Engineering**
     - Transformer 구조를 이해하고 Encoder/Decoder를 목적별로 활용
     - BERT, GPT-3, InstructGPT 등을 통해 다양한 훈련 방식(MLM, next-word prediction, in-context learning)과 Steerability 개념 이해

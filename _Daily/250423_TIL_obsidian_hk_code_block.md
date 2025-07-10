@@ -1,8 +1,5 @@
 # 250423 TIL - obsidian hk code block (Wednesday)
-
 **Area**: [[_Index_of_1a_Obsidian|1a_Obsidian]] (ID: A_r6yc8k6f)
-
-
 ## Overview
 -
 ## What I Learned
@@ -15,9 +12,6 @@ print("Hello world")
 - **Created Date**: 2025-04-23
 - **Category**: TIL
 - **ID**: N_lxl5eex4
-
-
-
 ## Area Notes
 ```dataview
 TABLE date as "Date", category as "Category", file.name as "File"
@@ -26,7 +20,6 @@ WHERE category = "TIL" AND context_id = "A_r6yc8k6f" AND file.name != "250423_TI
 SORT date DESC
 LIMIT 5
 ```
-
 ## Recent Notes
 ```dataview
 TABLE date as "Date", category as "Category", file.name as "File"

@@ -1,15 +1,9 @@
 # Project setup
-
 [ML Project Template / Structure setup](https://www.notion.so/ML-Project-Template-Structure-setup-12f596a3652f80b7b038fb009d8c4e61?pvs=21) 
-
 # Side Project
-
 https://github.com/kafkapple/github_grass_art.git
-
 # Study
-
 ## 변수 변환 Overview
-
 - **연속형 변수** 변환
     - **함수 변환**
         - **Log**
@@ -25,13 +19,9 @@ https://github.com/kafkapple/github_grass_art.git
     - **Label Encoding**
     - **Frequency Encoding**
     - **Target Encoding**
-
 ---
-
 ## 변수 변환
-
 ### 1. **연속형 변수 변환**
-
 - 연속형 변수는 값의 스케일을 조정하거나, 정규성을 확보해 모델 성능을 높이기 위해 다양한 방식으로 변환
 - **함수 변환**
     - **Log 변환**: **비대칭** 분포의 데이터를 **정규 분포에 가깝게 변환**하여 데이터의 **스케일을 작게** 만듦으로써 편차 줄이고 모델의 회귀 성능 향상
@@ -52,9 +42,7 @@ https://github.com/kafkapple/github_grass_art.git
 - **구간화 (Discretization)**
     - 연속형 변수를 일정한 구간(bins)으로 나누어 **불연속 범주형 데이터**로 변환
     - 예) 연령을 10세 단위로 구간화하여 “10대,” “20대,” “30대”와 같은 범주형 데이터로 변환
-
 ### 2. **범주형 변수 변환 (Encoding)**
-
 - 정의
     - 범주형 변수를 모델에 입력할 수 있는 형태의 수치 데이터로 변환
 - 종류

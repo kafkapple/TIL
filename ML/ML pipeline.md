@@ -1,6 +1,5 @@
 # ML Pipeline
 ### **1. Data Preprocessing**
-
 - **EDA (Exploratory Data Analysis)**: 데이터의 특성을 파악하고 문제점 식별.
 - **Issue Handling**:
     - **Missing Values**: 데이터 누락 해결.
@@ -8,11 +7,8 @@
 - **Variable Processing**:
     - **Continuous Variables**: 함수 변환, 스케일링, 구간화.
     - **Categorical Variables**: One-Hot Encoding 등 적절한 변환.
-
 ---
-
 ### **2. Feature Engineering**
-
 - **Derived Variable Creation 파생 변수 생성**:
     - 문제 도메인 지식을 반영한 변수 추가.
     - 단순 합성보다 데이터의 맥락을 고려한 변수 설계.
@@ -24,11 +20,8 @@
     - 성능: 모델의 예측 성능 향상.
     - 해석: 도메인 지식 기반으로 더 인간 친화적 분석.
     - 메모리: 정보 손실 최소화 및 전처리 속도 향상.
-
 ---
-
 ### **3. Feature Selection**
-
 - 문제에 유의미한 변수만 선택해 모델 효율성 개선.
 #### Filter method
 - 통계적 기법 활용
@@ -42,9 +35,7 @@
 - 모델 훈련 과정에서 중요도 기반
   - Feature importance
 ---
-
 ### **4. Model Selection**
-
 - **Purpose-based Model selection**:
     - 문제에 적합한 알고리즘 채택.
 - **Hyperparameter Tuning**:
@@ -53,5 +44,4 @@
     - Train/Validation/Test로 데이터 분리.
 - **Evaluatin and Validation**:
     - 모델 성능 평가(Evaluation Metrics).
-
 ---

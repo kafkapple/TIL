@@ -1,7 +1,5 @@
 # Seminar - Neuroscience: Causal Evidence of a Line Attractor Encoding an Affective State
-
 ### 주요 내용
-
 1. **Line Attractor와 감정 상태의 코딩**
     - Anderson Lab은 aggression과 arousal 같은 감정 상태가 **line attractor dynamics**로 코딩된다는 연구를 발표해왔으며, 이번 연구에서는 이를 **causal evidence**로 확장.
     - 연구 방법:
@@ -23,11 +21,8 @@
 4. **Line Attractor의 Synaptic 및 Network 특성**
     - Emotion stability는 slow neurotransmission time constant(GPCR)와 network density에 의해 영향을 받음.
     - **Network density**가 너무 높으면 feedback loop로 인해 instability 발생 가능.
-
 ---
-
 ### 논의 및 비판
-
 1. **Population-Level Dynamics의 타당성**
     - **김민유**:
         - Line attractor를 population level로 보는 해석이 타당한가?
@@ -47,11 +42,8 @@
 5. **Line Attractor의 Task Dependency**
     - Line attractor의 형성이 random signal input으로도 발생 가능한 구조인가?
     - Task-dependent한 attractor가 존재하며, 특정 행동(task)에 따라 point attractor로 나뉠 가능성.
-
 ---
-
 ### 질문 및 추가 논의
-
 1. **Individuality 및 Behavior Correlate**
     - 개인차(individual differences)는 line attractor 형성과 어떤 연관이 있는가?
     - 사회적 요인(social factors), 예를 들어 계급(hierarchy)이나 환경적 변수는 attractor 안정성에 영향을 미치는가?

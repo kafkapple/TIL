@@ -61,8 +61,8 @@
 ### Week-2
 - [SVD Rank, Correlation_Scaling (Standarization - mu, Normalization - min max)_Latex_기업 설명회](_Daily/250110_SVD%20Rank%2C%20Correlation_Scaling%20%28Standarization%20-%20mu%2C%20Normalization%20-%20min%20max%29_Latex_%EA%B8%B0%EC%97%85%20%EC%84%A4%EB%AA%85%ED%9A%8C.md) (Fri 01.10)
 - [Project Emotion(ISP), NLP 추가 구현. ML Basic 복습 - High-Low level 개념, Regression, Classification 실습, Python 삼중 따옴표 사용](_Daily/250109_Project%20Emotion%28ISP%29%2C%20NLP%20%EC%B6%94%EA%B0%80%20%EA%B5%AC%ED%98%84.%20ML%20Basic%20%EB%B3%B5%EC%8A%B5%20-%20High-Low%20level%20%EA%B0%9C%EB%85%90%2C%20Regression%2C%20Classification%20%EC%8B%A4%EC%8A%B5%2C%20Python%20%EC%82%BC%EC%A4%91%20%EB%94%B0%EC%98%B4%ED%91%9C%20%EC%82%AC%EC%9A%A9.md) (Thu 01.09)
-- [ROUGE 및 NLP 평가 메트릭 개요](_Daily/250108_ROUGE%20%EB%B0%8F%20NLP%20%ED%8F%89%EA%B0%80%20%EB%A9%94%ED%8A%B8%EB%A6%AD%20%EA%B0%9C%EC%9A%94.md) (Wed 01.08)
 - [Project Emotion - NLP, BART seq max 1024,  import warnings, seed](_Daily/250108_Project%20Emotion%20-%20NLP%2C%20BART%20seq%20max%201024%2C%20%20import%20warnings%2C%20seed.md) (Wed 01.08)
+- [ROUGE 및 NLP 평가 메트릭 개요](_Daily/250108_ROUGE%20%EB%B0%8F%20NLP%20%ED%8F%89%EA%B0%80%20%EB%A9%94%ED%8A%B8%EB%A6%AD%20%EA%B0%9C%EC%9A%94.md) (Wed 01.08)
 - [Project NLP - dialouge summarization template 디자인 구현](_Daily/250107_Project%20NLP%20-%20dialouge%20summarization%20template%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EA%B5%AC%ED%98%84.md) (Tue 01.07)
 - [특강 - 이력서](_Daily/%ED%8A%B9%EA%B0%95/250107_%ED%8A%B9%EA%B0%95%20-%20%EC%9D%B4%EB%A0%A5%EC%84%9C.md) (Tue 01.07)
 - [Template 코드 작성_Quantization, Torch dtype bfloat16, Powershell Conda 이슈](_Daily/250106_Template%20%EC%BD%94%EB%93%9C%20%EC%9E%91%EC%84%B1_Quantization%2C%20Torch%20dtype%20bfloat16%2C%20Powershell%20Conda%20%EC%9D%B4%EC%8A%88.md) (Mon 01.06)
@@ -71,8 +71,8 @@
 - [Hydra multi-config, Wandb logging - step, epoch](_Daily/250105_Hydra%20multi-config%2C%20Wandb%20logging%20-%20step%2C%20epoch.md) (Sun 01.05)
 - [Model Hyperparameters-Train, Optim, Regul, Model, Data](_Daily/250104_Model%20Hyperparameters-Train%2C%20Optim%2C%20Regul%2C%20Model%2C%20Data.md) (Sat 01.04)
 - [Project template 에서 src 및 main entry point 위치, Linux GPU monitoring, Conda 추천](_Daily/250103_Project%20template%20%EC%97%90%EC%84%9C%20src%20%EB%B0%8F%20main%20entry%20point%20%EC%9C%84%EC%B9%98%2C%20Linux%20GPU%20monitoring%2C%20Conda%20%EC%B6%94%EC%B2%9C.md) (Fri 01.03)
-- [CV Contest - 발표 피드백 및 개선 방향 from 송원호 멘토](_Daily/Mentoring/250102_CV%20Contest%20-%20%EB%B0%9C%ED%91%9C%20%ED%94%BC%EB%93%9C%EB%B0%B1%20%EB%B0%8F%20%EA%B0%9C%EC%84%A0%20%EB%B0%A9%ED%96%A5%20from%20%EC%86%A1%EC%9B%90%ED%98%B8%20%EB%A9%98%ED%86%A0.md) (Thu 01.02)
 - [init import 용법](_Daily/Python/250102_init%20import%20%EC%9A%A9%EB%B2%95.md) (Thu 01.02)
+- [CV Contest - 발표 피드백 및 개선 방향 from 송원호 멘토](_Daily/Mentoring/250102_CV%20Contest%20-%20%EB%B0%9C%ED%91%9C%20%ED%94%BC%EB%93%9C%EB%B0%B1%20%EB%B0%8F%20%EA%B0%9C%EC%84%A0%20%EB%B0%A9%ED%96%A5%20from%20%EC%86%A1%EC%9B%90%ED%98%B8%20%EB%A9%98%ED%86%A0.md) (Thu 01.02)
 - [Wandb](_Daily/MLOps/250101_Wandb.md) (Wed 01.01)
 
 # 2024 TIL

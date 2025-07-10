@@ -36,7 +36,16 @@ def get_current_branch(working_dir):
         return None
 
 def git_pull_rebase(repo_path):
-    """원격 저장소의 변경사항을 pull --rebase로 가져옵니다."""
+    """원격 저장소의 변경사항을 pull --rebase로 가져옵니다.
+    pull 전에 로컬 저장소를 원격과 동일하게 초기화합니다.
+    주의: 이 작업은 로컬의 커밋되지 않은 변경사항과 추적되지 않은 파일을 영구적으로 삭제합니다.
+    """
+    print("   로컬 저장소 상태를 초기화합니다 (git reset --hard HEAD && git clean -fd).")
+    if not run_command(["git", "reset", "--hard", "HEAD"], repo_path):
+        return False
+    if not run_command(["git", "clean", "-fd"], repo_path):
+        return False
+
     current_branch = get_current_branch(repo_path)
     if not current_branch:
         print("  - 오류: 현재 Git 브랜치 이름을 가져올 수 없습니다.")

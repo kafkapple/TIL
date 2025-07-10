@@ -13,18 +13,5 @@ AI 의 추론 능력, 진짜일까? 아니면 환상일까? - 최신 애플 논�
 - The Illusion of Thinking: New Research Paper from Apple (noailabs on Medium)
 - The illusion of "The Illusion of Thinking" (sean goedecke Article)
 - [R] Apple Research: The Illusion of Thinking: Understanding the Strengths and Limitations of Reasoning Models via the Lens of Problem Complexity (Reddit Thread on r/MachineLearning)
-- [Paper by Apple] The Illusion of Thinking: Understanding the Strengths and Limitations of Reasoning Models via the Lens of Problem Complexity (Reddit Thread on r/apple)dataview
-TABLE date as "Date", category as "Category", file.name as "File"
-FROM ""
-WHERE category = "TIL" AND context_id = "P_civi38os" AND file.name != "250612_TIL_3_The_Illusion_of_Thinking"
-SORT date DESC
-LIMIT 5
-```
-## Recent Notes
-```dataview
-TABLE date as "Date", category as "Category", file.name as "File" 
-FROM ""
-WHERE context_id = "P_civi38os" AND file.name != "250612_TIL_3_The_Illusion_of_Thinking"
-SORT date DESC
-LIMIT 5
+- [Paper by Apple] The Illusion of Thinking: Understanding the Strengths and Limitations of Reasoning Models via the Lens of Problem Complexity (Reddit Thread on 
 ```

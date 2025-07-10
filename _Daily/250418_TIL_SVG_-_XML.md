@@ -7,18 +7,5 @@ SVG(Scalable Vector Graphics)는 **XML을 기반으로 한 벡터 그래픽 포
 ## Overview
 -
 ## What I Learned
-- dataview
-TABLE date as "Date", context_name as "Context", file.name as "File"
-FROM ""
-WHERE category = "TIL" AND file.name != "250418_TIL_SVG_-_XML"
-SORT date DESC
-LIMIT 5
-```
-## Recent Notes
-```dataview
-TABLE date as "Date", category as "Category", file.name as "File"
-FROM ""
-WHERE file.name != "250418_TIL_SVG_-_XML"
-SORT file.cday DESC
-LIMIT 5
+- 
 ```

@@ -22,18 +22,5 @@ T → C (contribution) 기여할 점 으로 마무리\
 - 첫째, 둘째로 구분
 ![[Pasted image 20250423111344.png]]
 - 10개 항목
-- 도전 경험 말하기 전에, 지원하는 기업에 왜 그것 필요한지 설명dataview
-TABLE date as "Date", category as "Category", file.name as "File"
-FROM ""
-WHERE category = "TIL" AND context_id = "P_u95k08ja" AND file.name != "250423_TIL_MASTER_자기소개서"
-SORT date DESC
-LIMIT 5
-```
-## Recent Notes
-```dataview
-TABLE date as "Date", category as "Category", file.name as "File" 
-FROM ""
-WHERE context_id = "P_u95k08ja" AND file.name != "250423_TIL_MASTER_자기소개서"
-SORT date DESC
-LIMIT 5
+- 도전 경험 말하기 전에, 지원하는 기업에 왜 그것 필요한지 
 ```

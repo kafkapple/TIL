@@ -80,18 +80,5 @@ alike 
 만약 그 둘이 연결되어 있다면
 네 덕분에
 10 년 뒤에 넌 뭐하고 있을 것 같아?
-~한 제약 조건으로부터 자유롭다dataview
-TABLE date as "Date", category as "Category", file.name as "File"
-FROM ""
-WHERE category = "TIL" AND context_id = "A_0p9bzcdn" AND file.name != "250415_TIL_english"
-SORT date DESC
-LIMIT 5
-```
-## Recent Notes
-```dataview
-TABLE date as "Date", category as "Category", file.name as "File"
-FROM ""
-WHERE context_id = "A_0p9bzcdn" AND file.name != "250415_TIL_english"
-SORT date DESC
-LIMIT 5
+~한 제약 조건으로부터 
 ```

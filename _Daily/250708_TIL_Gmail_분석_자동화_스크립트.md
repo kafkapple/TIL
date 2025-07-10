@@ -85,7 +85,7 @@ function onOpen() {
 ### 결과 및 활용
 - **결과:** Google Sheets에 '발신자 분석 리포트' 시트가 생성되고, 발신자 통계가 자동으로 정리됩니다.
 - **활용:** 시트 상단 메뉴 또는 Apps Script 트리거를 통해 주기적으로 분석을 자동화할 수 있습니다.
-## Metadata
+
 - **Created Date**: 2025-07-08
 - **Category**: TIL
 - **ID**: N_gmail_script_250708

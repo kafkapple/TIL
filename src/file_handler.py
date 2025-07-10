@@ -12,9 +12,23 @@ TARGET_DAILY_FOLDER = "_Daily"
 
 def clean_obsidian_boilerplate(content):
     """Obsidian 관련 보일러플레이트(마크다운, 메타데이터, Dataview 쿼리 등)를 모두 제거합니다."""
+    # 1. ```dataview ... ``` 코드 블록 제거 (가장 먼저 처리)
+    content = re.sub(r"```dataview[\s\S]*?```", "", content, flags=re.DOTALL)
+
+    # 2. 코드 블록 없는 dataview 쿼리 제거 (e.g. "제품dataview TABLE...")
+    # 'dataview' 앞에 다른 문자가 붙어있을 수 있는 경우까지 고려
+    content = re.sub(r"\S*dataview\s+TABLE[\s\S]*?LIMIT\s+\d+", "", content, flags=re.IGNORECASE | re.DOTALL)
+
+    # 3. Area 라인 제거 (e.g. **Area**: ... (ID: ...))
     content = re.sub(r"^\*\*?Area\*\*?:.*\(ID: .*\)\s*\n?", "", content, flags=re.MULTILINE)
-    content = re.sub(r"\n## Metadata[\s\S]*?```\s*", "", content, flags=re.DOTALL)
-    return content.strip()
+
+    # 4. Dataview 제거 후 남은 헤딩 제거 (## Metadata, ## Recent Notes 등)
+    content = re.sub(r"^\s*## (Metadata|Area Notes|Recent Notes)\s*$", "", content, flags=re.MULTILINE)
+
+    # 5. 모든 제거 작업 후, 여러 개의 빈 줄을 하나의 빈 줄로 줄이고 양 끝 공백 제거
+    content = re.sub(r'(\n\s*){2,}', '\n\n', content).strip()
+    
+    return content
 
 def discover_til_notes(vault_path):
     print("-> TIL 노트 탐색 중...")

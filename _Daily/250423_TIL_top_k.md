@@ -21,18 +21,5 @@
 | Top-p 값 | 특징            | 예시 텍스트 스타일                                     |
 | ------- | ------------- | ---------------------------------------------- |
 | 0.3     | 예측 가능, 일관성 높음 | "식비 절약을 잘 하셨네요. 교통비도 계획적으로 관리해보세요."            |
-| 0.9     | 다양성, 창의성 높음   | "이번 달 예산을 잘 지키셨네요! 특히 식비와 카페 비용에서 멋지게 절약하셨어요." |dataview
-TABLE date as "Date", category as "Category", file.name as "File"
-FROM ""
-WHERE category = "TIL" AND context_id = "A_5p0kyoyo" AND file.name != "250423_TIL_top_k"
-SORT date DESC
-LIMIT 5
-```
-## Recent Notes
-```dataview
-TABLE date as "Date", category as "Category", file.name as "File"
-FROM ""
-WHERE context_id = "A_5p0kyoyo" AND file.name != "250423_TIL_top_k"
-SORT date DESC
-LIMIT 5
+| 0.9     | 다양성, 창의성 높음   | "이번 달 예산을 잘 지키셨네요! 특히 식비와 카페 비용에서 멋지게 절약하셨어요." 
 ```

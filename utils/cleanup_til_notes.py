@@ -8,16 +8,23 @@ TARGET_DIR = "/home/joon/dev/TIL"
 # --- 최종 정리 함수 ---
 def clean_obsidian_boilerplate(content):
     """Obsidian 관련 보일러플레이트(마크다운, 메타데이터, Dataview 쿼리 등)를 모두 제거합니다."""
-    
-    # 1. Area 라인 제거 (마크다운 강조, 공백 등 변형 고려)
+    # 1. ```dataview ... ``` 코드 블록 제거 (가장 먼저 처리)
+    content = re.sub(r"```dataview[\s\S]*?```", "", content, flags=re.DOTALL)
+
+    # 2. 코드 블록 없는 dataview 쿼리 제거 (e.g. "제품dataview TABLE...")
+    # 'dataview' 앞에 다른 문자가 붙어있을 수 있는 경우까지 고려
+    content = re.sub(r"\S*dataview\s+TABLE[\s\S]*?LIMIT\s+\d+", "", content, flags=re.IGNORECASE | re.DOTALL)
+
+    # 3. Area 라인 제거 (e.g. **Area**: ... (ID: ...))
     content = re.sub(r"^\*\*?Area\*\*?:.*\(ID: .*\)\s*\n?", "", content, flags=re.MULTILINE)
 
-    # 2. Metadata, Area Notes, Recent Notes 블록 전체를 한 번에 제거
-    #    - `## Metadata`로 시작해서 dataview 코드 블록의 끝(` ``` `)까지를 하나의 패턴으로 인식
-    content = re.sub(r"\n## Metadata[\s\S]*?```\s*", "", content, flags=re.DOTALL)
+    # 4. Dataview 제거 후 남은 헤딩 제거 (## Metadata, ## Recent Notes 등)
+    content = re.sub(r"^\s*## (Metadata|Area Notes|Recent Notes)\s*$", "", content, flags=re.MULTILINE)
 
-    # 정리 후 상단과 하단의 불필요한 공백을 모두 제거합니다.
-    return content.strip()
+    # 5. 모든 제거 작업 후, 여러 개의 빈 줄을 하나의 빈 줄로 줄이고 양 끝 공백 제거
+    content = re.sub(r'(\n\s*){2,}', '\n\n', content).strip()
+    
+    return content
 
 def cleanup_markdown_files(directory):
     """지정된 디렉토리의 모든 마크다운 파일 내용을 정리합니다."""

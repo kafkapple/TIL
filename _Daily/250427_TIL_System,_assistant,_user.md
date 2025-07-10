@@ -52,18 +52,5 @@
 - User 메시지에는 이번 실행을 위한 구체적인 작업 지시(구조, 템플릿, 절차)와 키워드를 넣습니다.
 - 현재 conf/config.yaml의 system_message는 좋은 내용을 담고 있지만, prompt_final.yaml의 관련 내용과 통합하여 더 강력한 System 메시지를 구성하는 것이 좋습니다.
 이러한 변경은 모델이 역할을 더 명확히 인지하고, 주어진 규칙과 구조를 일관되게 따르는 데 도움이 될 수 있습니다.
-이 제안에 따라 코드 수정을 원하시면 말씀해주세요.dataview
-TABLE date as "Date", category as "Category", file.name as "File"
-FROM ""
-WHERE category = "TIL" AND context_id = "A_y5jkryoi" AND file.name != "250427_TIL_System,_assistant,_user"
-SORT date DESC
-LIMIT 5
-```
-## Recent Notes
-```dataview
-TABLE date as "Date", category as "Category", file.name as "File"
-FROM ""
-WHERE context_id = "A_y5jkryoi" AND file.name != "250427_TIL_System,_assistant,_user"
-SORT date DESC
-LIMIT 5
+이 제안에 따라 코드 수정을 원하시면 
 ```

@@ -87,18 +87,5 @@ prompt 요소의 배치 순서 (role, persona, instruction, context /few-shot, o
 - 안나오는 용어는 한국어 사용
 - 번역해서 사용: 생각보다 비추
 번역, LLM 에 맡기지는 않음 (도움은 받고)
-solar prompt cook bookdataview
-TABLE date as "Date", category as "Category", file.name as "File"
-FROM ""
-WHERE category = "TIL" AND context_id = "A_y5jkryoi" AND file.name != "250418_TIL_Prompt_engineering_"
-SORT date DESC
-LIMIT 5
-```
-## Recent Notes
-```dataview
-TABLE date as "Date", category as "Category", file.name as "File"
-FROM ""
-WHERE context_id = "A_y5jkryoi" AND file.name != "250418_TIL_Prompt_engineering_"
-SORT date DESC
-LIMIT 5
+solar prompt cook 
 ```

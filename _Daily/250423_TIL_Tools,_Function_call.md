@@ -27,18 +27,5 @@
 |스트리밍/비동기|불가|지원|
 ## 4. 결론
 - “커스텀 함수 기능”은 tools의 기본 사례이지만, tools는 그 위에 **병렬성**, **확장성**, **보안**, **메타데이터 기반 탐색/오케스트레이션** 등의 중요한 기능을 추가한 **상위 개념**입니다.
-- 따라서 function calling은 tools의 한 부분일 뿐이며, modern agent 워크플로우에서는 반드시 tools 프레임워크를 활용하는 것이 바람직합니다.dataview
-TABLE date as "Date", category as "Category", file.name as "File"
-FROM ""
-WHERE category = "TIL" AND context_id = "A_5p0kyoyo" AND file.name != "250423_TIL_Tools,_Function_call"
-SORT date DESC
-LIMIT 5
-```
-## Recent Notes
-```dataview
-TABLE date as "Date", category as "Category", file.name as "File"
-FROM ""
-WHERE context_id = "A_5p0kyoyo" AND file.name != "250423_TIL_Tools,_Function_call"
-SORT date DESC
-LIMIT 5
+- 따라서 function calling은 tools의 한 부분일 뿐이며, modern agent 워크플로우에서는 반드시 tools 프레임워크를 활용하는 것이 
 ```

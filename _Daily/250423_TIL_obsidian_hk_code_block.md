@@ -6,18 +6,3 @@
 https://github.com/HeekangPark/obsidian-hk-code-block/blob/master/README_ko.md
 ```python title:"Title of the code block"
 print("Hello world")
-```dataview
-TABLE date as "Date", category as "Category", file.name as "File"
-FROM ""
-WHERE category = "TIL" AND context_id = "A_r6yc8k6f" AND file.name != "250423_TIL_obsidian_hk_code_block"
-SORT date DESC
-LIMIT 5
-```
-## Recent Notes
-```dataview
-TABLE date as "Date", category as "Category", file.name as "File"
-FROM ""
-WHERE context_id = "A_r6yc8k6f" AND file.name != "250423_TIL_obsidian_hk_code_block"
-SORT date DESC
-LIMIT 5
-```

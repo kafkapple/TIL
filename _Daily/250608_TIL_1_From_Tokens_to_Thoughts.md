@@ -3,18 +3,5 @@
 ## Overview
 -
 ## What I Learned
-- dataview
-TABLE date as "Date", category as "Category", file.name as "File"
-FROM ""
-WHERE category = "TIL" AND context_id = "P_civi38os" AND file.name != "250608_TIL_1_From_Tokens_to_Thoughts"
-SORT date DESC
-LIMIT 5
-```
-## Recent Notes
-```dataview
-TABLE date as "Date", category as "Category", file.name as "File" 
-FROM ""
-WHERE context_id = "P_civi38os" AND file.name != "250608_TIL_1_From_Tokens_to_Thoughts"
-SORT date DESC
-LIMIT 5
+- 
 ```

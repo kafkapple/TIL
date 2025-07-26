@@ -42,7 +42,13 @@ class ReadmeGenerator:
                 try:
                     date = datetime(year, int(month), int(day))
                     full_path = os.path.join(DAILY_DIR, filename)
-                    md_file = MarkdownFile(filename, full_path, date, topic)
+                    # TIL 문자열 제거 (정확한 단어 경계만)
+                    clean_topic = re.sub(r'^TIL_', '', topic)  # 앞 TIL_ 제거
+                    clean_topic = re.sub(r'_TIL_', '_', clean_topic)  # 중간 _TIL_ 제거  
+                    clean_topic = re.sub(r'_TIL$', '', clean_topic)  # 끝 _TIL 제거
+                    clean_topic = re.sub(r'_{2,}', '_', clean_topic)  # 연속 언더스코어 정리
+                    clean_topic = clean_topic.strip('_')  # 앞뒤 언더스코어 제거
+                    md_file = MarkdownFile(filename, full_path, date, clean_topic)
                     
                     self.daily_files[year].append(md_file)
                     self.contributions[date.date()] += 1
@@ -66,12 +72,22 @@ class ReadmeGenerator:
             weekday = (date.weekday() + 1) % 7
 
             if 0 <= week_num < total_weeks:
-                if date.day == 1:
-                    month_labels[week_num] = f"{date.month:<2}"
-                
                 count = self.contributions.get(date, 0)
                 level = min(count, len(LEVEL_SYMBOLS) - 1) if count > 0 else 0
                 grid[weekday][week_num] = level
+
+        # 월 라벨을 각 월의 중간 지점에 배치
+        for month in range(1, 13):
+            month_start = datetime(year, month, 1).date()
+            if month == 12:
+                month_end = datetime(year, 12, 31).date()
+            else:
+                month_end = datetime(year, month + 1, 1).date() - timedelta(days=1)
+            start_week = (month_start - start_of_first_week).days // 7
+            end_week = (month_end - start_of_first_week).days // 7
+            label_week = (start_week + end_week) // 2
+            if 0 <= label_week < total_weeks:
+                month_labels[label_week] = f"{month:<2}"
 
         # 헤더(월) 문자열 생성 (2칸 단위)
         header = "    " + "".join(month_labels)

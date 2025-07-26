@@ -36,44 +36,44 @@ Sat|⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜�
 ### 2025
 - #### July
   - **Week 1**
-    - [obsidian_js_문법](_Daily/250701_TIL_obsidian_js_%EB%AC%B8%EB%B2%95.md) - *01, Tue*
-    - [학습심리학 및 의학 용어 Scaffolding, Triage.md](_Daily/250705_TIL_%ED%95%99%EC%8A%B5%EC%8B%AC%EB%A6%AC%ED%95%99%20%EB%B0%8F%20%EC%9D%98%ED%95%99%20%EC%9A%A9%EC%96%B4%20Scaffolding%2C%20Triage.md.md) - *05, Sat*
+    - [TIL_obsidian_js_문법](_Daily/250701_TIL_obsidian_js_%EB%AC%B8%EB%B2%95.md) - *01, Tue*
+    - [TIL_학습심리학 및 의학 용어 Scaffolding, Triage.md](_Daily/250705_TIL_%ED%95%99%EC%8A%B5%EC%8B%AC%EB%A6%AC%ED%95%99%20%EB%B0%8F%20%EC%9D%98%ED%95%99%20%EC%9A%A9%EC%96%B4%20Scaffolding%2C%20Triage.md.md) - *05, Sat*
   - **Week 2**
-    - [텍스트 내 백틱 이스케이프.md](_Daily/250706_TIL_%ED%85%8D%EC%8A%A4%ED%8A%B8%20%EB%82%B4%20%EB%B0%B1%ED%8B%B1%20%EC%9D%B4%EC%8A%A4%EC%BC%80%EC%9D%B4%ED%94%84.md.md) - *06, Sun*
-    - [Gmail_분석_자동화_스크립트](_Daily/250708_TIL_Gmail_%EB%B6%84%EC%84%9D_%EC%9E%90%EB%8F%99%ED%99%94_%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8.md) - *08, Tue*
-    - [Obsidian_Github_Sync_Plan](_Daily/250709_Obsidian_TIL_Github_Sync_Plan.md) - *09, Wed*
+    - [TIL_텍스트 내 백틱 이스케이프.md](_Daily/250706_TIL_%ED%85%8D%EC%8A%A4%ED%8A%B8%20%EB%82%B4%20%EB%B0%B1%ED%8B%B1%20%EC%9D%B4%EC%8A%A4%EC%BC%80%EC%9D%B4%ED%94%84.md.md) - *06, Sun*
+    - [TIL_Gmail_분석_자동화_스크립트](_Daily/250708_TIL_Gmail_%EB%B6%84%EC%84%9D_%EC%9E%90%EB%8F%99%ED%99%94_%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8.md) - *08, Tue*
+    - [Obsidian_TIL_Github_Sync_Plan](_Daily/250709_Obsidian_TIL_Github_Sync_Plan.md) - *09, Wed*
   - **Week 3**
-    - [CNN_params.md](_Daily/250718_TIL_CNN_params.md.md) - *18, Fri*
+    - [TIL_CNN_params.md](_Daily/250718_TIL_CNN_params.md.md) - *18, Fri*
   - **Week 4**
-    - [Dual memory system.md](_Daily/250721_TIL_Dual%20memory%20system.md.md) - *21, Mon*
-    - [Overfitting 대응 – Dropout, Batch Size, Filter.md](_Daily/250723_TIL_Overfitting%20%EB%8C%80%EC%9D%91%20%E2%80%93%20Dropout%2C%20Batch%20Size%2C%20Filter.md.md) - *23, Wed*
-    - [vl-vmPFC_신뢰도중재-가치통합](_Daily/250724_TIL_vl-vmPFC_%EC%8B%A0%EB%A2%B0%EB%8F%84%EC%A4%91%EC%9E%AC-%EA%B0%80%EC%B9%98%ED%86%B5%ED%95%A9.md) - *24, Thu*
+    - [TIL_Dual memory system.md](_Daily/250721_TIL_Dual%20memory%20system.md.md) - *21, Mon*
+    - [TIL_Overfitting 대응 – Dropout, Batch Size, Filter.md](_Daily/250723_TIL_Overfitting%20%EB%8C%80%EC%9D%91%20%E2%80%93%20Dropout%2C%20Batch%20Size%2C%20Filter.md.md) - *23, Wed*
+    - [TIL_vl-vmPFC_신뢰도중재-가치통합](_Daily/250724_TIL_vl-vmPFC_%EC%8B%A0%EB%A2%B0%EB%8F%84%EC%A4%91%EC%9E%AC-%EA%B0%80%EC%B9%98%ED%86%B5%ED%95%A9.md) - *24, Thu*
 - #### June
   - **Week 2**
     - [2_연속_잠재_공간에서_LLM_추론_-_ToT_부터_Coconut_까지](_Daily/250610_2_%EC%97%B0%EC%86%8D_%EC%9E%A0%EC%9E%AC_%EA%B3%B5%EA%B0%84%EC%97%90%EC%84%9C_LLM_%EC%B6%94%EB%A1%A0_-_ToT_%EB%B6%80%ED%84%B0_Coconut_%EA%B9%8C%EC%A7%80.md) - *10, Tue*
   - **Week 5**
-    - [eng 연구 관련](_Daily/250629_TIL_eng%20%EC%97%B0%EA%B5%AC%20%EA%B4%80%EB%A0%A8.md) - *29, Sun*
+    - [TIL_eng 연구 관련](_Daily/250629_TIL_eng%20%EC%97%B0%EA%B5%AC%20%EA%B4%80%EB%A0%A8.md) - *29, Sun*
 - #### May
   - **Week 2**
-    - [저당_콜레스테롤_호밀빵_사워도우](_Daily/250510_TIL_%EC%A0%80%EB%8B%B9_%EC%BD%9C%EB%A0%88%EC%8A%A4%ED%85%8C%EB%A1%A4_%ED%98%B8%EB%B0%80%EB%B9%B5_%EC%82%AC%EC%9B%8C%EB%8F%84%EC%9A%B0.md) - *10, Sat*
+    - [TIL_저당_콜레스테롤_호밀빵_사워도우](_Daily/250510_TIL_%EC%A0%80%EB%8B%B9_%EC%BD%9C%EB%A0%88%EC%8A%A4%ED%85%8C%EB%A1%A4_%ED%98%B8%EB%B0%80%EB%B9%B5_%EC%82%AC%EC%9B%8C%EB%8F%84%EC%9A%B0.md) - *10, Sat*
 - #### April
   - **Week 3**
-    - [english](_Daily/250415_TIL_english.md) - *15, Tue*
-    - [취업_특강](_Daily/250416_TIL_%EC%B7%A8%EC%97%85_%ED%8A%B9%EA%B0%95_.md) - *16, Wed*
-    - [SVG_-_XML](_Daily/250418_TIL_SVG_-_XML.md) - *18, Fri*
-    - [Prompt_engineering_특강](_Daily/250418_TIL_Prompt_engineering_%ED%8A%B9%EA%B0%95.md) - *18, Fri*
-    - [이력서_특강 - 9가지 요소](_Daily/250418_TIL_%EC%9D%B4%EB%A0%A5%EC%84%9C_%ED%8A%B9%EA%B0%95%20-%209%EA%B0%80%EC%A7%80%20%EC%9A%94%EC%86%8C.md) - *18, Fri*
+    - [TIL_english](_Daily/250415_TIL_english.md) - *15, Tue*
+    - [TIL_취업_특강_](_Daily/250416_TIL_%EC%B7%A8%EC%97%85_%ED%8A%B9%EA%B0%95_.md) - *16, Wed*
+    - [TIL_SVG_-_XML](_Daily/250418_TIL_SVG_-_XML.md) - *18, Fri*
+    - [TIL_Prompt_engineering_특강](_Daily/250418_TIL_Prompt_engineering_%ED%8A%B9%EA%B0%95.md) - *18, Fri*
+    - [TIL_이력서_특강 - 9가지 요소](_Daily/250418_TIL_%EC%9D%B4%EB%A0%A5%EC%84%9C_%ED%8A%B9%EA%B0%95%20-%209%EA%B0%80%EC%A7%80%20%EC%9A%94%EC%86%8C.md) - *18, Fri*
   - **Week 4**
-    - [이력서_포인트](_Daily/250420_TIL_%EC%9D%B4%EB%A0%A5%EC%84%9C_%ED%8F%AC%EC%9D%B8%ED%8A%B8.md) - *20, Sun*
-    - [Langchain_Runnable,_YAML_Frontmatter](_Daily/250421_TIL_Langchain_Runnable%2C_YAML_Frontmatter.md) - *21, Mon*
-    - [포트폴리오_특강](_Daily/250422_TIL_%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4_%ED%8A%B9%EA%B0%95.md) - *22, Tue*
-    - [top_k](_Daily/250423_TIL_top_k.md) - *23, Wed*
-    - [MASTER_자기소개서](_Daily/250423_TIL_MASTER_%EC%9E%90%EA%B8%B0%EC%86%8C%EA%B0%9C%EC%84%9C.md) - *23, Wed*
-    - [Tools,_Function_call](_Daily/250423_TIL_Tools%2C_Function_call.md) - *23, Wed*
-    - [obsidian_hk_code_block](_Daily/250423_TIL_obsidian_hk_code_block.md) - *23, Wed*
+    - [TIL_이력서_포인트](_Daily/250420_TIL_%EC%9D%B4%EB%A0%A5%EC%84%9C_%ED%8F%AC%EC%9D%B8%ED%8A%B8.md) - *20, Sun*
+    - [TIL_Langchain_Runnable,_YAML_Frontmatter](_Daily/250421_TIL_Langchain_Runnable%2C_YAML_Frontmatter.md) - *21, Mon*
+    - [TIL_포트폴리오_특강](_Daily/250422_TIL_%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4_%ED%8A%B9%EA%B0%95.md) - *22, Tue*
+    - [TIL_top_k](_Daily/250423_TIL_top_k.md) - *23, Wed*
+    - [TIL_MASTER_자기소개서](_Daily/250423_TIL_MASTER_%EC%9E%90%EA%B8%B0%EC%86%8C%EA%B0%9C%EC%84%9C.md) - *23, Wed*
+    - [TIL_Tools,_Function_call](_Daily/250423_TIL_Tools%2C_Function_call.md) - *23, Wed*
+    - [TIL_obsidian_hk_code_block](_Daily/250423_TIL_obsidian_hk_code_block.md) - *23, Wed*
   - **Week 5**
-    - [제텔카스텐](_Daily/250427_TIL_%EC%A0%9C%ED%85%94%EC%B9%B4%EC%8A%A4%ED%85%90.md) - *27, Sun*
-    - [System,_assistant,_user](_Daily/250427_TIL_System%2C_assistant%2C_user.md) - *27, Sun*
+    - [TIL_제텔카스텐](_Daily/250427_TIL_%EC%A0%9C%ED%85%94%EC%B9%B4%EC%8A%A4%ED%85%90.md) - *27, Sun*
+    - [TIL_System,_assistant,_user](_Daily/250427_TIL_System%2C_assistant%2C_user.md) - *27, Sun*
 - #### January
   - **Week 1**
     - [Project template 에서 src 및 main entry point 위치, Linux GPU monitoring, Conda 추천](_Daily/250103_Project%20template%20%EC%97%90%EC%84%9C%20src%20%EB%B0%8F%20main%20entry%20point%20%EC%9C%84%EC%B9%98%2C%20Linux%20GPU%20monitoring%2C%20Conda%20%EC%B6%94%EC%B2%9C.md) - *03, Fri*

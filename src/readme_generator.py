@@ -77,6 +77,8 @@ class ReadmeGenerator:
                 grid[weekday][week_num] = level
 
         # 월 라벨을 각 월의 중간 지점에 배치
+        month_abbrevs = ["", "Jan", "Feb", "Mar", "Apr", "May", "Jun", 
+                        "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
         for month in range(1, 13):
             month_start = datetime(year, month, 1).date()
             if month == 12:
@@ -87,19 +89,19 @@ class ReadmeGenerator:
             end_week = (month_end - start_of_first_week).days // 7
             label_week = (start_week + end_week) // 2
             if 0 <= label_week < total_weeks:
-                month_labels[label_week] = f"{month:<2}"
+                month_labels[label_week] = f"{month_abbrevs[month]:<3}"
 
-        # 헤더(월) 문자열 생성 (2칸 단위)
+        # 헤더(월) 문자열 생성 (3칸 단위)
         header = "    " + "".join(month_labels)
         
-        # 그리드(요일) 문자열 생성 (2칸 단위)
+        # 그리드(요일) 문자열 생성 (3칸 단위)
         lines = [header]
         for i, day_name in enumerate(WEEKDAY_NAMES):
             line = f"{day_name: <3}|"
             for week in range(total_weeks):
                 level = grid[i][week]
-                # 이모지는 이미 2칸 너비, 빈 칸은 2칸 공백으로 처리
-                line += LEVEL_SYMBOLS[level] if level != -1 else "  "
+                # 이모지는 이미 2칸 너비, 빈 칸은 3칸 공백으로 처리 (1칸 추가로 정렬)
+                line += LEVEL_SYMBOLS[level] + " " if level != -1 else "   "
             lines.append(line + "|")
         
         return "\n".join(lines)

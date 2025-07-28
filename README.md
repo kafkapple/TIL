@@ -42,33 +42,33 @@ Sat|⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️
 - #### July
   - **Week 1**
     - [obsidian_js_문법](_Daily/250701_TIL_obsidian_js_%EB%AC%B8%EB%B2%95.md) - *01, Tue*
-    - [Obsidian Dataview Query Troubleshooting.md](_Daily/250701_TIL_Obsidian%20Dataview%20Query%20Troubleshooting.md.md) - *01, Tue*
-    - [Programming_PackageManagement.md](_Daily/250704_TIL_Programming_PackageManagement.md.md) - *04, Fri*
-    - [학습심리학 및 의학 용어 Scaffolding, Triage.md](_Daily/250705_TIL_%ED%95%99%EC%8A%B5%EC%8B%AC%EB%A6%AC%ED%95%99%20%EB%B0%8F%20%EC%9D%98%ED%95%99%20%EC%9A%A9%EC%96%B4%20Scaffolding%2C%20Triage.md.md) - *05, Sat*
+    - [Obsidian Dataview Query Troubleshooting](_Daily/250701_TIL_Obsidian%20Dataview%20Query%20Troubleshooting.md) - *01, Tue*
+    - [Programming_PackageManagement](_Daily/250704_TIL_Programming_PackageManagement.md) - *04, Fri*
+    - [학습심리학 및 의학 용어 Scaffolding, Triage](_Daily/250705_TIL_%ED%95%99%EC%8A%B5%EC%8B%AC%EB%A6%AC%ED%95%99%20%EB%B0%8F%20%EC%9D%98%ED%95%99%20%EC%9A%A9%EC%96%B4%20Scaffolding%2C%20Triage.md) - *05, Sat*
   - **Week 2**
     - [텍스트 내 백틱 이스케이프](_Daily/250706_TIL_%ED%85%8D%EC%8A%A4%ED%8A%B8%20%EB%82%B4%20%EB%B0%B1%ED%8B%B1%20%EC%9D%B4%EC%8A%A4%EC%BC%80%EC%9D%B4%ED%94%84.md) - *06, Sun*
   - **Week 3**
-    - [4D_Rendering_Hybrid_Approach.md](_Daily/250718_TIL_4D_Rendering_Hybrid_Approach.md.md) - *18, Fri*
+    - [4D_Rendering_Hybrid_Approach](_Daily/250718_TIL_4D_Rendering_Hybrid_Approach.md) - *18, Fri*
     - [CNN_Kernel_Pooling_Relationship_params](_Daily/250718_TIL_CNN_Kernel_Pooling_Relationship_params.md) - *18, Fri*
-    - [Dynamic Scene Representation with Factorization and Gaussian Splatting.md](_Daily/250719_TIL_Dynamic%20Scene%20Representation%20with%20Factorization%20and%20Gaussian%20Splatting.md.md) - *19, Sat*
+    - [Dynamic Scene Representation with Factorization and Gaussian Splatting](_Daily/250719_TIL_Dynamic%20Scene%20Representation%20with%20Factorization%20and%20Gaussian%20Splatting.md) - *19, Sat*
   - **Week 4**
-    - [Visual_Information_Bandwidth_vs_LLMs.md](_Daily/250720_TIL_Visual_Information_Bandwidth_vs_LLMs.md.md) - *20, Sun*
-    - [JEPA_WorldModel_Positioning.md](_Daily/250720_TIL_JEPA_WorldModel_Positioning.md.md) - *20, Sun*
-    - [Dual memory system.md](_Daily/250721_TIL_Dual%20memory%20system.md.md) - *21, Mon*
-    - [Overfitting 대응 – Dropout, Batch Size, Filter.md](_Daily/250723_TIL_Overfitting%20%EB%8C%80%EC%9D%91%20%E2%80%93%20Dropout%2C%20Batch%20Size%2C%20Filter.md.md) - *23, Wed*
-    - [Promptfoo_Delimiter_Understanding.md](_Daily/250723_TIL_Promptfoo_Delimiter_Understanding.md.md) - *23, Wed*
+    - [JEPA_WorldModel_Positioning](_Daily/250720_TIL_JEPA_WorldModel_Positioning.md) - *20, Sun*
+    - [Visual_Information_Bandwidth_vs_LLMs](_Daily/250720_TIL_Visual_Information_Bandwidth_vs_LLMs.md) - *20, Sun*
+    - [Dual memory system](_Daily/250721_TIL_Dual%20memory%20system.md) - *21, Mon*
+    - [Overfitting 대응 – Dropout, Batch Size, Filter](_Daily/250723_TIL_Overfitting%20%EB%8C%80%EC%9D%91%20%E2%80%93%20Dropout%2C%20Batch%20Size%2C%20Filter.md) - *23, Wed*
+    - [Promptfoo_Delimiter_Understanding](_Daily/250723_TIL_Promptfoo_Delimiter_Understanding.md) - *23, Wed*
     - [vl-vmPFC_신뢰도중재-가치통합](_Daily/250724_TIL_vl-vmPFC_%EC%8B%A0%EB%A2%B0%EB%8F%84%EC%A4%91%EC%9E%AC-%EA%B0%80%EC%B9%98%ED%86%B5%ED%95%A9.md) - *24, Thu*
-    - [Tolman-Eichenbaum Machine_Unifying Space and Relational Memory.md](_Daily/250725_TIL_Tolman-Eichenbaum%20Machine_Unifying%20Space%20and%20Relational%20Memory.md.md) - *25, Fri*
+    - [Tolman-Eichenbaum Machine_Unifying Space and Relational Memory](_Daily/250725_TIL_Tolman-Eichenbaum%20Machine_Unifying%20Space%20and%20Relational%20Memory.md) - *25, Fri*
   - **Week 5**
-    - [FC_Layer_Multi_Dimensional_Input.md](_Daily/250727_TIL_FC_Layer_Multi_Dimensional_Input.md.md) - *27, Sun*
+    - [FC_Layer_Multi_Dimensional_Input](_Daily/250727_TIL_FC_Layer_Multi_Dimensional_Input.md) - *27, Sun*
     - [Unified_Dashboard_사용법_가이드](_Daily/250728_TIL_Unified_Dashboard_%EC%82%AC%EC%9A%A9%EB%B2%95_%EA%B0%80%EC%9D%B4%EB%93%9C.md) - *28, Mon*
 - #### June
   - **Week 2**
-    - [Markdown_Prompt_Syntax.md](_Daily/250610_TIL_Markdown_Prompt_Syntax.md.md) - *10, Tue*
-    - [English Expressions for Professional Communication.md](_Daily/250613_TIL_English%20Expressions%20for%20Professional%20Communication.md.md) - *13, Fri*
+    - [Markdown_Prompt_Syntax](_Daily/250610_TIL_Markdown_Prompt_Syntax.md) - *10, Tue*
+    - [English Expressions for Professional Communication](_Daily/250613_TIL_English%20Expressions%20for%20Professional%20Communication.md) - *13, Fri*
   - **Week 4**
-    - [GIT_Basics_and_Revert_Strategies.md](_Daily/250622_TIL_GIT_Basics_and_Revert_Strategies.md.md) - *22, Sun*
-    - [Programming_CLI_and_Argument_Parsing.md](_Daily/250626_TIL_Programming_CLI_and_Argument_Parsing.md.md) - *26, Thu*
+    - [GIT_Basics_and_Revert_Strategies](_Daily/250622_TIL_GIT_Basics_and_Revert_Strategies.md) - *22, Sun*
+    - [Programming_CLI_and_Argument_Parsing](_Daily/250626_TIL_Programming_CLI_and_Argument_Parsing.md) - *26, Thu*
   - **Week 5**
     - [eng 연구 관련](_Daily/250629_TIL_eng%20%EC%97%B0%EA%B5%AC%20%EA%B4%80%EB%A0%A8.md) - *29, Sun*
 - #### May
@@ -92,7 +92,7 @@ Sat|⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️
   - **Week 5**
     - [제텔카스텐](_Daily/250427_TIL_%EC%A0%9C%ED%85%94%EC%B9%B4%EC%8A%A4%ED%85%90.md) - *27, Sun*
     - [System,_assistant,_user](_Daily/250427_TIL_System%2C_assistant%2C_user.md) - *27, Sun*
-    - [Python_Dotenv_Load.md](_Daily/250428_TIL_Python_Dotenv_Load.md.md) - *28, Mon*
+    - [Python_Dotenv_Load](_Daily/250428_TIL_Python_Dotenv_Load.md) - *28, Mon*
 - #### January
   - **Week 1**
     - [Project template 에서 src 및 main entry point 위치, Linux GPU monitoring, Conda 추천](_Daily/250103_Project%20template%20%EC%97%90%EC%84%9C%20src%20%EB%B0%8F%20main%20entry%20point%20%EC%9C%84%EC%B9%98%2C%20Linux%20GPU%20monitoring%2C%20Conda%20%EC%B6%94%EC%B2%9C.md) - *03, Fri*
@@ -100,14 +100,14 @@ Sat|⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️
   - **Week 2**
     - [Hydra multi-config, Wandb logging - step, epoch](_Daily/250105_Hydra%20multi-config%2C%20Wandb%20logging%20-%20step%2C%20epoch.md) - *05, Sun*
     - [Template 코드 작성_Quantization, Torch dtype bfloat16, Powershell Conda 이슈](_Daily/250106_Template%20%EC%BD%94%EB%93%9C%20%EC%9E%91%EC%84%B1_Quantization%2C%20Torch%20dtype%20bfloat16%2C%20Powershell%20Conda%20%EC%9D%B4%EC%8A%88.md) - *06, Mon*
-    - [특강-이력서.md](_Daily/250107_TIL_%ED%8A%B9%EA%B0%95-%EC%9D%B4%EB%A0%A5%EC%84%9C.md.md) - *07, Tue*
+    - [특강-이력서](_Daily/250107_TIL_%ED%8A%B9%EA%B0%95-%EC%9D%B4%EB%A0%A5%EC%84%9C.md) - *07, Tue*
     - [ROUGE 및 NLP 평가 메트릭 개요](_Daily/250108_ROUGE%20%EB%B0%8F%20NLP%20%ED%8F%89%EA%B0%80%20%EB%A9%94%ED%8A%B8%EB%A6%AD%20%EA%B0%9C%EC%9A%94.md) - *08, Wed*
     - [Project Emotion - NLP, BART seq max 1024,  import warnings, seed](_Daily/250108_Project%20Emotion%20-%20NLP%2C%20BART%20seq%20max%201024%2C%20%20import%20warnings%2C%20seed.md) - *08, Wed*
     - [Project Emotion(ISP), NLP 추가 구현. ML Basic 복습 - High-Low level 개념, Regression, Classification 실습, Python 삼중 따옴표 사용](_Daily/250109_Project%20Emotion%28ISP%29%2C%20NLP%20%EC%B6%94%EA%B0%80%20%EA%B5%AC%ED%98%84.%20ML%20Basic%20%EB%B3%B5%EC%8A%B5%20-%20High-Low%20level%20%EA%B0%9C%EB%85%90%2C%20Regression%2C%20Classification%20%EC%8B%A4%EC%8A%B5%2C%20Python%20%EC%82%BC%EC%A4%91%20%EB%94%B0%EC%98%B4%ED%91%9C%20%EC%82%AC%EC%9A%A9.md) - *09, Thu*
     - [SVD Rank, Correlation_Scaling (Standarization - mu, Normalization - min max)_Latex_기업 설명회](_Daily/250110_SVD%20Rank%2C%20Correlation_Scaling%20%28Standarization%20-%20mu%2C%20Normalization%20-%20min%20max%29_Latex_%EA%B8%B0%EC%97%85%20%EC%84%A4%EB%AA%85%ED%9A%8C.md) - *10, Fri*
   - **Week 3**
+    - [특강-Overview of LLM](_Daily/250113_TIL_%ED%8A%B9%EA%B0%95-Overview%20of%20LLM.md) - *13, Mon*
     - [Recommendation System, Time-series analysis, Model 평가 및 개선](_Daily/250113_Recommendation%20System%2C%20Time-series%20analysis%2C%20Model%20%ED%8F%89%EA%B0%80%20%EB%B0%8F%20%EA%B0%9C%EC%84%A0.md) - *13, Mon*
-    - [특강-Overview of LLM.md](_Daily/250113_TIL_%ED%8A%B9%EA%B0%95-Overview%20of%20LLM.md.md) - *13, Mon*
     - [CV Basic 3, 4강 - Backbone, decoder, CNN, ResNet, EfficientNet](_Daily/250114_CV%20Basic%203%2C%204%EA%B0%95%20-%20Backbone%2C%20decoder%2C%20CNN%2C%20ResNet%2C%20EfficientNet.md) - *14, Tue*
     - [PyTorch 텍스트 생성 모델의 Padding 처리와 -100 masking](_Daily/250115_PyTorch%20%ED%85%8D%EC%8A%A4%ED%8A%B8%20%EC%83%9D%EC%84%B1%20%EB%AA%A8%EB%8D%B8%EC%9D%98%20Padding%20%EC%B2%98%EB%A6%AC%EC%99%80%20-100%20masking.md) - *15, Wed*
     - [NLP contest 시작_ Pandas, random, sort_values, dict map_SSH Jupyter](_Daily/250115_NLP%20contest%20%EC%8B%9C%EC%9E%91_%20Pandas%2C%20random%2C%20sort_values%2C%20dict%20map_SSH%20Jupyter.md) - *15, Wed*
@@ -121,9 +121,9 @@ Sat|⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️
     - [EC2_Docker_Architecture](_Daily/241204_TIL_EC2_Docker_Architecture.md) - *04, Wed*
     - [Linux_Logger_google_doc](_Daily/241205_TIL_Linux_Logger_google_doc.md) - *05, Thu*
   - **Week 2**
-    - [Linux_windows_NVIDIA_torch_setup.md](_Daily/241208_TIL_Linux_windows_NVIDIA_torch_setup.md.md) - *08, Sun*
+    - [Linux_windows_NVIDIA_torch_setup](_Daily/241208_TIL_Linux_windows_NVIDIA_torch_setup.md) - *08, Sun*
     - [CICD_Workflow_management](_Daily/241209_TIL_CICD_Workflow_management.md) - *09, Mon*
-    - [Docker.md](_Daily/241212_TIL_Docker.md.md) - *12, Thu*
+    - [Docker](_Daily/241212_TIL_Docker.md) - *12, Thu*
     - [Bash vs Source, NVIDIA Driver, CUDA, CUDNN](_Daily/241213_Bash%20vs%20Source%2C%20NVIDIA%20Driver%2C%20CUDA%2C%20CUDNN.md) - *13, Fri*
   - **Week 3**
     - [Domain adaptation, Transfer learning](_Daily/241216_Domain%20adaptation%2C%20Transfer%20learning.md) - *16, Mon*

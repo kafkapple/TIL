@@ -11,24 +11,24 @@
 ### 2025
 ```
         1       2       3         4       5         6       7       8         9       10      11        12    
-Sun|  🟩⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️🟩🟢⬜️⬜️⬜️⬜️⬜️⬜️⬜️🟩🟩🟩⬜️🟢⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️|
+Sun|  🟩⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️🟩🟢⬜️⬜️⬜️⬜️⬜️⬜️⬜️🟩🟩🟩⬜️🟢🟩⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️|
 Mon|  🟩🟩🟩⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️🟩🟩⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️🟩⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️|
 Tue|  🟩🟩🟩⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️🟩🟩⬜️⬜️⬜️⬜️⬜️⬜️🟢⬜️⬜️🟢🟩⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️|
 Wed|⬜️🟢🟢⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️🟩🌳⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️🟩⬜️🟢⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️|
 Thu|⬜️🟩🟩⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️🟩⬜️⬜️⬜️🟩⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️  |
-Fri|🟩🟩🟩⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️💚⬜️⬜️⬜️⬜️⬜️⬜️⬜️🟩⬜️⬜️🟩⬜️🟢🟩⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️  |
+Fri|🟩🟩🟩⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️💚⬜️⬜️⬜️⬜️⬜️⬜️⬜️🟩⬜️⬜️🟩⬜️💚🟩⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️  |
 Sat|🟩⬜️🟩⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️🟩⬜️⬜️⬜️⬜️⬜️⬜️⬜️🟩⬜️🟩🟩⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️  |
 ```
 ### 2024
 ```
         1       2       3         4       5       6         7       8         9       10      11        12    
-Sun|  ⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️🟩⬜️⬜️⬜️⬜️⬜️⬜️|
-Mon|⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️🟩⬜️⬜️⬜️⬜️⬜️🟩🟩🟩|
+Sun|  ⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️🟩⬜️⬜️🟩⬜️⬜️⬜️|
+Mon|⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️🟩⬜️⬜️⬜️⬜️🟩🟩🟩🟩|
 Tue|⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️🟩🟩🟩🟩🟩⬜️⬜️🟩🟩⬜️|
-Wed|⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️🟩🟩⬜️⬜️🟩⬜️⬜️🟩🟩  |
-Thu|⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️🟩⬜️⬜️⬜️⬜️⬜️⬜️⬜️🟩  |
-Fri|⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️🟩🟩⬜️⬜️⬜️⬜️🟩🟩⬜️  |
-Sat|⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️🟩⬜️⬜️⬜️⬜️🟩🟩  |
+Wed|⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️🟩🟩⬜️⬜️🟩🟩⬜️🟩🟩  |
+Thu|⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️🟩⬜️⬜️⬜️⬜️🟩🟩⬜️🟩  |
+Fri|⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️🟩🟩⬜️⬜️⬜️⬜️🟩🟩🟩  |
+Sat|⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️🟩🟩⬜️⬜️⬜️🟩🟩  |
 ```
 <div align="right">Less ⬜️ 🟩 🟢 💚 🌳 More</div>
 
@@ -46,6 +46,7 @@ Sat|⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜�
     - [Obsidian_Github_Sync_Plan](_Daily/250709_Obsidian_TIL_Github_Sync_Plan.md) - *09, Wed*
   - **Week 3**
     - [4D_Rendering_Hybrid_Approach.md](_Daily/250718_TIL_4D_Rendering_Hybrid_Approach.md.md) - *18, Fri*
+    - [CNN_Kernel_Pooling_Relationship_params](_Daily/250718_TIL_CNN_Kernel_Pooling_Relationship_params.md) - *18, Fri*
     - [CNN_params.md](_Daily/250718_TIL_CNN_params.md.md) - *18, Fri*
     - [Dynamic Scene Representation with Factorization and Gaussian Splatting.md](_Daily/250719_TIL_Dynamic%20Scene%20Representation%20with%20Factorization%20and%20Gaussian%20Splatting.md.md) - *19, Sat*
   - **Week 4**
@@ -57,6 +58,8 @@ Sat|⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜�
     - [vl-vmPFC_신뢰도중재-가치통합](_Daily/250724_TIL_vl-vmPFC_%EC%8B%A0%EB%A2%B0%EB%8F%84%EC%A4%91%EC%9E%AC-%EA%B0%80%EC%B9%98%ED%86%B5%ED%95%A9.md) - *24, Thu*
     - [Tolman-Eichenbaum Machine_Unifying Space and Relational Memory.md](_Daily/250725_TIL_Tolman-Eichenbaum%20Machine_Unifying%20Space%20and%20Relational%20Memory.md.md) - *25, Fri*
     - [research_sync_optimization](_Daily/250726_research_TIL_sync_optimization.md) - *26, Sat*
+  - **Week 5**
+    - [FC_Layer_Multi_Dimensional_Input.md](_Daily/250727_TIL_FC_Layer_Multi_Dimensional_Input.md.md) - *27, Sun*
 - #### June
   - **Week 2**
     - [Markdown_Prompt_Syntax.md](_Daily/250610_TIL_Markdown_Prompt_Syntax.md.md) - *10, Tue*
@@ -114,7 +117,13 @@ Sat|⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜�
     - [스캐폴딩(Scaffolding) ](_Daily/250121_%EC%8A%A4%EC%BA%90%ED%8F%B4%EB%94%A9%28Scaffolding%29%20.md) - *21, Tue*
 ### 2024
 - #### December
+  - **Week 1**
+    - [EC2_Docker_Architecture](_Daily/241204_TIL_EC2_Docker_Architecture.md) - *04, Wed*
+    - [Linux_Logger_google_doc](_Daily/241205_TIL_Linux_Logger_google_doc.md) - *05, Thu*
   - **Week 2**
+    - [Linux_windows_NVIDIA_torch_setup.md](_Daily/241208_TIL_Linux_windows_NVIDIA_torch_setup.md.md) - *08, Sun*
+    - [CICD_Workflow_management](_Daily/241209_TIL_CICD_Workflow_management.md) - *09, Mon*
+    - [Docker.md](_Daily/241212_TIL_Docker.md.md) - *12, Thu*
     - [Bash vs Source, NVIDIA Driver, CUDA, CUDNN](_Daily/241213_Bash%20vs%20Source%2C%20NVIDIA%20Driver%2C%20CUDA%2C%20CUDNN.md) - *13, Fri*
   - **Week 3**
     - [Domain adaptation, Transfer learning](_Daily/241216_Domain%20adaptation%2C%20Transfer%20learning.md) - *16, Mon*
@@ -127,6 +136,7 @@ Sat|⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜�
     - [TTA_TTAd](_Daily/241224_TTA_TTAd.md) - *24, Tue*
     - [Precision 개선](_Daily/241225_Precision%20%EA%B0%9C%EC%84%A0.md) - *25, Wed*
     - [Focal_loss_Class_weight](_Daily/241226_Focal_loss_Class_weight.md) - *26, Thu*
+    - [Linux_tar](_Daily/241227_TIL_Linux_tar.md) - *27, Fri*
     - [Class_imbalance_Focal_Weighted_Precsion_Recall](_Daily/241228_Class_imbalance_Focal_Weighted_Precsion_Recall.md) - *28, Sat*
   - **Week 5**
     - [Data leakage - Augmentation 이슈](_Daily/241230_Data%20leakage%20-%20Augmentation%20%EC%9D%B4%EC%8A%88.md) - *30, Mon*
@@ -144,6 +154,7 @@ Sat|⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜�
   - **Week 4**
     - [Preprocessing](_Daily/241117_Preprocessing.md) - *17, Sun*
     - [Mentoring - ML 실전, Feature variable, Docker_stop](_Daily/241119_Mentoring%20-%20ML%20%EC%8B%A4%EC%A0%84%2C%20Feature%20variable%2C%20Docker_stop.md) - *19, Tue*
+    - [MLOps_II_S3_Crawling](_Daily/241123_TIL_MLOps_II_S3_Crawling.md) - *23, Sat*
   - **Week 5**
     - [Hyperparam_search_objective_metric](_Daily/241126_Hyperparam_search_objective_metric.md) - *26, Tue*
     - [Numpy, Pandas, Visualization, Sklearn](_Daily/241127_Numpy%2C%20Pandas%2C%20Visualization%2C%20Sklearn.md) - *27, Wed*

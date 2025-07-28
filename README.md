@@ -1,26 +1,26 @@
 # TIL Dashboard
-📊 **전체 통계:** 87개 TIL 노트
+📊 **전체 통계:** 88개 TIL 노트
 ## Table of Contents
 - [🗓️ Daily Learning Log](#daily-learning-log)
-  - [2025 (총 54개)](#2025-총-54개)
+  - [2025 (총 55개)](#2025-총-55개)
   - [2024 (총 33개)](#2024-총-33개)
 - [📚 Learning Archive](#learning-archive)
   - [2025](#2025)
   - [2024](#2024)
 
 ## 🗓️ Daily Learning Log
-### 2025 (총 54개)
+### 2025 (총 55개)
 ```
     Jan         Feb         Mar            Apr         May            Jun         Jul         Aug            Sep         Oct         Nov            Dec            
 Sun|   🟩 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ 🟩 🟢 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ 🟩 🟩 🟩 ⬜️ 🟢 🟩 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ |
-Mon|   🟩 🟩 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ 🟩 🟩 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ 🟩 🟩 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ |
-Tue|   ⬜️ 🟩 🟩 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ 🟩 🟩 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ 🟢 ⬜️ ⬜️ 🟢 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ |
+Mon|   🟩 🟢 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ 🟩 🟩 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ 🟩 🟩 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ |
+Tue|   🟩 🟩 🟩 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ 🟩 🟩 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ 🟩 ⬜️ ⬜️ 🟢 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ |
 Wed|⬜️ 🟢 🟢 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ 🟩 🌳 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ 🟢 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ |
 Thu|⬜️ 🟩 🟩 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ 🟩 ⬜️ ⬜️ ⬜️ 🟩 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️    |
 Fri|🟩 🟩 🟩 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ 💚 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ 🟩 ⬜️ ⬜️ 🟩 ⬜️ 🟢 🟩 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️    |
 Sat|🟩 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ 🟩 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ 🟩 ⬜️ 🟩 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️    |
 ```
-**분기별:** Q1: 15개 | Q2: 22개 | Q3: 17개
+**분기별:** Q1: 17개 | Q2: 21개 | Q3: 17개
 
 ### 2024 (총 33개)
 ```
@@ -61,11 +61,10 @@ Sat|⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️
     - [Tolman-Eichenbaum Machine_Unifying Space and Relational Memory.md](_Daily/250725_TIL_Tolman-Eichenbaum%20Machine_Unifying%20Space%20and%20Relational%20Memory.md.md) - *25, Fri*
   - **Week 5**
     - [FC_Layer_Multi_Dimensional_Input.md](_Daily/250727_TIL_FC_Layer_Multi_Dimensional_Input.md.md) - *27, Sun*
-    - [Test_Sync_Logging](_Daily/250728_TIL_Test_Sync_Logging.md) - *28, Mon*
+    - [Unified_Dashboard_사용법_가이드](_Daily/250728_TIL_Unified_Dashboard_%EC%82%AC%EC%9A%A9%EB%B2%95_%EA%B0%80%EC%9D%B4%EB%93%9C.md) - *28, Mon*
 - #### June
   - **Week 2**
     - [Markdown_Prompt_Syntax.md](_Daily/250610_TIL_Markdown_Prompt_Syntax.md.md) - *10, Tue*
-    - [2_연속_잠재_공간에서_LLM_추론_-_ToT_부터_Coconut_까지](_Daily/250610_2_%EC%97%B0%EC%86%8D_%EC%9E%A0%EC%9E%AC_%EA%B3%B5%EA%B0%84%EC%97%90%EC%84%9C_LLM_%EC%B6%94%EB%A1%A0_-_ToT_%EB%B6%80%ED%84%B0_Coconut_%EA%B9%8C%EC%A7%80.md) - *10, Tue*
     - [English Expressions for Professional Communication.md](_Daily/250613_TIL_English%20Expressions%20for%20Professional%20Communication.md.md) - *13, Fri*
   - **Week 4**
     - [GIT_Basics_and_Revert_Strategies.md](_Daily/250622_TIL_GIT_Basics_and_Revert_Strategies.md.md) - *22, Sun*
@@ -101,12 +100,14 @@ Sat|⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️
   - **Week 2**
     - [Hydra multi-config, Wandb logging - step, epoch](_Daily/250105_Hydra%20multi-config%2C%20Wandb%20logging%20-%20step%2C%20epoch.md) - *05, Sun*
     - [Template 코드 작성_Quantization, Torch dtype bfloat16, Powershell Conda 이슈](_Daily/250106_Template%20%EC%BD%94%EB%93%9C%20%EC%9E%91%EC%84%B1_Quantization%2C%20Torch%20dtype%20bfloat16%2C%20Powershell%20Conda%20%EC%9D%B4%EC%8A%88.md) - *06, Mon*
+    - [특강-이력서.md](_Daily/250107_TIL_%ED%8A%B9%EA%B0%95-%EC%9D%B4%EB%A0%A5%EC%84%9C.md.md) - *07, Tue*
     - [ROUGE 및 NLP 평가 메트릭 개요](_Daily/250108_ROUGE%20%EB%B0%8F%20NLP%20%ED%8F%89%EA%B0%80%20%EB%A9%94%ED%8A%B8%EB%A6%AD%20%EA%B0%9C%EC%9A%94.md) - *08, Wed*
     - [Project Emotion - NLP, BART seq max 1024,  import warnings, seed](_Daily/250108_Project%20Emotion%20-%20NLP%2C%20BART%20seq%20max%201024%2C%20%20import%20warnings%2C%20seed.md) - *08, Wed*
     - [Project Emotion(ISP), NLP 추가 구현. ML Basic 복습 - High-Low level 개념, Regression, Classification 실습, Python 삼중 따옴표 사용](_Daily/250109_Project%20Emotion%28ISP%29%2C%20NLP%20%EC%B6%94%EA%B0%80%20%EA%B5%AC%ED%98%84.%20ML%20Basic%20%EB%B3%B5%EC%8A%B5%20-%20High-Low%20level%20%EA%B0%9C%EB%85%90%2C%20Regression%2C%20Classification%20%EC%8B%A4%EC%8A%B5%2C%20Python%20%EC%82%BC%EC%A4%91%20%EB%94%B0%EC%98%B4%ED%91%9C%20%EC%82%AC%EC%9A%A9.md) - *09, Thu*
     - [SVD Rank, Correlation_Scaling (Standarization - mu, Normalization - min max)_Latex_기업 설명회](_Daily/250110_SVD%20Rank%2C%20Correlation_Scaling%20%28Standarization%20-%20mu%2C%20Normalization%20-%20min%20max%29_Latex_%EA%B8%B0%EC%97%85%20%EC%84%A4%EB%AA%85%ED%9A%8C.md) - *10, Fri*
   - **Week 3**
     - [Recommendation System, Time-series analysis, Model 평가 및 개선](_Daily/250113_Recommendation%20System%2C%20Time-series%20analysis%2C%20Model%20%ED%8F%89%EA%B0%80%20%EB%B0%8F%20%EA%B0%9C%EC%84%A0.md) - *13, Mon*
+    - [특강-Overview of LLM.md](_Daily/250113_TIL_%ED%8A%B9%EA%B0%95-Overview%20of%20LLM.md.md) - *13, Mon*
     - [CV Basic 3, 4강 - Backbone, decoder, CNN, ResNet, EfficientNet](_Daily/250114_CV%20Basic%203%2C%204%EA%B0%95%20-%20Backbone%2C%20decoder%2C%20CNN%2C%20ResNet%2C%20EfficientNet.md) - *14, Tue*
     - [PyTorch 텍스트 생성 모델의 Padding 처리와 -100 masking](_Daily/250115_PyTorch%20%ED%85%8D%EC%8A%A4%ED%8A%B8%20%EC%83%9D%EC%84%B1%20%EB%AA%A8%EB%8D%B8%EC%9D%98%20Padding%20%EC%B2%98%EB%A6%AC%EC%99%80%20-100%20masking.md) - *15, Wed*
     - [NLP contest 시작_ Pandas, random, sort_values, dict map_SSH Jupyter](_Daily/250115_NLP%20contest%20%EC%8B%9C%EC%9E%91_%20Pandas%2C%20random%2C%20sort_values%2C%20dict%20map_SSH%20Jupyter.md) - *15, Wed*

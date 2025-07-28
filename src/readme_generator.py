@@ -69,52 +69,52 @@ class ReadmeGenerator:
                     continue
 
     def generate_heatmap_for_year(self, year):
-        """특정 연도에 대한 히트맵을 생성합니다. (숫자 월, 2칸 정렬)"""
+        """특정 연도에 대한 히트맵을 생성합니다."""
         start_of_year = datetime(year, 1, 1).date()
         end_of_year = datetime(year, 12, 31).date()
         
+        # 일요일을 주의 시작으로 하는 첫 번째 주의 시작일 계산
         start_of_first_week = start_of_year - timedelta(days=(start_of_year.weekday() + 1) % 7)
         total_weeks = (end_of_year - start_of_first_week).days // 7 + 1
         
+        # 7x53 그리드 초기화 (7일 x 최대 53주)
         grid = [[-1] * total_weeks for _ in range(7)]
-        month_labels = ["  "] * total_weeks
-
+        
+        # 각 날짜에 대해 그리드 위치 계산 및 기여도 설정
         for day_offset in range((end_of_year - start_of_year).days + 1):
             date = start_of_year + timedelta(days=day_offset)
             week_num = (date - start_of_first_week).days // 7
-            weekday = (date.weekday() + 1) % 7
+            weekday = (date.weekday() + 1) % 7  # 일요일=0, 월요일=1, ..., 토요일=6
 
             if 0 <= week_num < total_weeks:
                 count = self.contributions.get(date, 0)
                 level = min(count, len(LEVEL_SYMBOLS) - 1) if count > 0 else 0
                 grid[weekday][week_num] = level
 
-        # 월 라벨을 각 월의 중간 지점에 배치
+        # 월 라벨 배치 - 각 월의 첫 번째 주에 라벨 배치
         month_abbrevs = ["", "Jan", "Feb", "Mar", "Apr", "May", "Jun", 
                         "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+        month_positions = ["   "] * total_weeks  # 3칸 공백으로 초기화
+        
         for month in range(1, 13):
             month_start = datetime(year, month, 1).date()
-            if month == 12:
-                month_end = datetime(year, 12, 31).date()
-            else:
-                month_end = datetime(year, month + 1, 1).date() - timedelta(days=1)
             start_week = (month_start - start_of_first_week).days // 7
-            end_week = (month_end - start_of_first_week).days // 7
-            label_week = (start_week + end_week) // 2
-            if 0 <= label_week < total_weeks:
-                month_labels[label_week] = f"{month_abbrevs[month]:<3}"
+            if 0 <= start_week < total_weeks:
+                month_positions[start_week] = f"{month_abbrevs[month]:<3}"
 
-        # 헤더(월) 문자열 생성 (3칸 단위)
-        header = "    " + "".join(month_labels)
+        # 헤더 생성
+        header = "    " + "".join(month_positions)
         
-        # 그리드(요일) 문자열 생성 (3칸 단위)
+        # 각 요일별 라인 생성
         lines = [header]
         for i, day_name in enumerate(WEEKDAY_NAMES):
-            line = f"{day_name: <3}|"
+            line = f"{day_name:<3}|"
             for week in range(total_weeks):
                 level = grid[i][week]
-                # 이모지는 이미 2칸 너비, 빈 칸은 3칸 공백으로 처리 (1칸 추가로 정렬)
-                line += LEVEL_SYMBOLS[level] + " " if level != -1 else "   "
+                if level != -1:
+                    line += f"{LEVEL_SYMBOLS[level]} "  # 이모지 + 공백 1개 = 3칸
+                else:
+                    line += "   "  # 3칸 공백
             lines.append(line + "|")
         
         return "\n".join(lines)

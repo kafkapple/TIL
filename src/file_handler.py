@@ -51,39 +51,62 @@ def discover_til_notes(vault_path):
     return valid_notes
 
 def sync_new_notes(til_notes, repo_path):
-    print("-> 새로운 노트 동기화 중...")
+    print("-> Obsidian ↔ TIL 저장소 차이 분석 및 동기화 시작...")
+    
     synced_count = 0
     deleted_count = 0
+    skipped_count = 0
     target_base_dir = os.path.join(repo_path, TARGET_DAILY_FOLDER)
     if not os.path.exists(target_base_dir):
         os.makedirs(target_base_dir)
 
-    # 현재 Obsidian에 있는 파일 목록 생성
-    obsidian_files = set(os.path.basename(path) for path in til_notes)
+    # 현재 Obsidian에 있는 파일 목록 생성 (파일명과 경로 매핑)
+    obsidian_files = {}
+    for path in til_notes:
+        filename = os.path.basename(path)
+        obsidian_files[filename] = path
     
     # TIL 저장소에 있는 기존 파일들 확인
+    existing_files = set()
     if os.path.exists(target_base_dir):
         existing_files = set(f for f in os.listdir(target_base_dir) if f.endswith('.md'))
-        
-        # Obsidian에서 삭제된 파일들을 TIL 저장소에서도 삭제
-        files_to_delete = existing_files - obsidian_files
-        for filename in files_to_delete:
+    
+    print(f"📊 파일 상태 분석:")
+    print(f"   Obsidian: {len(obsidian_files)}개 파일")
+    print(f"   TIL 저장소: {len(existing_files)}개 파일")
+    
+    # 삭제 대상 파일들 (TIL에 있지만 Obsidian에 없음)
+    files_to_delete = existing_files - set(obsidian_files.keys())
+    # 새로 추가될 파일들 (Obsidian에 있지만 TIL에 없음)
+    files_to_add = set(obsidian_files.keys()) - existing_files
+    # 기존 파일들 (양쪽에 모두 있음)
+    files_existing = set(obsidian_files.keys()) & existing_files
+    
+    print(f"🔍 변경 사항 감지:")
+    print(f"   삭제 대상: {len(files_to_delete)}개")
+    print(f"   신규 추가: {len(files_to_add)}개")
+    print(f"   기존 파일: {len(files_existing)}개")
+    
+    # 1. 삭제 작업
+    if files_to_delete:
+        print(f"\n🗑️  삭제 작업 ({len(files_to_delete)}개):")
+        for filename in sorted(files_to_delete):
             target_path = os.path.join(target_base_dir, filename)
             try:
                 os.remove(target_path)
-                print(f"  - 삭제 완료: {filename} (Obsidian에서 제거됨)")
+                print(f"  ❌ 삭제: {filename}")
+                print(f"     경로: TIL/_Daily/{filename}")
+                print(f"     이유: Obsidian에서 제거됨")
                 deleted_count += 1
             except Exception as e:
-                print(f"  - 삭제 오류 {filename}: {e}")
-
-    # 파일 동기화 (기존 로직)
-    for source_path in til_notes:
-        filename = os.path.basename(source_path)
-        target_path = os.path.join(target_base_dir, filename)
-
-        # 원본 파일이 타겟 파일보다 최신일 경우에만 동기화
-        if not os.path.exists(target_path) or \
-           os.path.getmtime(source_path) > os.path.getmtime(target_path):
+                print(f"  ⚠️  삭제 실패: {filename} - {e}")
+    
+    # 2. 신규 추가 작업
+    if files_to_add:
+        print(f"\n📝 신규 추가 ({len(files_to_add)}개):")
+        for filename in sorted(files_to_add):
+            source_path = obsidian_files[filename]
+            target_path = os.path.join(target_base_dir, filename)
             
             try:
                 with open(source_path, 'r', encoding='utf-8') as f_source:
@@ -95,17 +118,53 @@ def sync_new_notes(til_notes, repo_path):
                 with open(target_path, 'w', encoding='utf-8') as f_target:
                     f_target.write(cleaned_content)
 
-                print(f"  - 복사 및 정리 완료: {filename}")
+                print(f"  ✅ 추가: {filename}")
+                print(f"     원본: {source_path}")
+                print(f"     대상: TIL/_Daily/{filename}")
                 synced_count += 1
             except Exception as e:
-                print(f"  - 동기화 오류 {filename}: {e}")
+                print(f"  ⚠️  추가 실패: {filename} - {e}")
+    
+    # 3. 기존 파일 수정 감지 및 업데이트
+    if files_existing:
+        print(f"\n🔄 기존 파일 업데이트 확인 ({len(files_existing)}개):")
+        updated_files = []
+        
+        for filename in sorted(files_existing):
+            source_path = obsidian_files[filename]
+            target_path = os.path.join(target_base_dir, filename)
+            
+            # 수정 시간 비교
+            if os.path.getmtime(source_path) > os.path.getmtime(target_path):
+                try:
+                    with open(source_path, 'r', encoding='utf-8') as f_source:
+                        content = f_source.read()
+                    
+                    content_without_frontmatter = FRONTMATTER_REGEX.sub('', content, count=1)
+                    cleaned_content = clean_obsidian_boilerplate(content_without_frontmatter)
 
-    # 결과 출력
-    if synced_count == 0 and deleted_count == 0:
-        print("   새롭게 변경된 노트가 없습니다.")
-    else:
-        if synced_count > 0:
-            print(f"   총 {synced_count}개의 파일을 동기화했습니다.")
-        if deleted_count > 0:
-            print(f"   총 {deleted_count}개의 파일을 삭제했습니다.")
+                    with open(target_path, 'w', encoding='utf-8') as f_target:
+                        f_target.write(cleaned_content)
+
+                    print(f"  🔄 업데이트: {filename}")
+                    print(f"     원본: {source_path}")
+                    print(f"     대상: TIL/_Daily/{filename}")
+                    print(f"     이유: Obsidian 파일이 더 최신")
+                    updated_files.append(filename)
+                    synced_count += 1
+                except Exception as e:
+                    print(f"  ⚠️  업데이트 실패: {filename} - {e}")
+            else:
+                skipped_count += 1
+        
+        if not updated_files:
+            print("  ℹ️  업데이트할 파일이 없습니다 (모든 파일이 최신 상태)")
+
+    # 최종 결과 출력
+    print(f"\n📋 동기화 완료 요약:")
+    print(f"   ✅ 추가/업데이트: {synced_count}개")
+    print(f"   ❌ 삭제: {deleted_count}개")
+    print(f"   ⏭️  건너뜀: {skipped_count}개")
+    print(f"   📁 현재 TIL 파일 수: {len(obsidian_files)}개")
+    
     return True

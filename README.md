@@ -1,39 +1,39 @@
 # TIL Dashboard
-📊 **전체 통계:** 88개 TIL 노트
+📊 **전체 통계:** 94개 TIL 노트
 ## Table of Contents
 - [🗓️ Daily Learning Log](#daily-learning-log)
-  - [2025 (총 55개)](#2025-총-55개)
-  - [2024 (총 33개)](#2024-총-33개)
+  - [2025 (총 56개)](#2025-총-56개)
+  - [2024 (총 38개)](#2024-총-38개)
 - [📚 Learning Archive](#learning-archive)
   - [2025](#2025)
   - [2024](#2024)
 
 ## 🗓️ Daily Learning Log
-### 2025 (총 55개)
+### 2025 (총 56개)
 ```
     Jan         Feb         Mar            Apr         May            Jun         Jul         Aug            Sep         Oct         Nov            Dec            
 Sun|   🟩 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ 🟩 🟢 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ 🟩 🟩 🟩 ⬜️ 🟢 🟩 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ |
 Mon|   🟩 🟢 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ 🟩 🟩 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ 🟩 🟩 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ |
 Tue|   🟩 🟩 🟩 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ 🟩 🟩 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ 🟩 ⬜️ ⬜️ 🟢 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ |
-Wed|⬜️ 🟢 🟢 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ 🟩 🌳 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ 🟢 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ |
+Wed|🟩 🟢 🟢 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ 🟩 🌳 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ 🟢 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ |
 Thu|⬜️ 🟩 🟩 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ 🟩 ⬜️ ⬜️ ⬜️ 🟩 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️    |
 Fri|🟩 🟩 🟩 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ 💚 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ 🟩 ⬜️ ⬜️ 🟩 ⬜️ 🟢 🟩 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️    |
 Sat|🟩 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ 🟩 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ 🟩 ⬜️ 🟩 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️    |
 ```
-**분기별:** Q1: 17개 | Q2: 21개 | Q3: 17개
+**분기별:** Q1: 18개 | Q2: 21개 | Q3: 17개
 
-### 2024 (총 33개)
+### 2024 (총 38개)
 ```
     Jan         Feb         Mar            Apr         May         Jun            Jul         Aug            Sep         Oct         Nov            Dec            
 Sun|   ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ 🟩 ⬜️ ⬜️ 🟩 ⬜️ ⬜️ ⬜️ |
-Mon|⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ 🟩 ⬜️ ⬜️ ⬜️ ⬜️ 🟩 🟩 🟩 🟩 |
+Mon|⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ 🟩 ⬜️ 🟩 ⬜️ ⬜️ 🟩 🟩 🟩 🟩 |
 Tue|⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ 🟩 🟩 🟩 🟩 🟩 ⬜️ ⬜️ 🟩 🟩 ⬜️ |
 Wed|⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ 🟩 🟩 ⬜️ ⬜️ 🟩 🟩 ⬜️ 🟩 🟩    |
-Thu|⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ 🟩 ⬜️ ⬜️ ⬜️ ⬜️ 🟩 🟩 ⬜️ 🟩    |
-Fri|⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ 🟩 🟩 ⬜️ ⬜️ ⬜️ ⬜️ 🟩 🟩 🟩    |
-Sat|⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ 🟩 🟩 ⬜️ ⬜️ ⬜️ 🟩 🟩    |
+Thu|⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ 🟩 ⬜️ ⬜️ 🟩 ⬜️ 🟩 🟩 ⬜️ 🟩    |
+Fri|⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ 🟩 🟩 ⬜️ 🟩 ⬜️ 🟩 🟩 🟩 🟩    |
+Sat|⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ 🟩 🟩 ⬜️ ⬜️ 🟩 🟩 🟩    |
 ```
-**분기별:** Q4: 33개
+**분기별:** Q4: 38개
 
 <div align="right">Less ⬜️ 🟩 🟢 💚 🌳 More</div>
 
@@ -95,6 +95,7 @@ Sat|⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️
     - [Python_Dotenv_Load](_Daily/250428_TIL_Python_Dotenv_Load.md) - *28, Mon*
 - #### January
   - **Week 1**
+    - [Wandb](_Daily/250101_TIL_Wandb.md) - *01, Wed*
     - [Project template 에서 src 및 main entry point 위치, Linux GPU monitoring, Conda 추천](_Daily/250103_Project%20template%20%EC%97%90%EC%84%9C%20src%20%EB%B0%8F%20main%20entry%20point%20%EC%9C%84%EC%B9%98%2C%20Linux%20GPU%20monitoring%2C%20Conda%20%EC%B6%94%EC%B2%9C.md) - *03, Fri*
     - [Model Hyperparameters-Train, Optim, Regul, Model, Data](_Daily/250104_Model%20Hyperparameters-Train%2C%20Optim%2C%20Regul%2C%20Model%2C%20Data.md) - *04, Sat*
   - **Week 2**
@@ -120,11 +121,13 @@ Sat|⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️
   - **Week 1**
     - [EC2_Docker_Architecture](_Daily/241204_TIL_EC2_Docker_Architecture.md) - *04, Wed*
     - [Linux_Logger_google_doc](_Daily/241205_TIL_Linux_Logger_google_doc.md) - *05, Thu*
+    - [MLflow Tracking server, Artifact store 연동 이슈 .md](_Daily/241206_TIL_MLflow%20Tracking%20server%2C%20Artifact%20store%20%EC%97%B0%EB%8F%99%20%EC%9D%B4%EC%8A%88%20.md.md) - *06, Fri*
   - **Week 2**
     - [Linux_windows_NVIDIA_torch_setup](_Daily/241208_TIL_Linux_windows_NVIDIA_torch_setup.md) - *08, Sun*
     - [CICD_Workflow_management](_Daily/241209_TIL_CICD_Workflow_management.md) - *09, Mon*
     - [Docker](_Daily/241212_TIL_Docker.md) - *12, Thu*
     - [Bash vs Source, NVIDIA Driver, CUDA, CUDNN](_Daily/241213_Bash%20vs%20Source%2C%20NVIDIA%20Driver%2C%20CUDA%2C%20CUDNN.md) - *13, Fri*
+    - [MLFlow DB - SQLite, Postgre](_Daily/241214_TIL_MLFlow%20DB%20-%20SQLite%2C%20Postgre.md) - *14, Sat*
   - **Week 3**
     - [Domain adaptation, Transfer learning](_Daily/241216_Domain%20adaptation%2C%20Transfer%20learning.md) - *16, Mon*
     - [Hydra config 관리_wandb 전달](_Daily/241217_Hydra%20config%20%EA%B4%80%EB%A6%AC_wandb%20%EC%A0%84%EB%8B%AC.md) - *17, Tue*
@@ -153,7 +156,10 @@ Sat|⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️
     - [ML_pipeline](_Daily/241116_ML_pipeline.md) - *16, Sat*
   - **Week 4**
     - [Preprocessing](_Daily/241117_Preprocessing.md) - *17, Sun*
+    - [Mentoring - MLOps, CICD, VS_code_short_cut.md](_Daily/241118_TIL_Mentoring%20-%20MLOps%2C%20CICD%2C%20VS_code_short_cut.md.md) - *18, Mon*
     - [Mentoring - ML 실전, Feature variable, Docker_stop](_Daily/241119_Mentoring%20-%20ML%20%EC%8B%A4%EC%A0%84%2C%20Feature%20variable%2C%20Docker_stop.md) - *19, Tue*
+    - [Airflow_Docker](_Daily/241121_TIL_Airflow_Docker.md) - *21, Thu*
+    - [Docker_access_Compose](_Daily/241122_TIL_Docker_access_Compose.md) - *22, Fri*
     - [MLOps_II_S3_Crawling](_Daily/241123_TIL_MLOps_II_S3_Crawling.md) - *23, Sat*
   - **Week 5**
     - [Hyperparam_search_objective_metric](_Daily/241126_Hyperparam_search_objective_metric.md) - *26, Tue*

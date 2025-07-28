@@ -36,22 +36,47 @@ def get_current_branch(working_dir):
         return None
 
 def git_pull_rebase(repo_path):
-    """원격 저장소의 변경사항을 pull --rebase로 가져옵니다.
-    pull 전에 로컬 저장소를 원격과 동일하게 초기화합니다.
-    주의: 이 작업은 로컬의 커밋되지 않은 변경사항과 추적되지 않은 파일을 영구적으로 삭제합니다.
+    """원격 저장소의 변경사항을 안전하게 가져옵니다.
+    로컬 변경사항을 stash하고 pull 후 다시 적용합니다.
     """
-    print("   로컬 저장소 상태를 초기화합니다 (git reset --hard HEAD && git clean -fd).")
-    if not run_command(["git", "reset", "--hard", "HEAD"], repo_path):
-        return False
-    if not run_command(["git", "clean", "-fd"], repo_path):
-        return False
-
     current_branch = get_current_branch(repo_path)
     if not current_branch:
         print("  - 오류: 현재 Git 브랜치 이름을 가져올 수 없습니다.")
         return False
     
-    return run_command(["git", "pull", "--rebase", "origin", current_branch], repo_path)
+    # 원격 저장소 정보 가져오기
+    if not run_command(["git", "fetch", "origin"], repo_path):
+        print("  - 경고: 원격 저장소 정보를 가져오지 못했습니다. 계속 진행합니다.")
+    
+    # 로컬 변경사항 확인
+    try:
+        result = subprocess.run(
+            ["git", "status", "--porcelain"], 
+            cwd=repo_path, text=True, capture_output=True, check=True
+        )
+        has_changes = bool(result.stdout.strip())
+    except:
+        has_changes = False
+    
+    # 변경사항이 있으면 stash
+    stashed = False
+    if has_changes:
+        print("   로컬 변경사항을 임시 저장합니다 (stash).")
+        if run_command(["git", "stash", "push", "-m", "Auto-stash before sync"], repo_path):
+            stashed = True
+        else:
+            print("  - 경고: stash에 실패했습니다. 계속 진행합니다.")
+    
+    # Pull 시도
+    pull_success = run_command(["git", "pull", "origin", current_branch], repo_path)
+    
+    # Stash한 변경사항 복원
+    if stashed:
+        print("   임시 저장된 변경사항을 복원합니다 (stash pop).")
+        if not run_command(["git", "stash", "pop"], repo_path):
+            print("  - 경고: stash pop에 실패했습니다. 수동으로 'git stash pop'을 실행하세요.")
+    
+    return pull_success
 
 def git_commit_and_push(repo_path):
     """변경된 내용을 add, commit, push 합니다."""

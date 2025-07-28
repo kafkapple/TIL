@@ -53,10 +53,30 @@ def discover_til_notes(vault_path):
 def sync_new_notes(til_notes, repo_path):
     print("-> 새로운 노트 동기화 중...")
     synced_count = 0
+    deleted_count = 0
     target_base_dir = os.path.join(repo_path, TARGET_DAILY_FOLDER)
     if not os.path.exists(target_base_dir):
         os.makedirs(target_base_dir)
 
+    # 현재 Obsidian에 있는 파일 목록 생성
+    obsidian_files = set(os.path.basename(path) for path in til_notes)
+    
+    # TIL 저장소에 있는 기존 파일들 확인
+    if os.path.exists(target_base_dir):
+        existing_files = set(f for f in os.listdir(target_base_dir) if f.endswith('.md'))
+        
+        # Obsidian에서 삭제된 파일들을 TIL 저장소에서도 삭제
+        files_to_delete = existing_files - obsidian_files
+        for filename in files_to_delete:
+            target_path = os.path.join(target_base_dir, filename)
+            try:
+                os.remove(target_path)
+                print(f"  - 삭제 완료: {filename} (Obsidian에서 제거됨)")
+                deleted_count += 1
+            except Exception as e:
+                print(f"  - 삭제 오류 {filename}: {e}")
+
+    # 파일 동기화 (기존 로직)
     for source_path in til_notes:
         filename = os.path.basename(source_path)
         target_path = os.path.join(target_base_dir, filename)
@@ -80,8 +100,12 @@ def sync_new_notes(til_notes, repo_path):
             except Exception as e:
                 print(f"  - 동기화 오류 {filename}: {e}")
 
-    if synced_count == 0:
+    # 결과 출력
+    if synced_count == 0 and deleted_count == 0:
         print("   새롭게 변경된 노트가 없습니다.")
     else:
-        print(f"   총 {synced_count}개의 파일을 동기화했습니다.")
+        if synced_count > 0:
+            print(f"   총 {synced_count}개의 파일을 동기화했습니다.")
+        if deleted_count > 0:
+            print(f"   총 {deleted_count}개의 파일을 삭제했습니다.")
     return True

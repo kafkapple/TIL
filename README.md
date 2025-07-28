@@ -17,7 +17,7 @@ Tue|  🟩🟩🟩⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️�
 Wed|⬜️🟢🟢⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️🟩🌳⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️🟩⬜️🟢⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️|
 Thu|⬜️🟩🟩⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️🟩⬜️⬜️⬜️🟩⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️  |
 Fri|🟩🟩🟩⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️💚⬜️⬜️⬜️⬜️⬜️⬜️⬜️🟩⬜️⬜️🟩⬜️🟢🟩⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️  |
-Sat|🟩⬜️🟩⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️🟩⬜️⬜️⬜️⬜️⬜️⬜️⬜️🟩⬜️🟩⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️  |
+Sat|🟩⬜️🟩⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️🟩⬜️⬜️⬜️⬜️⬜️⬜️⬜️🟩⬜️🟩🟩⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️  |
 ```
 ### 2024
 ```
@@ -56,6 +56,7 @@ Sat|⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜�
     - [Promptfoo_Delimiter_Understanding.md](_Daily/250723_TIL_Promptfoo_Delimiter_Understanding.md.md) - *23, Wed*
     - [vl-vmPFC_신뢰도중재-가치통합](_Daily/250724_TIL_vl-vmPFC_%EC%8B%A0%EB%A2%B0%EB%8F%84%EC%A4%91%EC%9E%AC-%EA%B0%80%EC%B9%98%ED%86%B5%ED%95%A9.md) - *24, Thu*
     - [Tolman-Eichenbaum Machine_Unifying Space and Relational Memory.md](_Daily/250725_TIL_Tolman-Eichenbaum%20Machine_Unifying%20Space%20and%20Relational%20Memory.md.md) - *25, Fri*
+    - [research_sync_optimization](_Daily/250726_research_TIL_sync_optimization.md) - *26, Sat*
 - #### June
   - **Week 2**
     - [Markdown_Prompt_Syntax.md](_Daily/250610_TIL_Markdown_Prompt_Syntax.md.md) - *10, Tue*

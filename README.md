@@ -108,7 +108,7 @@ Sat|⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️
     - [Journal - Line Attractor encoding an affective state](_Daily/250116_Journal%20-%20Line%20Attractor%20encoding%20an%20affective%20state.md) - *16, Thu*
     - [Proj - LLM sum, emo recog, chat task_Token param_Categorical val - one-hot encode](_Daily/250117_Proj%20-%20LLM%20sum%2C%20emo%20recog%2C%20chat%20task_Token%20param_Categorical%20val%20-%20one-hot%20encode.md) - *17, Fri*
   - **Week 4**
-    - [스캐폴딩(Scaffolding) ](_Daily/250121_%EC%8A%A4%EC%BA%90%ED%8F%B4%EB%94%A9%28Scaffolding%29%20.md) - *21, Tue*
+    - [스캐폴딩(Scaffolding)](_Daily/250121_%EC%8A%A4%EC%BA%90%ED%8F%B4%EB%94%A9%28Scaffolding%29.md) - *21, Tue*
 ### 2024
 - #### December
   - **Week 1**

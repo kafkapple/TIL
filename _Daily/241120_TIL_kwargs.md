@@ -1,0 +1,141 @@
+## 인자 전달: *args, **kwargs
+
+- **용어**
+
+- `args`와 `*kwargs`를 통해 변동적인 수의 인자를 함수에 전달
+
+- `args`: 위치 인자 (Positional Arguments)를 튜플 형태로 전달
+
+- `*kwargs`: 키워드 인자 (Keyword Arguments)를 딕셔너리 형태로 전달
+
+---
+
+- **용법**
+
+- args 사용
+
+```python
+
+python
+
+코드 복사
+
+def sum_all(*args):
+
+return sum(args)
+
+result = sum_all(1, 2, 3, 4)
+
+print(result) # 출력: 10
+
+```
+
+- kwargs 사용
+
+```python
+
+python
+
+코드 복사
+
+def greet(**kwargs):
+
+for key, value in kwargs.items():
+
+print(f"{key}: {value}")
+
+greet(name="Alice", age=25)
+
+# 출력:
+
+# name: Alice
+
+# age: 25
+
+```
+
+- 둘을 함께 사용
+
+```python
+
+python
+
+코드 복사
+
+def mixed_example(a, b, *args, **kwargs):
+
+print(f"a: {a}, b: {b}")
+
+print(f"args: {args}")
+
+print(f"kwargs: {kwargs}")
+
+mixed_example(1, 2, 3, 4, name="Alice", age=30)
+
+# 출력:
+
+# a: 1, b: 2
+
+# args: (3, 4)
+
+# kwargs: {'name': 'Alice', 'age': 30}
+
+```
+
+---
+
+- **이유**
+
+- 함수가 고정된 수의 인자에 의존하지 않고, 더 유연하게 여러 인자를 받을 수 있도록 설계할 때 유용
+
+- 예를 들어, 동적으로 API 호출이나 설정 값을 전달할 때
+
+---
+
+- **장점:**
+
+- 코드 유연성 증대
+
+- 재사용성과 가독성 향상
+
+- **단점:**
+
+- 인자의 구조가 명확하지 않을 경우 가독성 저하
+
+- 잘못된 인자를 전달하면 디버깅이 어려울 수 있음
+
+---
+
+- **추천**
+
+- 인자가 고정적일 경우, 명시적인 인자 전달을 선호.
+
+- 복잡한 인자 구성이 필요한 경우, `args`와 `*kwargs`를 사용하되, 기본값 또는 문서화를 통해 인자의 목적을 명확히 할 것.
+
+---
+
+- **예제**
+
+REST API 호출 시 유동적인 파라미터 전달:
+
+```python
+
+python
+
+코드 복사
+
+def api_call(endpoint, **params):
+
+query_string = "&".join(f"{key}={value}" for key, value in params.items())
+
+url = f"{endpoint}?{query_string}"
+
+print(f"Calling URL: {url}")
+
+api_call("https://example.com/api", user="alice", age=30, token="abc123")
+
+# 출력: Calling URL: https://example.com/api?user=alice&age=30&token=abc123
+
+```
+
+---

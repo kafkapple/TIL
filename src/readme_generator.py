@@ -27,6 +27,11 @@ class ReadmeGenerator:
     def __init__(self):
         self.daily_files = defaultdict(list)
         self.contributions = defaultdict(int)
+        self.note_stats = {
+            'total': 0,
+            'by_year': defaultdict(int),
+            'by_quarter': defaultdict(lambda: defaultdict(int))
+        }
         self._collect_daily_files()
 
     def _collect_daily_files(self):
@@ -52,6 +57,14 @@ class ReadmeGenerator:
                     
                     self.daily_files[year].append(md_file)
                     self.contributions[date.date()] += 1
+                    
+                    # 통계 수집
+                    self.note_stats['total'] += 1
+                    self.note_stats['by_year'][year] += 1
+                    
+                    # 분기 계산 (Q1: 1-3월, Q2: 4-6월, Q3: 7-9월, Q4: 10-12월)
+                    quarter = (int(month) - 1) // 3 + 1
+                    self.note_stats['by_quarter'][year][quarter] += 1
                 except ValueError:
                     continue
 
@@ -112,9 +125,21 @@ class ReadmeGenerator:
         sorted_years = sorted(self.daily_files.keys(), reverse=True)
 
         for year in sorted_years:
-            content.append(f"### {year}")
+            year_count = self.note_stats['by_year'][year]
+            content.append(f"### {year} (총 {year_count}개)")
             heatmap_str = self.generate_heatmap_for_year(year)
             content.append(f"```\n{heatmap_str}\n```")
+            
+            # 분기별 통계 추가
+            quarters = self.note_stats['by_quarter'][year]
+            if quarters:
+                quarter_stats = []
+                for q in range(1, 5):
+                    if quarters[q] > 0:
+                        quarter_stats.append(f"Q{q}: {quarters[q]}개")
+                if quarter_stats:
+                    content.append(f"**분기별:** {' | '.join(quarter_stats)}")
+            content.append("")  # 빈 줄 추가
         
         legend = "Less ⬜️ 🟩 🟢 💚 🌳 More"
         content.append(f"<div align=\"right\">{legend}</div>\n")
@@ -204,9 +229,13 @@ class ReadmeGenerator:
         # TOC 생성
         toc_content = self._generate_toc_content(base_content_string)
 
+        # 전체 통계 생성
+        total_stats = f"📊 **전체 통계:** {self.note_stats['total']}개 TIL 노트"
+        
         # 최종 README 내용 조합
         final_content = [
             "# TIL Dashboard",
+            total_stats,
             toc_content, # TOC 삽입
             base_content_string
         ]

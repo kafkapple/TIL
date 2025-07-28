@@ -3,7 +3,7 @@ import re
 
 # --- 정규식 ---
 DATE_PREFIX_REGEX = re.compile(r"^(?:\d{8}|\d{6})_.*\.md$")
-TIL_TAG_REGEX = re.compile(r"tags:.*til", re.IGNORECASE)
+TIL_TAG_REGEX = re.compile(r"category:\s*[\"']*TIL[\"']*", re.IGNORECASE)
 FRONTMATTER_REGEX = re.compile(r"^---\s*\n.*?\n---\s*\n", re.DOTALL)
 
 # --- 설정 ---

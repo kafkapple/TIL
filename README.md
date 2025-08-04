@@ -51,8 +51,8 @@ Sat|⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️
     - [CNN_Kernel_Pooling_Relationship_params](_Daily/250718_TIL_CNN_Kernel_Pooling_Relationship_params.md) - *18, Fri*
     - [Dynamic Scene Representation with Factorization and Gaussian Splatting](_Daily/250719_TIL_Dynamic%20Scene%20Representation%20with%20Factorization%20and%20Gaussian%20Splatting.md) - *19, Sat*
   - **Week 4**
-    - [JEPA_WorldModel_Positioning](_Daily/250720_TIL_JEPA_WorldModel_Positioning.md) - *20, Sun*
     - [Visual_Information_Bandwidth_vs_LLMs](_Daily/250720_TIL_Visual_Information_Bandwidth_vs_LLMs.md) - *20, Sun*
+    - [JEPA_WorldModel_Positioning](_Daily/250720_TIL_JEPA_WorldModel_Positioning.md) - *20, Sun*
     - [Dual memory system](_Daily/250721_TIL_Dual%20memory%20system.md) - *21, Mon*
     - [Overfitting 대응 – Dropout, Batch Size, Filter](_Daily/250723_TIL_Overfitting%20%EB%8C%80%EC%9D%91%20%E2%80%93%20Dropout%2C%20Batch%20Size%2C%20Filter.md) - *23, Wed*
     - [Promptfoo_Delimiter_Understanding](_Daily/250723_TIL_Promptfoo_Delimiter_Understanding.md) - *23, Wed*
@@ -80,15 +80,15 @@ Sat|⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️
   - **Week 3**
     - [english](_Daily/250415_TIL_english.md) - *15, Tue*
     - [취업_특강](_Daily/250416_TIL_%EC%B7%A8%EC%97%85_%ED%8A%B9%EA%B0%95_.md) - *16, Wed*
+    - [이력서_특강 - 9가지 요소](_Daily/250418_TIL_%EC%9D%B4%EB%A0%A5%EC%84%9C_%ED%8A%B9%EA%B0%95%20-%209%EA%B0%80%EC%A7%80%20%EC%9A%94%EC%86%8C.md) - *18, Fri*
     - [SVG_-_XML](_Daily/250418_TIL_SVG_-_XML.md) - *18, Fri*
     - [Prompt_engineering_특강](_Daily/250418_TIL_Prompt_engineering_%ED%8A%B9%EA%B0%95.md) - *18, Fri*
-    - [이력서_특강 - 9가지 요소](_Daily/250418_TIL_%EC%9D%B4%EB%A0%A5%EC%84%9C_%ED%8A%B9%EA%B0%95%20-%209%EA%B0%80%EC%A7%80%20%EC%9A%94%EC%86%8C.md) - *18, Fri*
   - **Week 4**
     - [이력서_포인트](_Daily/250420_TIL_%EC%9D%B4%EB%A0%A5%EC%84%9C_%ED%8F%AC%EC%9D%B8%ED%8A%B8.md) - *20, Sun*
     - [Langchain_Runnable,_YAML_Frontmatter](_Daily/250421_TIL_Langchain_Runnable%2C_YAML_Frontmatter.md) - *21, Mon*
     - [포트폴리오_특강](_Daily/250422_TIL_%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4_%ED%8A%B9%EA%B0%95.md) - *22, Tue*
-    - [top_k](_Daily/250423_TIL_top_k.md) - *23, Wed*
     - [MASTER_자기소개서](_Daily/250423_TIL_MASTER_%EC%9E%90%EA%B8%B0%EC%86%8C%EA%B0%9C%EC%84%9C.md) - *23, Wed*
+    - [top_k](_Daily/250423_TIL_top_k.md) - *23, Wed*
     - [Tools,_Function_call](_Daily/250423_TIL_Tools%2C_Function_call.md) - *23, Wed*
     - [obsidian_hk_code_block](_Daily/250423_TIL_obsidian_hk_code_block.md) - *23, Wed*
   - **Week 5**
@@ -110,18 +110,18 @@ Sat|⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️
     - [Model Hyperparameters-Train, Optim, Regul, Model, Data](_Daily/250104_Model%20Hyperparameters-Train%2C%20Optim%2C%20Regul%2C%20Model%2C%20Data.md) - *04, Sat*
   - **Week 2**
     - [Hydra multi-config, Wandb logging - step, epoch](_Daily/250105_Hydra%20multi-config%2C%20Wandb%20logging%20-%20step%2C%20epoch.md) - *05, Sun*
-    - [ViT_Inductive_Bias](_Daily/250106_TIL_ViT_Inductive_Bias.md) - *06, Mon*
     - [Template 코드 작성_Quantization, Torch dtype bfloat16, Powershell Conda 이슈](_Daily/250106_Template%20%EC%BD%94%EB%93%9C%20%EC%9E%91%EC%84%B1_Quantization%2C%20Torch%20dtype%20bfloat16%2C%20Powershell%20Conda%20%EC%9D%B4%EC%8A%88.md) - *06, Mon*
+    - [ViT_Inductive_Bias](_Daily/250106_TIL_ViT_Inductive_Bias.md) - *06, Mon*
     - [PyTorch Dataset and DataLoader](_Daily/250107_TIL_PyTorch%20Dataset%20and%20DataLoader.md) - *07, Tue*
     - [특강-이력서](_Daily/250107_TIL_%ED%8A%B9%EA%B0%95-%EC%9D%B4%EB%A0%A5%EC%84%9C.md) - *07, Tue*
-    - [ROUGE 및 NLP 평가 메트릭 개요](_Daily/250108_ROUGE%20%EB%B0%8F%20NLP%20%ED%8F%89%EA%B0%80%20%EB%A9%94%ED%8A%B8%EB%A6%AD%20%EA%B0%9C%EC%9A%94.md) - *08, Wed*
     - [Project Emotion - NLP, BART seq max 1024,  import warnings, seed](_Daily/250108_Project%20Emotion%20-%20NLP%2C%20BART%20seq%20max%201024%2C%20%20import%20warnings%2C%20seed.md) - *08, Wed*
+    - [ROUGE 및 NLP 평가 메트릭 개요](_Daily/250108_ROUGE%20%EB%B0%8F%20NLP%20%ED%8F%89%EA%B0%80%20%EB%A9%94%ED%8A%B8%EB%A6%AD%20%EA%B0%9C%EC%9A%94.md) - *08, Wed*
     - [Project Emotion(ISP), NLP 추가 구현. ML Basic 복습 - High-Low level 개념, Regression, Classification 실습, Python 삼중 따옴표 사용](_Daily/250109_Project%20Emotion%28ISP%29%2C%20NLP%20%EC%B6%94%EA%B0%80%20%EA%B5%AC%ED%98%84.%20ML%20Basic%20%EB%B3%B5%EC%8A%B5%20-%20High-Low%20level%20%EA%B0%9C%EB%85%90%2C%20Regression%2C%20Classification%20%EC%8B%A4%EC%8A%B5%2C%20Python%20%EC%82%BC%EC%A4%91%20%EB%94%B0%EC%98%B4%ED%91%9C%20%EC%82%AC%EC%9A%A9.md) - *09, Thu*
-    - [Data_Type_Conversion_and_Missing_Value_Handling.md](_Daily/250110_TIL_Data_Type_Conversion_and_Missing_Value_Handling.md.md) - *10, Fri*
     - [SVD Rank, Correlation_Scaling (Standarization - mu, Normalization - min max)_Latex_기업 설명회](_Daily/250110_SVD%20Rank%2C%20Correlation_Scaling%20%28Standarization%20-%20mu%2C%20Normalization%20-%20min%20max%29_Latex_%EA%B8%B0%EC%97%85%20%EC%84%A4%EB%AA%85%ED%9A%8C.md) - *10, Fri*
+    - [Data_Type_Conversion_and_Missing_Value_Handling.md](_Daily/250110_TIL_Data_Type_Conversion_and_Missing_Value_Handling.md.md) - *10, Fri*
   - **Week 3**
-    - [특강-Overview of LLM](_Daily/250113_TIL_%ED%8A%B9%EA%B0%95-Overview%20of%20LLM.md) - *13, Mon*
     - [Recommendation System, Time-series analysis, Model 평가 및 개선](_Daily/250113_Recommendation%20System%2C%20Time-series%20analysis%2C%20Model%20%ED%8F%89%EA%B0%80%20%EB%B0%8F%20%EA%B0%9C%EC%84%A0.md) - *13, Mon*
+    - [특강-Overview of LLM](_Daily/250113_TIL_%ED%8A%B9%EA%B0%95-Overview%20of%20LLM.md) - *13, Mon*
     - [Residual_Learning_and_1x1_Convolution.md](_Daily/250114_TIL_Residual_Learning_and_1x1_Convolution.md.md) - *14, Tue*
     - [CV Basic 3, 4강 - Backbone, decoder, CNN, ResNet, EfficientNet](_Daily/250114_CV%20Basic%203%2C%204%EA%B0%95%20-%20Backbone%2C%20decoder%2C%20CNN%2C%20ResNet%2C%20EfficientNet.md) - *14, Tue*
     - [PyTorch 텍스트 생성 모델의 Padding 처리와 -100 masking](_Daily/250115_PyTorch%20%ED%85%8D%EC%8A%A4%ED%8A%B8%20%EC%83%9D%EC%84%B1%20%EB%AA%A8%EB%8D%B8%EC%9D%98%20Padding%20%EC%B2%98%EB%A6%AC%EC%99%80%20-100%20masking.md) - *15, Wed*
@@ -129,9 +129,9 @@ Sat|⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️
     - [Journal - Line Attractor encoding an affective state](_Daily/250116_Journal%20-%20Line%20Attractor%20encoding%20an%20affective%20state.md) - *16, Thu*
     - [Proj - LLM sum, emo recog, chat task_Token param_Categorical val - one-hot encode](_Daily/250117_Proj%20-%20LLM%20sum%2C%20emo%20recog%2C%20chat%20task_Token%20param_Categorical%20val%20-%20one-hot%20encode.md) - *17, Fri*
   - **Week 4**
-    - [ Seq2SeqTrainer_vs_AutoAPI.md](_Daily/250120_TIL_%20Seq2SeqTrainer_vs_AutoAPI.md.md) - *20, Mon*
-    - [RoBERTa_Improved_Learning.md](_Daily/250120_TIL_RoBERTa_Improved_Learning.md.md) - *20, Mon*
     - [Pandas_Data_Exploration.md](_Daily/250120_TIL_Pandas_Data_Exploration.md.md) - *20, Mon*
+    - [RoBERTa_Improved_Learning.md](_Daily/250120_TIL_RoBERTa_Improved_Learning.md.md) - *20, Mon*
+    - [ Seq2SeqTrainer_vs_AutoAPI.md](_Daily/250120_TIL_%20Seq2SeqTrainer_vs_AutoAPI.md.md) - *20, Mon*
     - [스캐폴딩(Scaffolding)](_Daily/250121_%EC%8A%A4%EC%BA%90%ED%8F%B4%EB%94%A9%28Scaffolding%29.md) - *21, Tue*
     - [LLM_Fine_Tuning_Strategies.md](_Daily/250124_TIL_LLM_Fine_Tuning_Strategies.md.md) - *24, Fri*
 ### 2024
@@ -171,8 +171,8 @@ Sat|⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️
     - [ML_data_Manual](_Daily/241101_ML_data_Manual.md) - *01, Fri*
   - **Week 2**
     - [Variable_continuous_categorical](_Daily/241104_Variable_continuous_categorical.md) - *04, Mon*
-    - [Machine_Learning_Algorithms_Overview.md](_Daily/241105_TIL_Machine_Learning_Algorithms_Overview.md.md) - *05, Tue*
     - [Ensemble](_Daily/241105_Ensemble.md) - *05, Tue*
+    - [Machine_Learning_Algorithms_Overview.md](_Daily/241105_TIL_Machine_Learning_Algorithms_Overview.md.md) - *05, Tue*
     - [Dataset_split](_Daily/241106_Dataset_split.md) - *06, Wed*
     - [Cursor IDE - Chat vs Composer, cursorrules](_Daily/241107_TIL_Cursor%20IDE%20-%20Chat%20vs%20Composer%2C%20cursorrules.md) - *07, Thu*
     - [Pandas 결측치 확인 info, isna - isnull, 처리 fillna, dropna](_Daily/241108_Pandas%20%EA%B2%B0%EC%B8%A1%EC%B9%98%20%ED%99%95%EC%9D%B8%20info%2C%20isna%20-%20isnull%2C%20%EC%B2%98%EB%A6%AC%20fillna%2C%20dropna.md) - *08, Fri*
@@ -185,8 +185,8 @@ Sat|⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️
     - [ML_pipeline](_Daily/241116_ML_pipeline.md) - *16, Sat*
   - **Week 4**
     - [Preprocessing](_Daily/241117_Preprocessing.md) - *17, Sun*
-    - [Mentoring - MLOps, CICD, VS_code_short_cut.md](_Daily/241118_TIL_Mentoring%20-%20MLOps%2C%20CICD%2C%20VS_code_short_cut.md.md) - *18, Mon*
     - [PortForwardingAndTensorBoard.md](_Daily/241118_TIL_PortForwardingAndTensorBoard.md.md) - *18, Mon*
+    - [Mentoring - MLOps, CICD, VS_code_short_cut.md](_Daily/241118_TIL_Mentoring%20-%20MLOps%2C%20CICD%2C%20VS_code_short_cut.md.md) - *18, Mon*
     - [Mentoring - ML 실전, Feature variable, Docker_stop](_Daily/241119_Mentoring%20-%20ML%20%EC%8B%A4%EC%A0%84%2C%20Feature%20variable%2C%20Docker_stop.md) - *19, Tue*
     - [kwargs](_Daily/241120_TIL_kwargs.md) - *20, Wed*
     - [Airflow_Docker](_Daily/241121_TIL_Airflow_Docker.md) - *21, Thu*

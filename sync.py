@@ -6,9 +6,10 @@ from src.git_handler import git_pull_rebase, git_commit_and_push
 # --- 설정 ---
 POSSIBLE_PATHS = [
     ("/home/joon/Documents/Obsidian", "/home/joon/dev/TIL"),
-    ("/Users/joon/Documents/Obsidian", "/Users/joon/dev/TIL"),
+    ("/Users/joonpark/Documents/Obsidian/Obsidian", "/Users/joonpark/Documents/dev/TIL"),
     ("D:/Documents/Obsidian", "D:/dev/TIL"),
 ]
+
 
 def find_paths():
     """현재 환경에 맞는 Obsidian 볼트와 TIL 저장소 경로를 찾습니다."""

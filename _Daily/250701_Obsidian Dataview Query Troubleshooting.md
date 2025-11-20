@@ -1,4 +1,4 @@
-# 📄 Obsidian Dataview Troubleshooting
+# 250701_Obsidian Dataview Query Troubleshooting
 
 옵시디언 Dataview 쿼리에서 FROM "folder/**" 사용 시 파일이 보이지 않는 문제 해결 가이드.
 

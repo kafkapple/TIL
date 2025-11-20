@@ -2,7 +2,7 @@ import os
 import re
 
 # --- 설정 ---
-OBSIDIAN_VAULT_PATH = "/home/joon/Documents/Obsidian"
+OBSIDIAN_VAULT_PATH = "/Users/joon/Documents/Obsidian"
 SOURCE_FOLDERS = ["10_Daily", "30_Projects", "40_Areas"]
 
 # --- 정규식 ---

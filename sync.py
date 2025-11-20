@@ -5,6 +5,7 @@ from src.git_handler import git_pull_rebase, git_commit_and_push
 
 # --- 설정 ---
 POSSIBLE_PATHS = [
+    ("/Users/joon/Documents/Obsidian", "/Users/joon/dev/TIL"), # 2025 Macbook Pro
     ("/home/joon/Documents/Obsidian", "/home/joon/dev/TIL"),
     ("/Users/joonpark/Documents/Obsidian/Obsidian", "/Users/joonpark/Documents/dev/TIL"),
     ("D:/Documents/Obsidian", "D:/dev/TIL"),
